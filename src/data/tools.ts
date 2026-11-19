@@ -5,6 +5,11 @@ export interface Faq {
   a: string
 }
 
+export interface ToolArticle {
+  title: string
+  paragraphs: string[]
+}
+
 export interface ToolMeta {
   id: string
   slug: string
@@ -26,23 +31,60 @@ export interface ToolMeta {
   seoDescription: string
   h1: string
   intro: string
+  article: ToolArticle
   steps: string[]
   features: string[]
   faqs: Faq[]
   related: string[]
 }
 
-type ToolInput = Omit<ToolMeta, 'slug' | 'kind' | 'h1'> & {
+type ToolInput = Omit<ToolMeta, 'slug' | 'kind' | 'h1' | 'article'> & {
   slug?: string
   h1?: string
+  article?: ToolArticle
 }
 
-const t = (x: ToolInput): ToolMeta => ({
-  ...x,
-  slug: x.slug ?? x.id,
-  kind: x.accept ? 'file' : 'text',
-  h1: x.h1 ?? x.name,
-})
+const articleCategoryName: Record<CategoryId, string> = {
+  image: 'image',
+  pdf: 'PDF',
+  text: 'text',
+  developer: 'developer',
+  converters: 'conversion',
+}
+
+const createArticle = (x: ToolInput): ToolArticle => {
+  const categoryName = articleCategoryName[x.category]
+  const relatedKeywords = x.keywords.slice(0, 4).join(', ')
+  const featureSummary = x.features.slice(0, 3).join('; ')
+  const stepSummary = x.steps.join(' ')
+  const inputLimit = x.accept
+    ? `The supported input is intended for ${x.accept.slice(0, 5).join(', ')} files. Browser and device limits still apply to large, damaged or unusually high-resolution inputs.`
+    : 'The tool works with text entered or pasted into the page. Very large inputs may take longer to process depending on browser and device performance.'
+
+  return {
+    title: `A practical guide to ${x.name}`,
+    paragraphs: [
+      `${x.name} is an online ${categoryName} tool for ${x.description.replace(/\.$/, '')}. It is designed for ${relatedKeywords} tasks that need a quick, repeatable result without installing a separate application. Start with the input area above and use the options that match the output you need.`,
+      `${x.intro} The interface keeps the work in one place, so you can review the result before copying or downloading it. ${x.accept ? 'A local file remains in the browser while it is processed.' : 'Your pasted text stays in the page unless you choose a separate service or download function.'}`,
+      `To use ${x.name}, follow the tool's controls rather than a separate document or upload form. ${stepSummary} Checking the preview, output or status after each operation helps catch an incorrect setting before you copy or save the result.`,
+      `The main features include ${featureSummary}. These options are useful when the input must be handled consistently, especially for repeated work or when several files need the same setting. Keep the original copy until you have checked the finished output, since conversions can change format, metadata or visual details.`,
+      inputLimit,
+      `Choose settings carefully and compare the result with the source. Depending on the operation, quality, formatting or data structure may change; the tool cannot recover detail that was already removed or repair every damaged file. For a final document or published asset, open the output in the target application before sharing it.`,
+      `Processing is performed through the browser, and the page does not require an account for this tool. Do not paste passwords, private records or confidential source material unless you understand the data you are working with. Close the page when you finish a sensitive task, and follow your organization's rules for retaining and distributing the resulting files.`,
+    ],
+  }
+}
+
+const t = (x: ToolInput): ToolMeta => {
+  const article = x.article ?? createArticle(x)
+  return {
+    ...x,
+    article,
+    slug: x.slug ?? x.id,
+    kind: x.accept ? 'file' : 'text',
+    h1: x.h1 ?? x.name,
+  }
+}
 
 const IMG = ['image/jpeg', 'image/png', 'image/webp', '.jpg', '.jpeg', '.png', '.webp']
 const IMG_ANY = [...IMG, 'image/avif', 'image/gif', 'image/bmp', '.avif', '.gif', '.bmp']

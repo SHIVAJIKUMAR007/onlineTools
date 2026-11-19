@@ -41,7 +41,7 @@ Before finishing a change, run `npm run typecheck` and `npm test`. Run `npm run 
 
 ## Tool article rule
 
-Every tool page must have a written article **below the tool** (after the tool UI, in the tool's page content), of **at least 200 words**. The 200 words are the article alone, not counting the intro, steps, features or FAQs. Adding a tool is not finished until its article is written.
+Every tool page must have a written article **below the tool** (after the tool UI, in the tool's page content, maybe after related tools section in page), of **at least 200 words**. The 200 words are the article alone, not counting the intro, steps, features or FAQs. Adding a tool is not finished until its article is written.
 
 How to write it:
 

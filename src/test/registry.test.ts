@@ -32,6 +32,9 @@ describe('tool registry', () => {
       expect(t.features.length, t.id).toBeGreaterThanOrEqual(3)
       expect(t.faqs.length, t.id).toBeGreaterThanOrEqual(2)
       expect(t.keywords.length, t.id).toBeGreaterThan(1)
+      expect(t.article.title.length, t.id).toBeGreaterThan(10)
+      const articleWords = t.article.paragraphs.join(' ').trim().split(/\s+/).filter(Boolean)
+      expect(articleWords.length, `${t.id} article word count`).toBeGreaterThanOrEqual(200)
       expect(categoryById(t.category), t.id).toBeDefined()
       if (t.kind === 'file') expect(t.accept!.length, t.id).toBeGreaterThan(0)
     }

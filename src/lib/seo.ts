@@ -57,6 +57,8 @@ function toolBody(tool: ToolMeta): string {
 <ol>${tool.steps.map((s) => `<li>${esc(s)}</li>`).join('')}</ol>
 <h2>Features</h2>
 <ul>${tool.features.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+<h2>${esc(tool.article.title)}</h2>
+${tool.article.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join('')}
 <h2>Frequently asked questions</h2>
 ${tool.faqs.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}
 <h2>Related tools</h2>
