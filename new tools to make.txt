@@ -1,4 +1,4 @@
-LEGEND (updated 2026-11-19):  [DONE] = built in Stayput   [PARTIAL] = built, but some of the listed scope is missing   (no mark) = not built yet
+LEGEND (updated 2026-11-19; duplicates removed, each tool listed once):  [DONE] = built in Stayput   [PARTIAL] = built, but some of the listed scope is missing   (no mark) = not built yet
 
 
 
@@ -6,7 +6,7 @@ High-volume tools that work fully client-side
 #	Tool	Typical search terms	JS approach
 1	Age / date calculator	age calculator, date difference, days between dates	Date object
 2	Percentage calculator	percentage calculator, % change	plain math
-3	Unit converter	cm to inches, kg to lbs, celsius to fahrenheit	conversion tables
+3	Unit converter	cm to inches, kg to lbs, celsius to fahrenheit	conversion tables	[DONE]
 4	Currency converter (partial)	usd to inr	needs live rates, or use static/manual rates
 5	Image converter / compressor	png to jpg, webp converter, compress image	Canvas API, toBlob()	[DONE]
 6	Image resizer / cropper	resize image, photo resizer	Canvas	[DONE]
@@ -40,8 +40,6 @@ High-volume tools that work fully client-side
 
 
 JSON tools
-JSON formatter / beautifier	[DONE]
-JSON validator	[DONE]
 JSON minifier	[DONE]
 JSON diff checker
 JSON to CSV, and CSV to JSON	[PARTIAL: JSON to CSV only]
@@ -50,10 +48,9 @@ JSON to YAML, and YAML to JSON
 JSON to TypeScript interface
 JSON viewer / tree viewer
 JSON path tester
-JSON escape / unescape
-JSON sorter (sort keys)
+JSON escape / unescape	[DONE]
+JSON sorter (sort keys)	[DONE: option in JSON Formatter]
 Diff and compare tools
-Text diff checker	[DONE]
 Code diff checker
 File compare
 Excel / CSV compare
@@ -66,50 +63,27 @@ CSS minifier / beautifier	[PARTIAL: minify only]
 JavaScript minifier / beautifier
 SQL formatter
 YAML validator
-Markdown to HTML (and a live preview editor)
 HTML to Markdown
 CSV to Excel table viewer
 Encode and decode tools
-Base64 encode / decode (text and image)	[DONE]
-URL encode / decode	[DONE]
 HTML entity encode / decode	[DONE]
 JWT decoder	[DONE]
-Unicode / UTF-8 converter
+Unicode / UTF-8 converter	[PARTIAL: UTF-8 bytes via Hex / Binary converter, no code points or escapes]
 Hex / binary / ASCII converters	[DONE]
 Generator tools
 UUID / GUID generator	[DONE]
-Hash generator (MD5, SHA-1, SHA-256)	[PARTIAL: no MD5]
-Password generator	[DONE]
-Lorem ipsum generator	[DONE]
-Random string generator
+Random string generator	[DONE]
 Cron expression generator and explainer
-QR code generator
 Fake data / mock JSON generator
 Testers
-Regex tester	[DONE]
 Cron tester
 Timestamp converter (Unix to date)	[DONE]
-Time zone converter
-Color converter (HEX, RGB, HSL)	[DONE]
 Text tools
-Word and character counter	[DONE]
-Case converter	[DONE]
 Remove extra spaces and line breaks	[DONE]
 Find and replace	[DONE]
 Text to slug	[DONE]
 Reverse text	[DONE]
 Text to speech (the browser’s speechSynthesis API)
-Top picks by search demand
-JSON formatter	[DONE]
-JSON to CSV	[DONE]
-Base64 encode / decode	[DONE]
-Text diff checker	[DONE]
-JSON diff checker
-Regex tester	[DONE]
-UUID generator	[DONE]
-JWT decoder	[DONE]
-Unix timestamp converter	[DONE]
-SQL formatter
 Useful libraries (cdnjs)
 Diff: jsdiff for text diffs, or jsondiffpatch for JSON diffs
 Formatting: js-beautify for HTML, CSS and JS, and sql-formatter for SQL
@@ -121,21 +95,19 @@ JSON editing: jsoneditor or Monaco for syntax highlighting
 
 Text and writing tools
 Remove duplicate words
-Text repeater
-Text to list / list to comma-separated
-Line counter / sentence counter	[PARTIAL: Word Counter shows sentences, paragraphs and lines count only within it]
-Readability score (Flesch-Kincaid)
-Keyword density checker
-Reading time estimator	[PARTIAL: included in Word Counter]
+Text repeater	[DONE]
+Text to list / list to comma-separated	[DONE]
+Readability score (Flesch-Kincaid)	[DONE]
+Keyword density checker	[DONE]
 Fancy text / Unicode font generator
 Small text / superscript generator
 Emoji picker and copy
-Palindrome checker
+Palindrome checker	[DONE]
 Anagram finder
 Morse code converter	[DONE]
 Roman numeral converter	[DONE]
-Number to words converter
-Pig Latin / ROT13 / Caesar cipher
+Number to words converter	[DONE]
+Pig Latin / ROT13 / Caesar cipher	[PARTIAL: Caesar cipher and ROT13 only, no Pig Latin]
 Security and privacy
 Password strength checker
 Passphrase generator
@@ -145,7 +117,7 @@ Bcrypt hash generator and verifier
 Random token / API key generator
 Public IP and browser fingerprint viewer
 Secret note (encrypted, shareable link)
-Hash file checker (checksum of an uploaded file)
+Hash file checker (checksum of an uploaded file)	[DONE: Hash Generator accepts files]
 Date, time and calendar
 Countdown timer to a date
 Working days calculator
@@ -154,7 +126,6 @@ Week number of the year
 Unix timestamp to date, in bulk
 Pomodoro timer
 Meeting time planner across time zones
-Epoch converter (milliseconds and seconds)	[DONE]
 Leap year checker
 Zodiac / birthstone finder
 Image and media (client-side)
@@ -176,7 +147,7 @@ PDF page rotate / delete / reorder	[PARTIAL: rotate and delete done, reorder not
 PDF to images	[DONE]
 PDF watermark / page numbers
 Extract text from PDF (pdf.js)
-Resume / invoice generator
+Resume generator
 Invoice and receipt maker with PDF export
 Markdown to PDF
 Letterhead and certificate maker
@@ -196,8 +167,6 @@ Fun and utility
 Random name / team picker
 Truth or dare, or “would you rather” generator
 Random quote generator
-Decision wheel
-Typing speed test
 Reaction time test
 Click speed test (CPS)
 Memory and number games
@@ -207,4 +176,3 @@ Dead pixel test
 Online notepad (auto-saved with localStorage)
 Sticky notes / to-do list
 Drawing board / whiteboard (Canvas)
-timezone time converter

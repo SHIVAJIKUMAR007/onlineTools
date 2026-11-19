@@ -69,6 +69,17 @@ const loaders: Record<string, Loader> = {
   // more converters
   'morse-code-translator': named(() => import('./converters/CodeConverters'), 'MorseConverter'),
   'roman-numeral-converter': named(() => import('./converters/CodeConverters'), 'RomanNumerals'),
+  'unit-converter': named(() => import('./converters/UnitTools'), 'UnitConverter'),
+  'number-to-words': named(() => import('./converters/UnitTools'), 'NumberToWords'),
+  // batch 3
+  'caesar-cipher': named(() => import('./text/TextMore'), 'CaesarCipher'),
+  'text-repeater': named(() => import('./text/TextMore'), 'TextRepeater'),
+  'list-to-comma-separated': named(() => import('./text/TextMore'), 'ListConverter'),
+  'palindrome-checker': named(() => import('./text/TextMore'), 'PalindromeChecker'),
+  'readability-score': named(() => import('./text/TextMore'), 'ReadabilityChecker'),
+  'keyword-density-checker': named(() => import('./text/TextMore'), 'KeywordDensity'),
+  'json-escape-unescape': named(() => import('./developer/DevMore'), 'JsonEscape'),
+  'random-string-generator': named(() => import('./developer/DevMore'), 'RandomStringGenerator'),
 }
 
 const cache = new Map<string, LazyExoticComponent<ComponentType>>()
