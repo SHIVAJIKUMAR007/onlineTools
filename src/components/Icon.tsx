@@ -1,12 +1,12 @@
 import {
-  AlignLeft, ArrowDownUp, ArrowLeftRight, Binary, Braces, CaseSensitive, Code2, Combine, Crop, FileArchive, FileCode, FileImage, FileMinus,
+  AlignLeft, ArrowDownUp, Clock, ArrowLeftRight, Binary, Braces, CaseSensitive, Code2, Combine, Crop, FileArchive, FileCode, FileImage, FileMinus,
   FilePlus2, FileText, Fingerprint, GitCompare, Hash, Image, Images, Info, KeyRound, Link, ListX, Minimize2, Palette, Repeat2, RotateCw,
   ScanSearch, Scaling, Scissors, Shapes, Smartphone, Table, Type, Wand2, Wrench, type LucideProps,
 } from 'lucide-react'
 import type { ComponentType } from 'react'
 
 const icons: Record<string, ComponentType<LucideProps>> = {
-  AlignLeft, ArrowDownUp, ArrowLeftRight, Binary, Braces, CaseSensitive, Code2, Combine, Crop, FileArchive, FileCode, FileImage, FileMinus,
+  AlignLeft, ArrowDownUp, Clock, ArrowLeftRight, Binary, Braces, CaseSensitive, Code2, Combine, Crop, FileArchive, FileCode, FileImage, FileMinus,
   FilePlus2, FileText, Fingerprint, GitCompare, Hash, Image, Images, Info, KeyRound, Link, ListX, Minimize2, Palette, Repeat2, RotateCw,
   ScanSearch, Scaling, Scissors, Shapes, Smartphone, Table, Type, Wand2,
 }

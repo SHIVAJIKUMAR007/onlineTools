@@ -57,6 +57,18 @@ const loaders: Record<string, Loader> = {
   'html-entity-encoder-decoder': named(() => import('./developer/DevTools'), 'HtmlEntities'),
   'jwt-decoder': named(() => import('./developer/DevTools'), 'JwtDecoder'),
   'color-converter': named(() => import('./developer/DevTools'), 'ColorConverter'),
+  'password-generator': named(() => import('./developer/DevUtilities'), 'PasswordGenerator'),
+  'regex-tester': named(() => import('./developer/DevUtilities'), 'RegexTester'),
+  'unix-timestamp-converter': named(() => import('./developer/DevUtilities'), 'TimestampConverter'),
+  'hex-binary-ascii-converter': named(() => import('./developer/DevUtilities'), 'BaseConverter'),
+  // more text
+  'sort-lines': named(() => import('./text/TextUtilities'), 'SortLines'),
+  'find-and-replace': named(() => import('./text/TextUtilities'), 'FindReplace'),
+  'text-to-slug': named(() => import('./text/TextUtilities'), 'TextToSlug'),
+  'remove-extra-spaces': named(() => import('./text/TextUtilities'), 'CleanWhitespace'),
+  // more converters
+  'morse-code-translator': named(() => import('./converters/CodeConverters'), 'MorseConverter'),
+  'roman-numeral-converter': named(() => import('./converters/CodeConverters'), 'RomanNumerals'),
 }
 
 const cache = new Map<string, LazyExoticComponent<ComponentType>>()

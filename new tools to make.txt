@@ -11,7 +11,7 @@ High-volume tools that work fully client-side
 5	Image converter / compressor	png to jpg, webp converter, compress image	Canvas API, toBlob()	[DONE]
 6	Image resizer / cropper	resize image, photo resizer	Canvas	[DONE]
 7	QR code generator	qr code generator	qrcode library (cdnjs)
-8	Password generator	password generator	crypto.getRandomValues()
+8	Password generator	password generator	crypto.getRandomValues()	[DONE]
 9	Word / character counter	word counter, character count	string ops	[DONE]
 10	Case converter	uppercase to lowercase, title case	string ops	[DONE]
 11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas
@@ -27,7 +27,7 @@ High-volume tools that work fully client-side
 21	Hash generator (MD5, SHA)	sha256 generator	crypto.subtle.digest	[PARTIAL: SHA-1/256/384/512 only, no MD5]
 22	Lorem ipsum generator	lorem ipsum	word list	[DONE]
 23	Text diff / compare	text compare	diff library	[DONE]
-24	Regex tester	regex tester	RegExp
+24	Regex tester	regex tester	RegExp	[DONE]
 25	Markdown to HTML	markdown editor	marked library
 26	Speed typing test	typing test	key events and timers
 27	Time zone converter / world clock	time zone converter	Intl.DateTimeFormat
@@ -58,7 +58,7 @@ Code diff checker
 File compare
 Excel / CSV compare
 Duplicate line remover	[DONE]
-Sort lines (A-Z, Z-A, numeric)
+Sort lines (A-Z, Z-A, numeric)	[DONE]
 Format and convert tools
 XML formatter
 HTML formatter / minifier
@@ -75,28 +75,28 @@ URL encode / decode	[DONE]
 HTML entity encode / decode	[DONE]
 JWT decoder	[DONE]
 Unicode / UTF-8 converter
-Hex / binary / ASCII converters
+Hex / binary / ASCII converters	[DONE]
 Generator tools
 UUID / GUID generator	[DONE]
 Hash generator (MD5, SHA-1, SHA-256)	[PARTIAL: no MD5]
-Password generator
+Password generator	[DONE]
 Lorem ipsum generator	[DONE]
 Random string generator
 Cron expression generator and explainer
 QR code generator
 Fake data / mock JSON generator
 Testers
-Regex tester
+Regex tester	[DONE]
 Cron tester
-Timestamp converter (Unix to date)
+Timestamp converter (Unix to date)	[DONE]
 Time zone converter
 Color converter (HEX, RGB, HSL)	[DONE]
 Text tools
 Word and character counter	[DONE]
 Case converter	[DONE]
-Remove extra spaces and line breaks
-Find and replace
-Text to slug
+Remove extra spaces and line breaks	[DONE]
+Find and replace	[DONE]
+Text to slug	[DONE]
 Reverse text	[DONE]
 Text to speech (the browser’s speechSynthesis API)
 Top picks by search demand
@@ -105,10 +105,10 @@ JSON to CSV	[DONE]
 Base64 encode / decode	[DONE]
 Text diff checker	[DONE]
 JSON diff checker
-Regex tester
+Regex tester	[DONE]
 UUID generator	[DONE]
 JWT decoder	[DONE]
-Unix timestamp converter
+Unix timestamp converter	[DONE]
 SQL formatter
 Useful libraries (cdnjs)
 Diff: jsdiff for text diffs, or jsondiffpatch for JSON diffs
@@ -132,8 +132,8 @@ Small text / superscript generator
 Emoji picker and copy
 Palindrome checker
 Anagram finder
-Morse code converter
-Roman numeral converter
+Morse code converter	[DONE]
+Roman numeral converter	[DONE]
 Number to words converter
 Pig Latin / ROT13 / Caesar cipher
 Security and privacy
@@ -154,7 +154,7 @@ Week number of the year
 Unix timestamp to date, in bulk
 Pomodoro timer
 Meeting time planner across time zones
-Epoch converter (milliseconds and seconds)
+Epoch converter (milliseconds and seconds)	[DONE]
 Leap year checker
 Zodiac / birthstone finder
 Image and media (client-side)
