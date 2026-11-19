@@ -2,7 +2,7 @@ import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from '@/components/layout/Layout'
 import { categories } from '@/data/categories'
-import { aboutPage, privacyPage, termsPage } from '@/data/pages'
+import { aboutPage, contactPage, disclaimerPage, privacyPage, termsPage } from '@/data/pages'
 import { tools } from '@/data/tools'
 import Home from '@/pages/Home'
 import { AllTools, CategoryPage } from '@/pages/Listing'
@@ -28,7 +28,9 @@ export function AppRoutes() {
         <Route path="about" element={<DocPageView page={aboutPage} />} />
         <Route path="privacy" element={<DocPageView page={privacyPage} />} />
         <Route path="terms" element={<DocPageView page={termsPage} />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="disclaimer" element={<DocPageView page={disclaimerPage} />} />
+        <Route path="contact" element={<DocPageView page={contactPage} />} />
+        <Route path="*"element={<NotFound />} />
       </Route>
     </Routes>
   )

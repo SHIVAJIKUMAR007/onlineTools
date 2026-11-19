@@ -16,7 +16,7 @@ describe('tool registry', () => {
     for (const t of tools) expect(toolPath(t)).toBe(`/${t.slug}`)
   })
   it('does not collide with static routes', () => {
-    const reserved = new Set(['tools', 'about', 'privacy', 'terms', ...categories.map((c) => c.slug)])
+    const reserved = new Set(['tools', 'about', 'privacy', 'terms', 'disclaimer', 'contact', ...categories.map((c) => c.slug)])
     for (const t of tools) expect(reserved.has(t.slug)).toBe(false)
   })
   it('implements a component for every tool and nothing extra', () => {

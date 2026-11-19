@@ -41,7 +41,7 @@ describe('navigation', () => {
     for (const h of hrefs) expect(valid.has(h), `broken link ${h}`).toBe(true)
   })
 
-  it.each(['/tools', '/image-tools', '/pdf-tools', '/converters', '/text-tools', '/developer-tools', '/about', '/privacy', '/terms'])('renders %s', async (path) => {
+  it.each(['/tools', '/image-tools', '/pdf-tools', '/converters', '/text-tools', '/developer-tools', '/about', '/privacy', '/terms', '/disclaimer', '/contact'])('renders %s', async (path) => {
     renderAt(path)
     expect(await screen.findByRole('heading', { level: 1 })).toBeInTheDocument()
   })

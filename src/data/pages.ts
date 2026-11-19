@@ -16,6 +16,7 @@ export interface DocPage {
 
 export const SITE_NAME = 'Stayput'
 export const MODEL_HOST = 'huggingface.co'
+export const CONTACT_EMAIL = 'official.shivaji007@gmail.com'
 
 export const aboutPage: DocPage = {
   path: '/about',
@@ -88,8 +89,21 @@ export const privacyPage: DocPage = {
     {
       heading: 'What we store in your browser',
       paragraphs: [
-        'We do not set cookies. We do not use analytics or advertising trackers. The Background Remover stores downloaded model files in your browser Cache Storage so the next visit is faster. You can remove them any time by clearing site data in your browser settings.',
+        'The tools themselves do not set cookies. The Background Remover stores downloaded model files in your browser Cache Storage so the next visit is faster. You can remove them any time by clearing site data in your browser settings.',
       ],
+    },
+    {
+      heading: 'Advertising and cookies',
+      paragraphs: [
+        'Stayput may show ads from third-party advertising partners, such as Google AdSense, to cover running costs. These partners may use cookies, device identifiers or similar technologies to show ads and measure how they perform. This may include personalized ads based on your past visits to this and other websites.',
+        'Ad providers collect this data under their own privacy policies. Google, as a third-party vendor, uses cookies to serve ads based on your visits to this and other sites. You can opt out of personalized advertising at https://adssettings.google.com, and learn more about how Google uses data from sites that use its services at https://policies.google.com/technologies/partner-sites.',
+        'Where the law requires it (for example in the European Economic Area, the United Kingdom and some US states), we ask for your consent before ad cookies are used, and you can decline. You can also block or delete cookies in your browser settings.',
+        'Ads are separate from the tools. Ad providers do not receive your files or text, because those are processed in your browser and are never sent anywhere.',
+      ],
+    },
+    {
+      heading: 'Contact',
+      paragraphs: [`Questions about this policy can be sent to ${CONTACT_EMAIL}.`],
     },
     {
       heading: 'Server logs',
@@ -146,6 +160,13 @@ export const termsPage: DocPage = {
       ],
     },
     {
+      heading: 'Advertising and external links',
+      paragraphs: [
+        'Stayput may display third-party advertisements. We do not control ad content, and showing an ad is not an endorsement of the advertiser or its products. Any dealings you have with advertisers are between you and them. Please do not click ads automatically or in bulk, or use tools to generate ad impressions or clicks.',
+        'The site may link to external websites. We are not responsible for their content or practices. See the Disclaimer for details.',
+      ],
+    },
+    {
       heading: 'Acceptable use',
       paragraphs: ['Do not use the site to break the law, to attack others, or to try to disrupt the service.'],
     },
@@ -153,10 +174,95 @@ export const termsPage: DocPage = {
       heading: 'Changes',
       paragraphs: ['We may update these terms. The date at the top shows when they last changed.'],
     },
+    {
+      heading: 'Contact',
+      paragraphs: [`Questions about these terms can be sent to ${CONTACT_EMAIL}.`],
+    },
   ],
 }
 
-export const docPages: DocPage[] = [aboutPage, privacyPage, termsPage]
+export const disclaimerPage: DocPage = {
+  path: '/disclaimer',
+  title: 'Disclaimer',
+  seoTitle: 'Disclaimer and Affiliate Disclosure | Stayput',
+  seoDescription: 'Stayput disclaimer: general information only, no professional advice, third-party ads and affiliate link disclosure.',
+  lead: 'Stayput provides free tools and general information. Please read how far you can rely on them.',
+  updated: 'November 19, 2026',
+  sections: [
+    {
+      heading: 'General information only',
+      paragraphs: [
+        'The tools and the guidance on this site are provided for general purposes. We try to keep them accurate and working, but we make no promise that results are complete, error-free or suitable for your particular need. Check important output before you rely on it, and keep your original files.',
+      ],
+    },
+    {
+      heading: 'Not professional advice',
+      paragraphs: [
+        'Nothing on Stayput is legal, financial, medical or other professional advice. Tools such as converters, formatters and checkers produce mechanical results. They are not a substitute for a qualified professional. If a document, contract or file matters, have it reviewed by someone qualified.',
+      ],
+    },
+    {
+      heading: 'Advertising',
+      paragraphs: [
+        'Stayput may show advertisements from third-party networks. We do not control which ads appear, and an ad is not a recommendation by us. See the Privacy Policy for how ad providers may use cookies.',
+      ],
+    },
+    {
+      heading: 'Affiliate disclosure',
+      paragraphs: [
+        'Some links on this site may be affiliate links. If you buy something through one, we may earn a commission at no extra cost to you. Affiliate relationships do not change how the tools work, and we only mention products we think are relevant. Affiliate links, if any, will be marked.',
+      ],
+    },
+    {
+      heading: 'External links',
+      paragraphs: [
+        'We may link to third-party sites for reference. We do not control or endorse their content and are not responsible for it or for any loss from using them.',
+      ],
+    },
+    {
+      heading: 'Third-party software and models',
+      paragraphs: [
+        'Stayput relies on open-source libraries and AI models published by others. These can make mistakes. For example, background removal may miss fine edges, hair or glass. Check the result before using it.',
+      ],
+    },
+    {
+      heading: 'Contact',
+      paragraphs: [`Questions about this disclaimer can be sent to ${CONTACT_EMAIL}.`],
+    },
+  ],
+}
+
+export const contactPage: DocPage = {
+  path: '/contact',
+  title: 'Contact Us',
+  seoTitle: 'Contact Us | Stayput',
+  seoDescription: 'Contact the Stayput developer for questions, bug reports, feature requests or business enquiries.',
+  lead: 'Found a bug, want a tool added, or have a question? Send an email and a real person will read it.',
+  sections: [
+    {
+      heading: 'Email',
+      paragraphs: [CONTACT_EMAIL, 'We aim to reply within a few working days.'],
+    },
+    {
+      heading: 'What to include in a bug report',
+      list: [
+        'The tool you used and what you expected to happen',
+        'Your browser and device (for example Chrome on Windows, or Safari on iPhone)',
+        'The file type and rough size. Please do not attach private files unless asked.',
+      ],
+    },
+    {
+      heading: 'Other enquiries',
+      list: [
+        'Feature requests and new tool ideas',
+        'Advertising and partnership questions',
+        'Privacy requests related to the Privacy Policy',
+      ],
+    },
+  ],
+}
+
+export const docPages: DocPage[] = [aboutPage, privacyPage, termsPage, disclaimerPage, contactPage]
 
 export const homeFaqs = [
   {
@@ -181,6 +287,6 @@ export const homeFaqs = [
   },
   {
     q: 'How is it free?',
-    a: 'Because the processing happens on your device, running the site costs very little. There are no ads or tracking.',
+    a: 'Because the processing happens on your device, running the site costs very little. The site may show ads to cover costs, and the tools never see your files go anywhere.',
   },
 ]

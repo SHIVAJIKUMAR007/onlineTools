@@ -68,7 +68,7 @@ writeFileSync(
 )
 
 const today = new Date().toISOString().slice(0, 10)
-const priority = (p: string) => (p === '/' ? '1.0' : p === '/tools' ? '0.9' : p.endsWith('-tools') || p === '/converters' ? '0.8' : ['/about', '/privacy', '/terms'].includes(p) ? '0.3' : '0.7')
+const priority = (p: string) => (p === '/' ? '1.0' : p === '/tools' ? '0.9' : p.endsWith('-tools') || p === '/converters' ? '0.8' : ['/about', '/privacy', '/terms', '/disclaimer', '/contact'].includes(p) ? '0.3' : '0.7')
 writeFileSync(
   join(dist, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${allPublicPaths()
