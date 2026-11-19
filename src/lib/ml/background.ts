@@ -6,22 +6,15 @@ import type { BgRequest, BgResponse } from '@/workers/bg.worker'
 import type { BgModel } from './models'
 
 // The ONNX Runtime files are bundled with the site, so no CDN is contacted.
-// `asyncify` supports both WebGPU and CPU; the plain build is smaller and CPU-only.
-import wasmAsyncify from 'onnxruntime-web/ort-wasm-simd-threaded.asyncify.wasm?url'
-import mjsAsyncify from 'onnxruntime-web/ort-wasm-simd-threaded.asyncify.mjs?url'
+// Only the plain CPU build is bundled. The WebGPU ("asyncify") build is 25.6 MiB,
+// which exceeds Cloudflare's 25 MiB per-asset limit, so WebGPU is disabled.
 import wasmPlain from 'onnxruntime-web/ort-wasm-simd-threaded.wasm?url'
 import mjsPlain from 'onnxruntime-web/ort-wasm-simd-threaded.mjs?url'
 
 export type Device = 'webgpu' | 'wasm'
 
 export async function detectWebGpu(): Promise<boolean> {
-  try {
-    const gpu = (navigator as Navigator & { gpu?: { requestAdapter: () => Promise<unknown | null> } }).gpu
-    if (!gpu) return false
-    return !!(await gpu.requestAdapter())
-  } catch {
-    return false
-  }
+  return false
 }
 
 export interface RemoveResult {
@@ -44,7 +37,6 @@ export class BackgroundRemover {
     worker.onmessage = (e: MessageEvent<BgResponse>) => this.handle(e.data)
     worker.onerror = (e) => this.fail(new Error(e.message || 'The background remover could not start in this browser.'))
     const abs = (u: string) => new URL(u, location.href).href
-    const useAsync = device === 'webgpu'
     return new Promise<Device>((resolve, reject) => {
       this.loadWaiter = { resolve, reject }
       const req: BgRequest = {
@@ -53,7 +45,7 @@ export class BackgroundRemover {
         runtime: model.runtime,
         dtype: model.dtype,
         device,
-        wasm: { mjs: abs(useAsync ? mjsAsyncify : mjsPlain), wasm: abs(useAsync ? wasmAsyncify : wasmPlain) },
+        wasm: { mjs: abs(mjsPlain), wasm: abs(wasmPlain) },
       }
       worker.postMessage(req)
     })

@@ -426,7 +426,7 @@ export const tools: ToolMeta[] = [
     ],
     features: [
       'Real model inference with Transformers.js and ONNX Runtime',
-      'WebGPU when available, WebAssembly otherwise',
+      'Runs on your CPU with WebAssembly',
       'Transparent PNG or solid color background',
       'Download progress and a cached model for next time',
     ],

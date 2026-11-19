@@ -4,7 +4,20 @@ import tailwindcss from '@tailwindcss/vite'
 import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    {
+      // onnxruntime-web references its 25.6 MiB WebGPU (asyncify) wasm internally. It is never
+      // loaded (WebGPU is disabled) and exceeds Cloudflare's 25 MiB per-asset limit, so drop it.
+      name: 'drop-ort-asyncify-wasm',
+      generateBundle(_o, bundle) {
+        for (const name of Object.keys(bundle)) {
+          if (/ort-wasm-simd-threaded\.asyncify-.*\.wasm$/.test(name)) delete bundle[name]
+        }
+      },
+    },
+  ],
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   // WASM codecs resolve their .wasm files with import.meta.url, so they must not be pre-bundled.
   optimizeDeps: {
