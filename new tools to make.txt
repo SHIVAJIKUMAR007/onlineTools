@@ -1,3 +1,4 @@
+LEGEND (updated 2026-11-19):  [DONE] = built in Stayput   [PARTIAL] = built, but some of the listed scope is missing   (no mark) = not built yet
 
 
 
@@ -7,31 +8,31 @@ High-volume tools that work fully client-side
 2	Percentage calculator	percentage calculator, % change	plain math
 3	Unit converter	cm to inches, kg to lbs, celsius to fahrenheit	conversion tables
 4	Currency converter (partial)	usd to inr	needs live rates, or use static/manual rates
-5	Image converter / compressor	png to jpg, webp converter, compress image	Canvas API, toBlob()
-6	Image resizer / cropper	resize image, photo resizer	Canvas
+5	Image converter / compressor	png to jpg, webp converter, compress image	Canvas API, toBlob()	[DONE]
+6	Image resizer / cropper	resize image, photo resizer	Canvas	[DONE]
 7	QR code generator	qr code generator	qrcode library (cdnjs)
 8	Password generator	password generator	crypto.getRandomValues()
-9	Word / character counter	word counter, character count	string ops
-10	Case converter	uppercase to lowercase, title case	string ops
+9	Word / character counter	word counter, character count	string ops	[DONE]
+10	Case converter	uppercase to lowercase, title case	string ops	[DONE]
 11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas
 12	EMI / loan / SIP / compound interest calculator	emi calculator, sip calculator	financial formulas
 13	GST / VAT / tax calculator	gst calculator	formulas
-14	Merge / split PDF	merge pdf, split pdf	pdf-lib
-15	Image to PDF / JPG to PDF	jpg to pdf	jsPDF or pdf-lib
+14	Merge / split PDF	merge pdf, split pdf	pdf-lib	[DONE]
+15	Image to PDF / JPG to PDF	jpg to pdf	jsPDF or pdf-lib	[DONE]
 16	Random number / dice / coin / picker wheel	random number generator, spin wheel	Math.random() / crypto
 17	Stopwatch / timer / countdown	online timer, stopwatch	performance.now()
-18	Color picker / HEX-RGB converter	color picker, hex to rgb	pure JS, <input type=color>
-19	JSON formatter / validator	json formatter	JSON.parse/stringify
-20	Base64 / URL encode-decode	base64 decode	btoa/atob, encodeURIComponent
-21	Hash generator (MD5, SHA)	sha256 generator	crypto.subtle.digest
-22	Lorem ipsum generator	lorem ipsum	word list
-23	Text diff / compare	text compare	diff library
+18	Color picker / HEX-RGB converter	color picker, hex to rgb	pure JS, <input type=color>	[DONE]
+19	JSON formatter / validator	json formatter	JSON.parse/stringify	[DONE]
+20	Base64 / URL encode-decode	base64 decode	btoa/atob, encodeURIComponent	[DONE]
+21	Hash generator (MD5, SHA)	sha256 generator	crypto.subtle.digest	[PARTIAL: SHA-1/256/384/512 only, no MD5]
+22	Lorem ipsum generator	lorem ipsum	word list	[DONE]
+23	Text diff / compare	text compare	diff library	[DONE]
 24	Regex tester	regex tester	RegExp
 25	Markdown to HTML	markdown editor	marked library
 26	Speed typing test	typing test	key events and timers
 27	Time zone converter / world clock	time zone converter	Intl.DateTimeFormat
 28	Video / audio converter, trimmer	mp4 to mp3	ffmpeg.wasm (heavy, but client-only)
-29	Background remover	remove background	ML in the browser (@imgly/background-removal, WASM)
+29	Background remover	remove background	ML in the browser (@imgly/background-removal, WASM)	[DONE]
 30	OCR, image to text	image to text	tesseract.js
 
 
@@ -39,11 +40,11 @@ High-volume tools that work fully client-side
 
 
 JSON tools
-JSON formatter / beautifier
-JSON validator
-JSON minifier
+JSON formatter / beautifier	[DONE]
+JSON validator	[DONE]
+JSON minifier	[DONE]
 JSON diff checker
-JSON to CSV, and CSV to JSON
+JSON to CSV, and CSV to JSON	[PARTIAL: JSON to CSV only]
 JSON to XML, and XML to JSON
 JSON to YAML, and YAML to JSON
 JSON to TypeScript interface
@@ -52,16 +53,16 @@ JSON path tester
 JSON escape / unescape
 JSON sorter (sort keys)
 Diff and compare tools
-Text diff checker
+Text diff checker	[DONE]
 Code diff checker
 File compare
 Excel / CSV compare
-Duplicate line remover
+Duplicate line remover	[DONE]
 Sort lines (A-Z, Z-A, numeric)
 Format and convert tools
 XML formatter
 HTML formatter / minifier
-CSS minifier / beautifier
+CSS minifier / beautifier	[PARTIAL: minify only]
 JavaScript minifier / beautifier
 SQL formatter
 YAML validator
@@ -69,17 +70,17 @@ Markdown to HTML (and a live preview editor)
 HTML to Markdown
 CSV to Excel table viewer
 Encode and decode tools
-Base64 encode / decode (text and image)
-URL encode / decode
-HTML entity encode / decode
-JWT decoder
+Base64 encode / decode (text and image)	[DONE]
+URL encode / decode	[DONE]
+HTML entity encode / decode	[DONE]
+JWT decoder	[DONE]
 Unicode / UTF-8 converter
 Hex / binary / ASCII converters
 Generator tools
-UUID / GUID generator
-Hash generator (MD5, SHA-1, SHA-256)
+UUID / GUID generator	[DONE]
+Hash generator (MD5, SHA-1, SHA-256)	[PARTIAL: no MD5]
 Password generator
-Lorem ipsum generator
+Lorem ipsum generator	[DONE]
 Random string generator
 Cron expression generator and explainer
 QR code generator
@@ -89,24 +90,24 @@ Regex tester
 Cron tester
 Timestamp converter (Unix to date)
 Time zone converter
-Color converter (HEX, RGB, HSL)
+Color converter (HEX, RGB, HSL)	[DONE]
 Text tools
-Word and character counter
-Case converter
+Word and character counter	[DONE]
+Case converter	[DONE]
 Remove extra spaces and line breaks
 Find and replace
 Text to slug
-Reverse text
+Reverse text	[DONE]
 Text to speech (the browser’s speechSynthesis API)
 Top picks by search demand
-JSON formatter
-JSON to CSV
-Base64 encode / decode
-Text diff checker
+JSON formatter	[DONE]
+JSON to CSV	[DONE]
+Base64 encode / decode	[DONE]
+Text diff checker	[DONE]
 JSON diff checker
 Regex tester
-UUID generator
-JWT decoder
+UUID generator	[DONE]
+JWT decoder	[DONE]
 Unix timestamp converter
 SQL formatter
 Useful libraries (cdnjs)
@@ -122,10 +123,10 @@ Text and writing tools
 Remove duplicate words
 Text repeater
 Text to list / list to comma-separated
-Line counter / sentence counter
+Line counter / sentence counter	[PARTIAL: Word Counter shows sentences, paragraphs and lines count only within it]
 Readability score (Flesch-Kincaid)
 Keyword density checker
-Reading time estimator
+Reading time estimator	[PARTIAL: included in Word Counter]
 Fancy text / Unicode font generator
 Small text / superscript generator
 Emoji picker and copy
@@ -157,7 +158,7 @@ Epoch converter (milliseconds and seconds)
 Leap year checker
 Zodiac / birthstone finder
 Image and media (client-side)
-Image cropper, rotator and flipper
+Image cropper, rotator and flipper	[DONE]
 Image to grayscale / filters
 Image color picker (extract a palette from a photo)
 Image watermark adder
@@ -167,12 +168,12 @@ Screen recorder (MediaRecorder API)
 Audio recorder
 Webcam photo booth
 Video to GIF (ffmpeg.wasm)
-EXIF metadata viewer and remover
+EXIF metadata viewer and remover	[PARTIAL: viewer only]
 Image metadata stripper (privacy)
 Collage maker
 Document tools
-PDF page rotate / delete / reorder
-PDF to images
+PDF page rotate / delete / reorder	[PARTIAL: rotate and delete done, reorder not]
+PDF to images	[DONE]
 PDF watermark / page numbers
 Extract text from PDF (pdf.js)
 Resume / invoice generator
