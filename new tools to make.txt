@@ -1,0 +1,209 @@
+
+
+
+High-volume tools that work fully client-side
+#	Tool	Typical search terms	JS approach
+1	Age / date calculator	age calculator, date difference, days between dates	Date object
+2	Percentage calculator	percentage calculator, % change	plain math
+3	Unit converter	cm to inches, kg to lbs, celsius to fahrenheit	conversion tables
+4	Currency converter (partial)	usd to inr	needs live rates, or use static/manual rates
+5	Image converter / compressor	png to jpg, webp converter, compress image	Canvas API, toBlob()
+6	Image resizer / cropper	resize image, photo resizer	Canvas
+7	QR code generator	qr code generator	qrcode library (cdnjs)
+8	Password generator	password generator	crypto.getRandomValues()
+9	Word / character counter	word counter, character count	string ops
+10	Case converter	uppercase to lowercase, title case	string ops
+11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas
+12	EMI / loan / SIP / compound interest calculator	emi calculator, sip calculator	financial formulas
+13	GST / VAT / tax calculator	gst calculator	formulas
+14	Merge / split PDF	merge pdf, split pdf	pdf-lib
+15	Image to PDF / JPG to PDF	jpg to pdf	jsPDF or pdf-lib
+16	Random number / dice / coin / picker wheel	random number generator, spin wheel	Math.random() / crypto
+17	Stopwatch / timer / countdown	online timer, stopwatch	performance.now()
+18	Color picker / HEX-RGB converter	color picker, hex to rgb	pure JS, <input type=color>
+19	JSON formatter / validator	json formatter	JSON.parse/stringify
+20	Base64 / URL encode-decode	base64 decode	btoa/atob, encodeURIComponent
+21	Hash generator (MD5, SHA)	sha256 generator	crypto.subtle.digest
+22	Lorem ipsum generator	lorem ipsum	word list
+23	Text diff / compare	text compare	diff library
+24	Regex tester	regex tester	RegExp
+25	Markdown to HTML	markdown editor	marked library
+26	Speed typing test	typing test	key events and timers
+27	Time zone converter / world clock	time zone converter	Intl.DateTimeFormat
+28	Video / audio converter, trimmer	mp4 to mp3	ffmpeg.wasm (heavy, but client-only)
+29	Background remover	remove background	ML in the browser (@imgly/background-removal, WASM)
+30	OCR, image to text	image to text	tesseract.js
+
+
+
+
+
+JSON tools
+JSON formatter / beautifier
+JSON validator
+JSON minifier
+JSON diff checker
+JSON to CSV, and CSV to JSON
+JSON to XML, and XML to JSON
+JSON to YAML, and YAML to JSON
+JSON to TypeScript interface
+JSON viewer / tree viewer
+JSON path tester
+JSON escape / unescape
+JSON sorter (sort keys)
+Diff and compare tools
+Text diff checker
+Code diff checker
+File compare
+Excel / CSV compare
+Duplicate line remover
+Sort lines (A-Z, Z-A, numeric)
+Format and convert tools
+XML formatter
+HTML formatter / minifier
+CSS minifier / beautifier
+JavaScript minifier / beautifier
+SQL formatter
+YAML validator
+Markdown to HTML (and a live preview editor)
+HTML to Markdown
+CSV to Excel table viewer
+Encode and decode tools
+Base64 encode / decode (text and image)
+URL encode / decode
+HTML entity encode / decode
+JWT decoder
+Unicode / UTF-8 converter
+Hex / binary / ASCII converters
+Generator tools
+UUID / GUID generator
+Hash generator (MD5, SHA-1, SHA-256)
+Password generator
+Lorem ipsum generator
+Random string generator
+Cron expression generator and explainer
+QR code generator
+Fake data / mock JSON generator
+Testers
+Regex tester
+Cron tester
+Timestamp converter (Unix to date)
+Time zone converter
+Color converter (HEX, RGB, HSL)
+Text tools
+Word and character counter
+Case converter
+Remove extra spaces and line breaks
+Find and replace
+Text to slug
+Reverse text
+Text to speech (the browser’s speechSynthesis API)
+Top picks by search demand
+JSON formatter
+JSON to CSV
+Base64 encode / decode
+Text diff checker
+JSON diff checker
+Regex tester
+UUID generator
+JWT decoder
+Unix timestamp converter
+SQL formatter
+Useful libraries (cdnjs)
+Diff: jsdiff for text diffs, or jsondiffpatch for JSON diffs
+Formatting: js-beautify for HTML, CSS and JS, and sql-formatter for SQL
+Conversion: js-yaml for YAML, and PapaParse for CSV
+Markdown: marked
+JSON editing: jsoneditor or Monaco for syntax highlighting
+
+
+
+Text and writing tools
+Remove duplicate words
+Text repeater
+Text to list / list to comma-separated
+Line counter / sentence counter
+Readability score (Flesch-Kincaid)
+Keyword density checker
+Reading time estimator
+Fancy text / Unicode font generator
+Small text / superscript generator
+Emoji picker and copy
+Palindrome checker
+Anagram finder
+Morse code converter
+Roman numeral converter
+Number to words converter
+Pig Latin / ROT13 / Caesar cipher
+Security and privacy
+Password strength checker
+Passphrase generator
+HMAC generator
+AES encrypt / decrypt (Web Crypto API)
+Bcrypt hash generator and verifier
+Random token / API key generator
+Public IP and browser fingerprint viewer
+Secret note (encrypted, shareable link)
+Hash file checker (checksum of an uploaded file)
+Date, time and calendar
+Countdown timer to a date
+Working days calculator
+Date add / subtract calculator
+Week number of the year
+Unix timestamp to date, in bulk
+Pomodoro timer
+Meeting time planner across time zones
+Epoch converter (milliseconds and seconds)
+Leap year checker
+Zodiac / birthstone finder
+Image and media (client-side)
+Image cropper, rotator and flipper
+Image to grayscale / filters
+Image color picker (extract a palette from a photo)
+Image watermark adder
+Meme generator
+GIF maker from images
+Screen recorder (MediaRecorder API)
+Audio recorder
+Webcam photo booth
+Video to GIF (ffmpeg.wasm)
+EXIF metadata viewer and remover
+Image metadata stripper (privacy)
+Collage maker
+Document tools
+PDF page rotate / delete / reorder
+PDF to images
+PDF watermark / page numbers
+Extract text from PDF (pdf.js)
+Resume / invoice generator
+Invoice and receipt maker with PDF export
+Markdown to PDF
+Letterhead and certificate maker
+Everyday calculators
+Discount / sale price calculator
+Tip and bill splitter
+Profit margin and markup calculator
+Fuel cost / mileage calculator
+Grade / GPA / CGPA calculator
+Fraction, ratio and average calculators
+Scientific calculator
+Salary hourly-to-annual converter
+Retirement / FD / RD / PPF calculators
+Break-even calculator
+Electricity bill calculator
+Fun and utility
+Random name / team picker
+Truth or dare, or “would you rather” generator
+Random quote generator
+Decision wheel
+Typing speed test
+Reaction time test
+Click speed test (CPS)
+Memory and number games
+Screen resolution and device info viewer
+Keyboard key code tester
+Dead pixel test
+Online notepad (auto-saved with localStorage)
+Sticky notes / to-do list
+Drawing board / whiteboard (Canvas)
+timezone time converter

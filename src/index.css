@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/geist';
+
+@theme {
+  --font-sans: 'Geist Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --color-paper: #ffffff;
+  --color-surface: #f6f6f3;
+  --color-surface-2: #eeeeea;
+  --color-line: #e4e4de;
+  --color-line-strong: #cfcfc7;
+  --color-ink: #17181b;
+  --color-ink-2: #3c3e43;
+  --color-muted: #6a6c72;
+  --color-accent: #0b7a5e;
+  --color-accent-hover: #086349;
+  --color-accent-tint: #e7f4ef;
+  --color-accent-line: #b9dfd2;
+  --color-danger: #b42318;
+  --color-danger-tint: #fdecea;
+  --color-warn: #8a5a00;
+  --color-warn-tint: #fff4d6;
+  --color-add: #e3f5e8;
+  --color-add-strong: #bde6c9;
+  --color-del: #fde8e6;
+  --color-del-strong: #f6bdb7;
+
+  --radius-card: 14px;
+  --shadow-soft: 0 1px 2px rgb(23 24 27 / 0.04), 0 4px 14px rgb(23 24 27 / 0.05);
+  --shadow-lift: 0 2px 4px rgb(23 24 27 / 0.05), 0 12px 32px rgb(23 24 27 / 0.09);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: var(--color-accent-tint);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  input[type='range'] {
+    accent-color: var(--color-accent);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .checker {
+    background-color: #fff;
+    background-image: linear-gradient(45deg, #e9e9e4 25%, transparent 25%), linear-gradient(-45deg, #e9e9e4 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #e9e9e4 75%), linear-gradient(-45deg, transparent 75%, #e9e9e4 75%);
+    background-size: 16px 16px;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+  }
+  .prose-plain p + p {
+    margin-top: 0.9em;
+  }
+}
+
+@keyframes stripe {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 28px 0;
+  }
+}
+.progress-indeterminate {
+  background-image: repeating-linear-gradient(-45deg, var(--color-accent) 0 8px, var(--color-accent-hover) 8px 14px);
+  background-size: 28px 28px;
+  animation: stripe 0.8s linear infinite;
+}
