@@ -15,6 +15,8 @@ export interface PageSeo {
   ogType: 'website' | 'article'
   ogImage?: string
   ogImageAlt?: string
+  ogImageWidth?: number
+  ogImageHeight?: number
   jsonLd: Record<string, unknown>[]
   /** Static HTML placed inside #root for crawlers. Replaced when React mounts. */
   bodyHtml: string
@@ -191,6 +193,8 @@ export function seoForPath(rawPath: string, siteUrl: string): PageSeo | null {
       ogType: 'article',
       ogImage: joinUrl(siteUrl, blogPost.image),
       ogImageAlt: blogPost.imageAlt,
+      ogImageWidth: 1200,
+      ogImageHeight: 675,
       jsonLd: [
         breadcrumb(siteUrl, [
           { name: 'Home', path: '/' },

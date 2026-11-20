@@ -153,6 +153,8 @@ describe('SEO', () => {
       expect(toolBySlug(post.toolSlug), post.slug).toBeDefined()
       const seo = seoForPath(`/blog/${post.slug}`, site)!
       expect(seo.ogType).toBe('article')
+      expect(seo.ogImageWidth).toBe(1200)
+      expect(seo.ogImageHeight).toBe(675)
       expect(seo.jsonLd.map((block) => block['@type'])).toContain('BlogPosting')
       expect(seo.bodyHtml).toContain(`href="/${post.toolSlug}"`)
       expect(seo.bodyHtml).toContain(`src="${post.image}"`)
