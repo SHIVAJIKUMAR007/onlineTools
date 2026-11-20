@@ -972,6 +972,1314 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'crop-an-image-to-the-right-size',
+    title: 'How to crop an image to the right size for its next use',
+    seoTitle: 'How to Crop an Image for Social, Print, and Web',
+    seoDescription: 'Learn how to crop an image with exact dimensions or a fixed aspect ratio, protect important details, and export a clean copy.',
+    excerpt: 'A good crop gives a photo room to work in its destination. Plan the frame first, check the pixels that remain, and save a separate copy.',
+    image: '/blog/images/image-cropper-guide.webp',
+    imageAlt: 'A rugged mountain landscape beneath a wide sky',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'image-cropper',
+    toolCta: 'Crop an image in your browser',
+    sections: [
+      {
+        heading: 'Choose a crop for its destination',
+        paragraphs: [
+          'Cropping removes the parts of an image outside a selected frame. That can put a face in the center of a profile picture, make a banner fit a page header, or trim a scan to its page edges. Start with the destination and its shape. A square avatar, a 16:9 video thumbnail, and a portrait flyer call for different compositions.',
+          'If a site publishes an exact pixel size, note it before editing. A requirement such as 1200 by 630 pixels includes both dimensions, while an aspect ratio describes only the relationship between width and height. Matching the ratio helps avoid distortion, but the final image still needs enough pixels for its display size.'
+        ]
+      },
+      {
+        heading: 'Set the frame before moving it',
+        paragraphs: [
+          'Open the image and look at the whole scene before tightening the frame. Decide which details must remain: a person’s face, a product label, a landmark, or the edges of a document. Select a preset ratio when the destination requires one, or use a free crop when you have more room to choose.',
+          'A fixed ratio keeps the frame’s proportions while you resize it, which helps a set of thumbnails look consistent. Freeform cropping gives you control over both width and height for a one-off composition. If you have exact pixel requirements, use the numeric left, top, width, and height fields instead of estimating by eye.'
+        ]
+      },
+      {
+        heading: 'Keep the subject clear of the edges',
+        paragraphs: [
+          'Leave breathing room around people and objects unless a tight crop is deliberate. A face pressed against the edge can feel accidental, and a product cut through its handle may be hard to identify. For a profile portrait, keep enough shoulder and head space for the platform’s circular crop if it applies one later.',
+          'Text and logos need special care. Cropping close to a letter can make the design look clipped even when the file is technically correct. Review the frame at full size and check small details near every edge. If the image will appear in several layouts, make one master crop with margin, then create tighter versions for each placement.'
+        ]
+      },
+      {
+        heading: 'Rotate before placing the crop',
+        paragraphs: [
+          'A sideways source image changes what its width and height mean for a crop. Rotate it before positioning the frame so the crop coordinates match the direction you expect. Stayput’s cropper turns the preview in 90-degree steps and adjusts the working dimensions for quarter-turns, which makes the visible frame easier to place.',
+          'Phone photos can carry orientation information in EXIF metadata. The browser usually displays the corrected orientation when the image loads, but a separate export still deserves a check. Open the downloaded result before deleting the original. If the result is sideways, use a dedicated image rotator and crop again.'
+        ]
+      },
+      {
+        heading: 'Use exact coordinates for repeatable results',
+        paragraphs: [
+          'Pixel fields help when a crop needs to match a design specification or a previous export. Left and top locate the frame inside the source; width and height define the retained area. With a fixed ratio selected, changing one dimension updates the other to preserve that proportion.',
+          'Coordinates refer to the image after rotation, so record the orientation along with values you plan to reuse. If the source file changes, the same numbers may select a different subject area. Keep the original and note its dimensions when a crop must be reproduced for a second language, product color, or campaign.'
+        ]
+      },
+      {
+        heading: 'Understand what happens to image quality',
+        paragraphs: [
+          'Cropping removes pixels outside the frame; it does not invent detail inside it. A crop from a large original can still be sharp, while a very small selected area may become soft when enlarged elsewhere. Check output dimensions before using it as a large banner or print image, especially when the source was a thumbnail.',
+          'Stayput exports the selected area as PNG, JPG, or WebP. PNG keeps pixel values without lossy compression, while JPG and lossy WebP can trade detail for a smaller file. Repeatedly saving a lossy image can add artifacts, so start from the best original you have.'
+        ]
+      },
+      {
+        heading: 'Compare the downloaded crop with the source',
+        paragraphs: [
+          'A live crop preview makes placement quick, but verify the exported file as well. Open it at the size people will see, look for a clipped edge, and check that important text remains legible. If the image appears in a responsive card, test both wide and narrow layouts because the page may crop it again.',
+          'Save the result with a name that records its use, such as `team-profile-square.png` or `homepage-banner.webp`. Keep the uncropped source in a separate folder. If a design changes, you can make a new frame without trying to recover pixels discarded in an earlier export.',
+          "When a crop must match a platform's exact specification, check both the ratio and the final dimensions. A square selection from a very small source can still be too small for a high-resolution profile image. Set the frame to the intended shape, note its output width and height, and resize separately if the service asks for a particular pixel count. For print, ask for the trim size and bleed rather than guessing from a screen preview. The cropper's numeric controls are useful for a precise rectangle, but they do not add pixels or mark a print bleed area. Keep enough margin around the subject for the design to survive alternate crops, then inspect the exported version at the size and shape where it will actually be displayed."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-png-to-jpg-without-surprises',
+    title: 'How to convert PNG to JPG without losing the details you need',
+    seoTitle: 'Convert PNG to JPG: Backgrounds, Quality, and Use',
+    seoDescription: 'See when PNG to JPG conversion makes sense, how transparent pixels are filled, and how to inspect the output before sharing it.',
+    excerpt: 'JPG is convenient for photos, but it cannot keep transparency. Choose the background deliberately and review edges and text after conversion.',
+    image: '/blog/images/png-to-jpg-conversion.webp',
+    imageAlt: 'Green fern fronds filling the frame in a shaded pattern',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'png-to-jpg',
+    toolCta: 'Convert PNG files to JPG',
+    sections: [
+      {
+        heading: 'Decide whether JPG fits the image',
+        paragraphs: [
+          'PNG to JPG conversion helps when a photo upload accepts JPEG but rejects PNG, or when a photograph needs a smaller file for email or a website. JPG is widely supported and handles photographic tones efficiently. It is less suitable for screenshots with tiny text, sharp interface shapes, or logos that need a transparent background.',
+          'The extension alone does not tell you what kind of picture you have. A PNG might be a camera photo, screenshot, icon, or scanned form. Look at its edges and content before choosing the new format. If the image contains crisp lettering or flat-color artwork, try another supported format or keep the PNG rather than introducing blur.'
+        ]
+      },
+      {
+        heading: 'Pick a background for transparent areas',
+        paragraphs: [
+          'PNG can store transparent pixels, while JPG cannot. During conversion, transparent parts must be filled with a solid color. White is common for product photos and documents, but it can create a visible rectangle when the JPG sits on a colored page. Black or a sampled brand color may fit a particular layout better.',
+          'Inspect corners and the outline around the subject after selecting a background. Fine hair, glass, shadows, and soft antialiased edges may blend differently against a new color. If the image needs to sit on several backgrounds, keep the transparent PNG as the master and create a JPG only for the destination that requires it.'
+        ]
+      },
+      {
+        heading: 'Set a sensible quality level',
+        paragraphs: [
+          'JPG uses lossy compression, so it discards some image information to reduce file size. A quality slider changes how much compression the browser encoder applies. Higher settings usually retain more detail and produce larger files. The size change varies with the source, so a percentage cannot guarantee a particular number of kilobytes.',
+          'Start near the default quality, then compare the output with the PNG at its display size. Look for halos around dark edges, blocky texture in shadows, and smudged lettering. If the differences are obvious, raise quality. If the two look alike and the file is still too large, resize to the needed pixel dimensions before lowering quality further.'
+        ]
+      },
+      {
+        heading: 'Convert a file or prepare a batch',
+        paragraphs: [
+          'For a single upload, add the PNG and choose a background color and quality before downloading the JPG. For a folder of photos, add several files and process them together. Batch conversion reduces repetitive clicks, but review a representative image first. A landscape, a portrait, and a graphic can react differently to identical settings.',
+          'Stayput’s PNG to JPG tool supports multiple PNG files and can package their results into a ZIP. It works in the browser, so images are not uploaded to a remote converter. A large batch still uses memory on your device. If a phone slows down or a conversion fails, try fewer files at once and close demanding tabs.'
+        ]
+      },
+      {
+        heading: 'Check dimensions and orientation',
+        paragraphs: [
+          'Changing a file format does not automatically make its dimensions smaller. A 4000-pixel photo remains large unless you resize or crop it separately. If a web form has both a file-size limit and a maximum dimension, inspect those requirements before conversion and use an image resizer when necessary.',
+          'Open the output after downloading. Confirm that it is upright, the subject still fits in the frame, and the chosen background looks intentional. For images from phones, orientation metadata can affect how an app interprets the picture. Check the final file in the application where it will be used.'
+        ]
+      },
+      {
+        heading: 'Keep the PNG when it is the better master',
+        paragraphs: [
+          'A JPG cannot restore detail removed by compression, and a converted JPG cannot recover transparency. Keep the original PNG if you may need another background, a larger crop, or another version later. Use a separate output filename so a batch conversion does not replace the only source copy.',
+          'When an image has already been saved as JPG several times, converting it to PNG only places current pixels in a lossless container. It does not undo earlier compression. If possible, return to the original source before making a new export. This matters for brand assets, diagrams, and photos that will be edited again.'
+        ]
+      },
+      {
+        heading: 'Use the converted file for its destination',
+        paragraphs: [
+          'JPG often works well for a photo attached to a form, a newsletter image, or a page where broad compatibility matters. It may be a poor choice for a logo on a transparent header or a screenshot with fine interface text. Check the destination’s accepted formats and size requirements instead of assuming every website prefers JPEG.',
+          'Once the file passes those checks, add it to the upload or page and view it in context. A white background can look clean on a white page but stand out on a gray card. Confirm that colors, crop, and scale remain sensible beside neighboring content, then store the final export separately from the original PNG.',
+          "The tool starts JPG encoding at quality 90 and lets you adjust quality and the background for transparent areas. For a small batch, convert one representative photo first and compare its output size before processing the rest. An image with fine grain may remain relatively large at the same setting as a smooth product photo. If every output is still over a form's limit, resize a copy to the dimensions the form accepts, then export again. Do not rely on renaming an extension or repeatedly recompressing an already compressed JPG. Keep the original PNG as the source, particularly when the transparent outline or crisp lettering may need another background later."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'turn-png-images-into-webp',
+    title: 'When to turn PNG images into WebP for smaller web files',
+    seoTitle: 'PNG to WebP: Preserve Transparency and Reduce Size',
+    seoDescription: 'Learn how PNG to WebP conversion handles transparency, when to use lossy or lossless output, and how to compare image quality.',
+    excerpt: 'WebP can keep transparency while using fewer bytes than PNG. The right quality setting depends on whether the file is a photo, logo, or screenshot.',
+    image: '/blog/images/png-to-webp-format.webp',
+    imageAlt: 'A close view of electronic components on a circuit board',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'png-to-webp',
+    toolCta: 'Convert PNG images to WebP',
+    sections: [
+      {
+        heading: 'Check the destination before changing formats',
+        paragraphs: [
+          'WebP is a practical output for many website images because it supports photographic compression and transparency. A PNG to WebP conversion can shrink an illustration or photo, but the result depends on the chosen mode and source. Before converting, check whether the website, editor, email system, or older desktop app can open WebP.',
+          'Current major browsers display WebP, but a workflow may include software that has not caught up. If the image is for a CMS, test one file in the actual upload flow. A browser preview proves that your browser can display it; it does not prove that every publishing tool, printer, or archive system accepts the format.'
+        ]
+      },
+      {
+        heading: 'Choose lossless or lossy by content',
+        paragraphs: [
+          'Lossless WebP preserves the source pixels while changing how image data is stored. It suits logos, line art, interface graphics, and images where small edge changes would be noticeable. The size reduction may be modest, especially when the PNG is already optimized or contains a lot of fine detail.',
+          'Lossy WebP removes some image information to achieve smaller output. It can work well for photos, soft gradients, and busy illustrations when the visual difference is not noticeable at display size. A lower quality value can introduce texture changes or halos. Compare the output before settling on a setting for a whole library.'
+        ]
+      },
+      {
+        heading: 'Preserve transparency when the layout needs it',
+        paragraphs: [
+          'WebP supports transparent pixels, so a PNG logo can keep its see-through background after conversion. Check transparency against a checkerboard preview or a contrasting page color. White pixels in a logo are not the same as transparent pixels, and converting the file cannot turn an already white background into a cutout.',
+          'Look closely at semi-transparent edges around shadows, hair, or antialiased shapes. The alpha channel can remain present while lossy encoding changes color detail around its boundary. Place the new file on light and dark backgrounds if that is how people will use it. Keep the PNG if the edge treatment matters and WebP does not match.'
+        ]
+      },
+      {
+        heading: 'Compare the visual result and file size',
+        paragraphs: [
+          'A smaller file is useful only if it still serves its purpose. Compare the original and WebP at the dimensions used on the page, then inspect a close view of thin lines, type, faces, and gradients. At extreme zoom, even small differences can look severe. At a tiny preview, compression damage can disappear. Use the actual display size as your main test.',
+          'Stayput’s converter reports each output size and includes lossless and lossy choices. The saving is not fixed: a simple icon, noisy photo, and screenshot have different patterns. If lossless barely changes the file, try a moderate lossy setting only when the image can tolerate it. Record the quality used as a consistent starting point for the next batch.'
+        ]
+      },
+      {
+        heading: 'Resize oversized images before conversion',
+        paragraphs: [
+          'Format conversion does not change pixel dimensions. A 5000-pixel PNG used in a 700-pixel card still carries pixels the page may never display. If the destination dimensions are known, resize a copy before creating the WebP. This can reduce the file more than lowering quality, while keeping detail that matters at the actual size.',
+          'Do not resize the only source unless you are certain you will never need the larger image. Save a separate web-sized version and retain the original PNG in an archive. If a site uses responsive image variants, make more than one size rather than relying on a single small asset being stretched across every screen.'
+        ]
+      },
+      {
+        heading: 'Convert batches with a review step',
+        paragraphs: [
+          'Batch conversion is convenient for a product catalog or folder of screenshots. Start with a mix of the most difficult files: transparency, small labels, detailed textures, and large photographs. Review those results, adjust the settings if needed, and then run the rest. A common configuration is a useful baseline rather than proof every item looks right.',
+          'The Stayput tool accepts multiple PNG files, preserves transparency, and can package converted files for download. Processing happens on your device, so the batch is limited by available memory and browser capacity. Split a very large folder into smaller groups if the browser slows down. Keep the originals until you have checked the archive and destination pages.'
+        ]
+      },
+      {
+        heading: 'Name and test the final WebP files',
+        paragraphs: [
+          'Give outputs a predictable suffix, such as `logo-web.webp` or `gallery-03.webp`, so the new format is easy to distinguish from its source. Open the downloaded file with the publishing platform and verify that it renders. A successful download does not catch every issue with color, orientation, or file handling in a separate service.',
+          'If a recipient needs a PNG, keep a PNG copy available rather than converting the WebP back and forth. Every lossy conversion can add visible changes, and reversing the format does not recover source pixels. Choose the version that suits the next task and keep a clean source for future edits.',
+          'For a transparent logo, test the output over the actual page color instead of judging it against only a checkerboard. A faint fringe can be invisible against white and obvious against a dark navigation bar. For a photo, compare the WebP at its intended display size and check areas with fine texture. The converter begins at quality 85; try lossless output when a graphic needs exact pixels, then use lossy settings for photographic content that can tolerate small changes. Record the choice for files that belong together, but retain the PNG originals until the site has loaded the new assets successfully and the fallback workflow has been checked.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-iphone-heic-photos-to-jpg',
+    title: 'How to convert iPhone HEIC photos to JPG for sharing',
+    seoTitle: 'Convert HEIC to JPG for Websites and Older Apps',
+    seoDescription: 'Learn why iPhone photos use HEIC, how to convert them to JPG or PNG, and what to check in a batch of converted images.',
+    excerpt: 'HEIC keeps photo files compact, but some upload forms still reject it. Convert a copy to JPG, then check color, orientation, and size.',
+    image: '/blog/images/heic-to-jpg-iphone.webp',
+    imageAlt: 'A person pointing at a touchscreen tablet on a desk',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'heic-to-jpg',
+    toolCta: 'Convert HEIC photos to JPG',
+    sections: [
+      {
+        heading: 'Why a phone photo may arrive as HEIC',
+        paragraphs: [
+          'iPhones can save still photos in HEIC, a format designed to store image data efficiently. That can make a photo library smaller than one that stores every picture as JPEG. The trouble appears when a form, older editor, or messaging workflow accepts JPG but does not recognize the HEIC file you selected.',
+          'Check the actual extension and format before converting. Changing the filename from `.heic` to `.jpg` does not convert the image data. A receiving app may still report that it cannot open the file. A converter decodes HEIC and writes a new JPEG or PNG that the destination can read.'
+        ]
+      },
+      {
+        heading: 'Pick JPG for broad compatibility',
+        paragraphs: [
+          'JPG is a safe choice for sharing photographs with a website, office application, or device that expects a common image format. It is supported by most photo viewers and upload forms. JPEG compression is lossy, so the converted file may not retain every original pixel value. For ordinary sharing, a moderate quality setting is often a reasonable compromise.',
+          'Choose PNG when a destination explicitly needs lossless output or when converting a graphic with sharp edges. A phone photograph saved as PNG can be much larger, and it does not recover detail absent from the source decoder. The HEIC to JPG tool offers both formats, with a quality control for JPG and no quality slider for PNG.'
+        ]
+      },
+      {
+        heading: 'Prepare a group of photos before converting',
+        paragraphs: [
+          'For a large photo batch, make a copy of the originals first and put only intended images in a working folder. Rename files if the upload service sorts them alphabetically and order matters. Check dates and previews so you do not include screenshots, burst frames, or unrelated images by mistake.',
+          'Stayput accepts HEIC and HEIF files, supports multiple images, and can package outputs together. The HEIC decoder loads when the tool is first used, so the first conversion can take longer. Leave the tab open while it works. If a phone or older laptop runs low on memory, convert smaller groups instead of the entire camera roll.'
+        ]
+      },
+      {
+        heading: 'Review orientation and the whole photo',
+        paragraphs: [
+          'After decoding, check whether each image is upright and whether the subject remains in frame. A phone can record orientation as metadata rather than rotating every pixel in the original file. The converter reads the image and exports a new file, but open the output in the application that will receive it before sending a whole batch.',
+          'Look at faces, signs, and details near the edges. A thumbnail review may miss a failed file or a picture rotated differently from the others. If preparing an application, a set of insurance records, or evidence for a report, match each output to its source name and confirm that the selected images are correct.'
+        ]
+      },
+      {
+        heading: 'Balance quality with upload limits',
+        paragraphs: [
+          'Some upload forms reject files because they are too large, not because they are HEIC. Conversion may change byte size in either direction. Try the output in the form once, then inspect its size if the upload still fails. Resizing is a separate step and can help when the form sets maximum pixel dimensions as well as a megabyte limit.',
+          'Lowering JPG quality can reduce file size, but do not use the smallest setting blindly. Fine textures, hair, foliage, and printed text show compression damage sooner than plain areas. If the form has a firm size cap, make a test export and compare it at normal viewing size. Keep the original HEIC untouched for another version later.'
+        ]
+      },
+      {
+        heading: 'Understand the limits of conversion',
+        paragraphs: [
+          'A HEIC to JPG conversion creates a still image. Live Photos include additional motion and audio information that a single JPEG cannot contain, and the tool converts only the still image. It also does not edit the photo, change its contents, or decide which image in a burst is the keeper.',
+          'The output may look slightly different in color or contrast because the browser decodes and re-encodes image data. It cannot restore information already lost in an earlier edit or export. For a photo that needs color-critical production work, compare it in the target application and use a dedicated color-managed workflow when that matters.'
+        ]
+      },
+      {
+        heading: 'Keep the original and name the export clearly',
+        paragraphs: [
+          'Keep the original HEIC until the JPG has been delivered and accepted. It remains the best starting point if you need another size or a different quality setting. Store the converted file beside it with a suffix such as `-share.jpg`, or use a separate output folder so an archive does not mix formats without warning.',
+          'The converter processes files in the browser and does not upload them to a conversion server. This can be convenient for personal photos, although the surrounding device and browser still matter. Use a trusted device, avoid leaving private images visible on a shared screen, and clear the working folder when you no longer need its temporary copies.',
+          "If an upload still rejects the converted image, read the form's message before adjusting anything. It may require a maximum width, a specific color profile, or a smaller byte size rather than a different extension. The HEIC tool outputs JPG at quality 90 by default, so a large original can still exceed an attachment limit. Convert a few files, open them, and confirm their names match the photos you meant to send. Live Photo motion does not travel in the still-image export, and a batch ZIP does not preserve the camera library's album structure. Keep those originals in the phone backup if that extra context matters."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'read-image-metadata-before-sharing',
+    title: 'What image metadata can reveal before you share a photo',
+    seoTitle: 'Image Metadata Viewer: Check EXIF Before Sharing',
+    seoDescription: 'Find image dimensions, EXIF camera details, timestamps, GPS coordinates, color data, and learn what metadata removal changes.',
+    excerpt: 'A photo can carry camera settings, dates, and sometimes location coordinates. Inspect the file first, then decide whether a cleaned copy is appropriate.',
+    image: '/blog/images/image-metadata-exif.webp',
+    imageAlt: 'Colorful source code displayed on a computer screen',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'image-metadata-viewer',
+    toolCta: 'Inspect image metadata in your browser',
+    sections: [
+      {
+        heading: 'Metadata sits beside the visible pixels',
+        paragraphs: [
+          'Image metadata describes details about a file that are separate from the visible picture. A camera may record its make and model, lens, exposure time, aperture, ISO, date, and orientation. Some photos also contain GPS coordinates. A screenshot or an image saved from a website may have little or none of this information.',
+          'Metadata can help sort a photo archive or understand how a picture was taken. It can also reveal information you did not intend to send, especially a precise location attached to a family photo. The file determines which fields exist. A viewer can show available values, but an empty field does not prove no other kind of embedded data exists.'
+        ]
+      },
+      {
+        heading: 'Check locations and dates before sending',
+        paragraphs: [
+          'If an image includes latitude and longitude, those coordinates may point close to where the camera recorded the photo. They can identify a home, school, workplace, or vacation spot. Before sharing a personal picture in a public post, inspect the original file rather than relying on what a social platform might remove after upload.',
+          'Date fields also need context. The capture time may use a camera clock that was set incorrectly, and file modification time may change when you copy the image. Compare the displayed metadata with your records before treating it as proof of when a picture was taken. The viewer reports values present in the image; it does not verify their accuracy.'
+        ]
+      },
+      {
+        heading: 'Read dimensions and file type accurately',
+        paragraphs: [
+          'Pixel dimensions tell you how many pixels wide and tall an image is. Megapixels summarize that count, while the aspect ratio describes its shape. These details help decide whether a photo is large enough for a banner or whether a portrait fits a profile slot. Dimensions alone do not measure sharpness, color accuracy, or print quality.',
+          'Stayput compares the type reported by the browser with the type detected from file contents, and shows its size and last-modified time. A mismatch can indicate a misleading extension or a browser type label that differs from the detected data. Treat that warning as a reason to check the file, not proof that it is unsafe or corrupted.'
+        ]
+      },
+      {
+        heading: 'Use color summaries as a quick check',
+        paragraphs: [
+          'The image viewer samples decoded pixels to estimate average and dominant colors and whether any pixels are transparent. That summary can help spot an unexpected white background, a palette shift, or an image that is mostly transparent. It is a compact description of sampled colors, not a full color profile or a replacement for a calibrated editing display.',
+          'The browser does not expose every technical property for every image format. Bit depth and embedded color profiles are not shown for most formats in this tool. If the image will be used for print or color-critical design, inspect it in software that can report those properties and manage color profiles. A dominant-color swatch cannot tell you whether the display is calibrated.'
+        ]
+      },
+      {
+        heading: 'Remove metadata with a clean copy',
+        paragraphs: [
+          'The tool can create a copy without metadata it reads by decoding the picture and re-encoding its pixels. The original file stays separate, so you can preserve it and download a cleaned version for sharing. This is different from editing the original in place, and the output should be treated as a new image file.',
+          'Re-encoding can change file size and image quality. PNG is written without lossy compression, while JPEG and WebP output can be recompressed. The viewer uses a high quality setting for lossy outputs, but that does not make the process identical to copying source bytes. Compare the cleaned copy if image fidelity matters.'
+        ]
+      },
+      {
+        heading: 'Know what a metadata viewer cannot guarantee',
+        paragraphs: [
+          'A viewer reports fields the supported parser can read; it is not a forensic certification of every byte in the file. The tool reads selected EXIF and GPS information and leaves some metadata families, such as XMP, outside the displayed EXIF list. A blank camera table does not mean that no metadata of any kind remains.',
+          'A cleaned copy is useful for removing standard image metadata from the re-encoded output, but check the result with the receiving workflow if a specific privacy requirement applies. The tool does not alter the visible scene, blur a face, remove a reflection, or erase identifying details that are part of the pixels. Those require image editing.'
+        ]
+      },
+      {
+        heading: 'Make metadata checks part of a sharing routine',
+        paragraphs: [
+          'Before sending a personal photo, inspect location coordinates, date fields, and camera information. If they are not needed, download a clean copy and open it to confirm that the image still looks right. Use a descriptive filename for the shared version so it is not confused with the full-resolution original in your archive.',
+          'Stayput reads the image in your browser and does not send it to a metadata service. Large files can still use memory while decoding and analyzing pixels. If a panorama or high-resolution image is slow, try it on a device with more available memory. For important records, keep the unmodified original secure and note which version you shared.',
+          'The viewer accepts common raster images, SVG, and HEIC files, but decoding support can vary with the browser and source. It reads a selected set of EXIF fields, including GPS when present, and samples a reduced copy of the pixels for color analysis. The color swatches are a summary rather than a pixel-by-pixel inventory. When you use Download without metadata, open the resulting file and inspect it again if a particular standard field must be absent. The operation re-encodes image pixels, so retain the original when you need its exact bytes, embedded profile, or editing history. A clean copy is a sharing version, not a certificate that every hidden or visual identifier has been removed.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'optimize-svg-files-for-the-web',
+    title: 'How to optimize an SVG without changing its appearance',
+    seoTitle: 'Optimize SVG Files with Careful Precision Settings',
+    seoDescription: 'Reduce SVG markup with SVGO, compare previews, preserve the viewBox, and understand why optimization is not sanitization.',
+    excerpt: 'SVG files can contain editor notes and extra precision that browsers do not need. Reduce the markup, then check the artwork and viewBox.',
+    image: '/blog/images/svg-optimizer-vector.webp',
+    imageAlt: 'Lines of source code displayed on a computer screen',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'svg-optimizer',
+    toolCta: 'Optimize an SVG in your browser',
+    sections: [
+      {
+        heading: 'Why SVG files can be worth optimizing',
+        paragraphs: [
+          'SVG stores illustrations as text describing shapes, paths, colors, and other vector details. Design software may add comments, editor metadata, hidden objects, and long decimal values along the way. Those details can make a file heavier than necessary for a website icon or logo. An SVG optimizer removes selected markup and writes a smaller text file.',
+          'The goal is to preserve the rendered artwork while dropping information that the browser does not need to draw it. A smaller source can reduce transfer size, especially for repeated icons and interface assets. The amount saved depends on how the image was exported. A clean, hand-written SVG may have little excess markup to remove.'
+        ]
+      },
+      {
+        heading: 'Inspect the original before changing settings',
+        paragraphs: [
+          'Open the SVG in a browser or graphics editor and note its dimensions, visual appearance, and whether it uses a viewBox. A viewBox describes the coordinate system that lets vector artwork scale. Removing it can affect how an SVG fits in responsive layouts, so retain it unless you know the image relies on fixed width and height instead.',
+          'Check for details that might be easy to overlook: a subtle shadow, small gap, clip path, or text converted to outlines. If the file contains many linked assets or fonts, see how it behaves in its final page too. The input preview is a baseline for comparison, not a guarantee that every external dependency will travel with the SVG.'
+        ]
+      },
+      {
+        heading: 'Tune decimal precision with the artwork in view',
+        paragraphs: [
+          'SVG paths often use decimal coordinates to position points. Lower precision rounds those values and can shorten the file, but curves may shift slightly when the rounding is too aggressive. A simple geometric icon can tolerate fewer decimals than a detailed illustration with thin lines and tightly fitted shapes.',
+          'Stayput lets you adjust precision from zero through eight decimal places, compare source and optimized previews, and see their byte sizes. Begin with the default precision of three. If curves or alignments look different, raise it and compare again. Use the same zoom and background for both previews so a small visual change is easier to spot.'
+        ]
+      },
+      {
+        heading: 'Choose viewBox, dimensions, and multipass deliberately',
+        paragraphs: [
+          'Keeping the viewBox is recommended for scalable artwork. The optimizer also lets you remove explicit width and height values, which may help an SVG size itself through CSS, but that changes how some embedding contexts determine its initial dimensions. Test the file where it will be used before removing those attributes from a shared icon library.',
+          'Multiple optimization passes can find additional savings after earlier changes. Pretty printing makes the output easier to inspect but adds whitespace, which usually works against a compact production file. Try one option at a time and note which combination keeps the drawing correct. The optimizer uses SVGO in the browser and recalculates the result as its options change.'
+        ]
+      },
+      {
+        heading: 'Compare the art, not only the byte count',
+        paragraphs: [
+          'A smaller size is not a successful result if the logo has a gap or a curve looks pinched. Compare the entire image, then inspect areas where paths meet, small type sits, or masks overlap. A side-by-side preview helps, but also download the result and open it in a browser and the design tool used by your team.',
+          'Some SVGs render differently across applications because of filters, fonts, unsupported features, or external references. A preview in one browser can miss a difference in a different renderer. If the SVG is part of a navigation bar or product mark, test its normal size and the smallest supported mobile layout before replacing a production asset.'
+        ]
+      },
+      {
+        heading: 'Keep an untouched source and a clear output name',
+        paragraphs: [
+          'Save an optimized file as a separate version, such as `brand-mark.min.svg`, instead of overwriting your design source. The original is easier to edit and gives you a recovery point if an optimization setting removes something important. For a team, keep the source and delivery file together with a short note about the intended use.',
+          'A file can grow after optimization if pretty printing or a setting adds markup. Compare the displayed original and optimized byte counts before deciding which one to keep. For a tiny icon, a few bytes may not affect a page meaningfully. Avoid spending time on a less important file while larger image assets remain unreviewed.'
+        ]
+      },
+      {
+        heading: 'Optimization does not make an SVG safe to inline',
+        paragraphs: [
+          'An SVG can contain more than shapes. It may include links, metadata, or active content. Stayput renders its previews as images so scripts do not run in those preview elements, but the optimized download is not a security sanitizer. Do not assume that a smaller SVG is safe to paste into an HTML document or accept from an untrusted source.',
+          'If you need to use SVG from outside your team, follow the sanitization and content-security rules for your application. Review the file, remove content your workflow does not allow, and use a trusted SVG sanitizer when that is the requirement. Optimization is meant to reduce file markup, not to inspect every possible security property.',
+          'A practical handoff is to keep the design export unchanged, create an optimized copy, and test that copy in its final location. The controls include precision from zero to eight decimal places, multiple passes, viewBox handling, optional dimension removal, and pretty printing. Try only one change at a time when comparing a rendering problem. If the file gets larger, that is still a valid result of the selected settings, not a reason to trust it blindly. Check the original and output byte counts, save the version that behaves correctly, and keep enough context for another designer to reproduce the choice. This helps with logos used in several sizes, where removing dimensions or rounding paths can affect a particular embed.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'remove-pages-from-a-pdf',
+    title: 'How to remove pages from a PDF and check the new file',
+    seoTitle: 'Remove Pages from a PDF Without Rebuilding It',
+    seoDescription: 'Select PDF pages to remove, keep the remaining page content, and verify page order, counts, forms, and document details.',
+    excerpt: 'A page remover is handy for a duplicate scan or an outdated appendix. Preview selections carefully and keep the original until the export is checked.',
+    image: '/blog/images/pdf-remove-pages.webp',
+    imageAlt: 'Coworkers gathered around a laptop in a meeting',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'pdf-page-remover',
+    toolCta: 'Remove pages from a PDF',
+    sections: [
+      {
+        heading: 'Decide which pages the final PDF should contain',
+        paragraphs: [
+          'Removing a page can clean up a scan with a blank sheet, remove a duplicate receipt, or make a copy of a report without an appendix. First write down the page numbers to keep or remove. The thumbnail order in a PDF reader may differ from printed page labels, so use visible content as well as a printed number.',
+          'Check whether the requested change is allowed. A signed contract, official record, or evidence packet may need to remain complete, and altering it can affect trust or compliance. Keep an untouched source file and follow the instructions of the organization that will receive the revised document.'
+        ]
+      },
+      {
+        heading: 'Use thumbnails to confirm each selection',
+        paragraphs: [
+          'Add the PDF and inspect the page previews before marking anything. Click a thumbnail to mark it for removal; marked pages are crossed out, and clicking again clears that choice. Page numbers appear below the previews. This visual confirmation is useful when a file contains covers, blank backs, or similar-looking pages.',
+          'The tool provides select-all and clear-selection controls, but it does not export a zero-page PDF. If every page is marked, unmark at least one before downloading. The remaining and removed counts help catch an accidental selection, but they cannot tell whether the retained pages are the ones you intended.'
+        ]
+      },
+      {
+        heading: 'Check the content around removed pages',
+        paragraphs: [
+          'Some pages refer to a section, attachment, or page number that you plan to remove. A report might say “see Appendix B,” or a form may list supporting documents on a cover sheet. Look for those references before export and decide whether the text should also be revised in a separate editor.',
+          'If a document includes bookmarks, fillable form fields, comments, or links, inspect those features in the output. The remover copies selected page content into a new PDF. It is designed to preserve remaining pages, but document-level extras may not work exactly as they did in the source. Keep a backup if interactive features are important.'
+        ]
+      },
+      {
+        heading: 'Export a copy and verify page order',
+        paragraphs: [
+          'After clicking export, open the downloaded PDF in a reader. Confirm its page count equals the number of pages you expected to keep, then scan the first and last page and several pages in the middle. A correct count can still hide a selection error, especially in a long document with repeated forms.',
+          'Try searching for a phrase or selecting text if the original had selectable text. For a scanned PDF, zoom in on small print and check that each page remains readable. The tool copies remaining pages rather than converting them to images, so it does not deliberately reduce their resolution or flatten their text.'
+        ]
+      },
+      {
+        heading: 'Keep page labels and references in mind',
+        paragraphs: [
+          'A PDF page index and a printed page number are not always the same. A file can start numbering at a cover, use roman numerals for front matter, or repeat numbers in appendices. Use the actual page content to identify what should go, and check references after removing pages because the visible numbering may no longer follow the document sequence.',
+          'When a reader needs to cite the revised file, share the new page count and make sure any contents page still points to the right section. If the page labels are embedded in the page artwork, the tool cannot update them automatically. Edit the document text in its source application or add a corrected contents page with a PDF editor.'
+        ]
+      },
+      {
+        heading: 'Understand what page removal changes',
+        paragraphs: [
+          'The exported result is a new PDF; the source file is not modified. Selected page indexes are omitted, and the remaining pages are copied into a fresh document in their existing order. That keeps the visible page material intact without re-rendering each page as a picture.',
+          'A page remover does not rewrite text that mentions removed content, repair a damaged source, or guarantee that every bookmark and form field survives. Password-protected PDFs that cannot be opened may not be processed. If the file fails to load, leave the original unchanged and check whether it is encrypted or damaged before trying another approach.'
+        ]
+      },
+      {
+        heading: 'Use a browser-based workflow for simple edits',
+        paragraphs: [
+          'Stayput’s PDF Page Remover previews pages locally in the browser, lets you select which ones to remove, and downloads the retained pages as a separate PDF. The original remains on your device. This is a straightforward option when you need to omit a few pages without installing desktop editing software.',
+          'The browser still needs memory for the PDF and its page previews. A large document may take longer to open or export, particularly on a phone. Keep the tab active while it works, and split a large job into smaller files only if that fits the document’s purpose. Always open the result before sending it.',
+          "A simple audit trail can prevent confusion later: record the source filename, page numbers removed, and name of the exported copy. This is useful for expense packets, training handouts, and internal reports where a colleague may need to know why the document has fewer pages. Do not alter an official or signed record if your organization expects the original to remain complete. The export must contain at least one page, and the tool does not rewrite a table of contents or printed references after a page is removed. If you must update those references, make the correction in the document's source file or a separate PDF editor, then compare the packet with its recipient's requirements."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'rotate-sideways-pdf-pages',
+    title: 'How to rotate sideways pages in a PDF without losing text',
+    seoTitle: 'Rotate PDF Pages and Keep the Original Content',
+    seoDescription: 'Rotate selected PDF pages or the whole file, review the page previews, and understand how PDF rotation differs from rasterizing.',
+    excerpt: 'Scanned pages often arrive sideways in an otherwise upright PDF. Set rotation on the affected pages, then check the final file in another reader.',
+    image: '/blog/images/pdf-rotate-pages.webp',
+    imageAlt: 'Coworkers seated around a shared table with laptops',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'pdf-page-rotator',
+    toolCta: 'Rotate PDF pages in your browser',
+    sections: [
+      {
+        heading: 'Find the pages that need turning',
+        paragraphs: [
+          'A scanned packet can mix portrait pages with a landscape chart or a receipt that was fed sideways. Open the PDF and identify the affected page numbers before changing anything. Use the thumbnail preview to tell whether one page is wrong or whether a whole group needs the same correction.',
+          'Rotation can be added to one page, several selected pages, or the whole file. In Stayput’s rotator, no selection means the rotation buttons target every page. Selecting thumbnails narrows the target set. Check the selection label before pressing a rotation control so an accidental click does not turn the entire document.'
+        ]
+      },
+      {
+        heading: 'Choose a quarter turn or a half turn',
+        paragraphs: [
+          'The tool rotates in 90-degree steps. A page that reads sideways usually needs a quarter turn left or right; one upside down needs 180 degrees. A second quarter turn changes the direction again. Use the live thumbnails to confirm that headings and diagrams point the right way before exporting.',
+          'If the page is tilted by a few degrees rather than sideways, a 90-degree control will not straighten it. That requires image deskewing or a PDF editor that can rotate by arbitrary angles. For a scan, you may need to correct the page image and rebuild that page rather than apply a standard PDF rotation.'
+        ]
+      },
+      {
+        heading: 'Rotate pages without flattening the document',
+        paragraphs: [
+          'PDF page rotation is stored as a page property. Stayput updates that rotation value instead of drawing the page into a new bitmap. Text can remain selectable, and the operation does not intentionally reduce the resolution of scanned artwork. The rotation changes how a conforming viewer displays the page.',
+          'A scanned page is already an image inside its PDF, so selectable text depends on whether the source has an OCR text layer. Rotating the page does not create searchable text or improve a blurry scan. After export, try selecting text if that mattered in the original, and inspect small print at a comfortable zoom.'
+        ]
+      },
+      {
+        heading: 'Check page size and reading order',
+        paragraphs: [
+          'After a quarter turn, a landscape page may appear wider than the portrait pages around it. That is expected if the original content was landscape. Review the sequence in a reader and make sure the page order still makes sense. Page rotation does not rearrange or remove pages.',
+          'Look at table headings, handwritten notes, signatures, and margins near the edge. A page can appear upright in its thumbnail yet still have content rotated within the scanned image itself. The tool turns the page as a whole; it does not rotate a chart or text block independently from the rest of the sheet.'
+        ]
+      },
+      {
+        heading: 'Save a new file and test another viewer',
+        paragraphs: [
+          'Export creates a rotated copy with a new filename; it does not replace the input file. Open that copy in a second PDF reader if the document will be sent to someone else. The PDF standard defines page rotation, but testing in the destination reader confirms the appearance in the actual workflow.',
+          'Keep the original until the recipient confirms the orientation. Some older software may display page properties differently, and a file can have stored rotation before you edit it. Compare the source and output pages if the result looks unexpectedly reversed. A fresh export from the original is easier than undoing several rotation steps.'
+        ]
+      },
+      {
+        heading: 'Use selection carefully on mixed documents',
+        paragraphs: [
+          'For a document with only two sideways scans, select those thumbnails and rotate them while leaving the others alone. If every page is selected, the preview should make that scope visible. Rotating all pages is appropriate for a document scanned upside down as a whole, but can make a mixed packet harder to read.',
+          'Page indexes can differ from printed page numbers. A cover and an unnumbered insert count as PDF pages even when the document’s printed numbering begins later. Use the thumbnail’s actual page position and visible contents together, particularly in a long report with similar forms.'
+        ]
+      },
+      {
+        heading: 'When a rotator is not enough',
+        paragraphs: [
+          'A page that needs cropping, deskewing, OCR, redaction, or text editing requires more than a rotation flag. A PDF page rotator only changes the selected pages’ orientation in the document. For a skewed scan, use a scanning application or image editor and keep a copy of the original evidence before changing it.',
+          'Stayput handles ordinary PDF files locally in the browser. Encrypted files that require a password cannot be edited through the tool, and damaged PDFs may fail to load. If the document is important, avoid trying random repair services with sensitive material. Use an approved PDF application and confirm the revised file before distributing it.',
+          "Before rotating a long file, turn one page and export a test copy. Verify that the new orientation appears in the reader used by your team and that text remains selectable wherever it was selectable in the source. Rotation accumulates in 90-degree increments, so pressing the same direction twice is a half turn and pressing it four times returns the page to its starting orientation. If a thumbnail has an existing rotation, the tool adds to that setting rather than changing the page's scanned pixels. That is usually right for orientation fixes, but a document with unusual page-level settings deserves a quick comparison before you rotate every page."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-pdf-pages-to-images',
+    title: 'How to convert PDF pages to images at a useful resolution',
+    seoTitle: 'Convert PDF Pages to JPG or PNG at the Right DPI',
+    seoDescription: 'Choose a page range, image format, and DPI for PDF conversion, then check file size, readability, and browser rendering limits.',
+    excerpt: 'Exporting PDF pages as images is useful for previews and uploads. Choose the resolution for the destination and expect larger files at higher DPI.',
+    image: '/blog/images/pdf-to-images-export.webp',
+    imageAlt: 'People gathered around a laptop and notebooks at a shared table',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'pdf-to-images',
+    toolCta: 'Convert PDF pages to images',
+    sections: [
+      {
+        heading: 'Choose images when the next step needs them',
+        paragraphs: [
+          'Converting a PDF page to PNG or JPG is useful when a website accepts images but not documents, when you need a slide preview, or when a page must be placed in a design. The output is a raster image of the rendered page. Text and vector shapes become pixels, so they will no longer behave like selectable PDF text.',
+          'Keep the original PDF if you may need to search, copy, or edit its text later. An image is useful for viewing and sharing a fixed appearance, but it is less accessible and can be harder to print cleanly at a different size. Choose conversion for the specific downstream task rather than treating it as a general PDF cleanup.'
+        ]
+      },
+      {
+        heading: 'Select the pages you actually need',
+        paragraphs: [
+          'The tool can render all pages or a comma-separated range such as `1-3, 7`. Leaving the page field empty selects the entire document. A range helps avoid creating dozens of images when a form only asks for the signature page or when a report’s first page is enough for a preview.',
+          'Check the page count before entering ranges. The parser reports invalid page numbers, and repeated selections are de-duplicated in the output. Open the resulting previews and confirm the right page numbers appear. For a packet with front matter or inserts, remember that visible printed numbers may not match the PDF’s page index.'
+        ]
+      },
+      {
+        heading: 'Pick PNG or JPG based on the page',
+        paragraphs: [
+          'PNG is a useful choice for pages with small text, line drawings, or diagrams where crisp edges matter. It uses lossless compression, so it often produces larger files. JPG can make photographic scans smaller, and its quality setting lets you trade some detail for fewer bytes. Repeated compression can blur small type or produce blocks around sharp edges.',
+          'Compare a representative page before converting an entire document. A text-heavy tax form, a photo-heavy brochure, and a mixed engineering drawing respond differently. Try PNG when a JPG makes labels hard to read, or use JPG when a scan has large smooth areas and the receiving service limits upload size.'
+        ]
+      },
+      {
+        heading: 'Set DPI for the display or print size',
+        paragraphs: [
+          'DPI controls how many image pixels the page renderer creates per inch of PDF page size. Stayput offers 72, 150, 200, and 300 DPI. For a page viewed on a screen, 150 DPI is often a practical starting point. Use 300 DPI when the image needs more detail for printing, while accounting for the larger output and memory demand.',
+          'A higher DPI does not add detail that a low-resolution scan never captured. It creates a larger raster with the existing page content interpolated across more pixels. For a very large page, high DPI can exceed browser canvas limits. If rendering fails, lower the resolution or select fewer pages and run the conversion again.'
+        ]
+      },
+      {
+        heading: 'Expect a tradeoff between resolution and file size',
+        paragraphs: [
+          'Doubling the rendering resolution can multiply the number of pixels substantially because both width and height increase. As a result, a page at 300 DPI may use much more memory and produce a larger file than the same page at 150 DPI. File size also depends on whether you choose PNG or JPG and on the content of each page.',
+          'Stayput shows page dimensions and resulting file sizes after rendering, and lets you download images individually or as a ZIP. Check available disk space and upload limits before making a full set. If you only need a quick reference, a lower resolution often makes the files easier to share and open.'
+        ]
+      },
+      {
+        heading: 'Review text, color, and page boundaries',
+        paragraphs: [
+          'Open a converted page and inspect small print, thin rules, stamps, and signatures. Make sure no margins or page edges are clipped. If color is important, compare the image with the source in a PDF reader because the browser render may not reproduce every embedded color setting exactly.',
+          'Rendered images do not contain the PDF’s searchable text, links, or form fields. For searchable images, you need an OCR step in another application. If a form must remain fillable or a link must work, send the original PDF or use a PDF workflow that preserves those features.'
+        ]
+      },
+      {
+        heading: 'Use the browser tool within its limits',
+        paragraphs: [
+          'Stayput renders PDF pages with PDF.js in your browser, supports selected page ranges, and exports PNG or JPG. You can choose a supported DPI, adjust JPG quality, stop a long conversion, and download several finished pages as a ZIP. Files are processed locally rather than uploaded to a remote converter.',
+          'The browser and device still impose limits on canvas dimensions and available memory. A large file, high DPI, or a long page range can take time. If the tab becomes slow, stop the job and retry a smaller range at lower resolution. Keep the browser open until the downloads finish, then check each file before replacing your source document.',
+          "A consistent filename makes a ZIP of page images much easier to use. The tool names exports with the source document's base name and a page number padded to the document's page-count width, then adds `.png` or `.jpg`. If only one page is selected, download that image directly; several results can be grouped into a ZIP. Keep the page number attached when sharing a selection so the recipient can relate an image back to the PDF. For an image that must remain searchable or accessible, send the PDF as well or run OCR separately. Rendering captures appearance only, and a high-resolution export can be much larger than the original compressed document."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'turn-images-into-a-pdf',
+    title: 'How to turn photos and scans into a well-sized PDF',
+    seoTitle: 'Turn Images into a PDF with the Right Page Layout',
+    seoDescription: 'Combine JPG, PNG, and WebP files into a PDF, arrange page order, set paper size and margins, and check the finished document.',
+    excerpt: 'A stack of photos can become a useful document when the order, page size, orientation, and margins are set before export.',
+    image: '/blog/images/images-to-pdf-scans.webp',
+    imageAlt: 'A laptop open on a dark desk',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'images-to-pdf',
+    toolCta: 'Combine images into a PDF',
+    sections: [
+      {
+        heading: 'Plan the document before adding images',
+        paragraphs: [
+          'Images to PDF conversion is useful for turning receipts into an expense packet, combining scanned forms, or sending a set of product photos as one attachment. Decide whether each image belongs on its own page and what order the reader should see. A little planning saves you from rearranging pages in a second application.',
+          'Use names or a short list to establish order before you upload. The first file becomes the first page, and the list can be reordered before creation. If filenames are camera defaults such as `IMG_0012`, sort by the story you want the document to tell rather than assuming the numeric sequence is complete.'
+        ]
+      },
+      {
+        heading: 'Choose a page size that suits the recipient',
+        paragraphs: [
+          'Stayput offers A4, US Letter, US Legal, A5, or a page fitted to each image. A4 and Letter suit common office documents, while Legal gives more length for forms that use that paper size. A5 can work for a small booklet. Fit-to-image makes each page follow its picture instead of placing it on a fixed sheet.',
+          'Check the recipient’s requirements before choosing. A government form may need Letter or A4, while a photo archive can benefit from fit-to-image. Mixing page dimensions may be fine for a screen packet but can make printing less predictable. If the output needs uniform sheets, choose one paper size and let the tool fit each image inside it.'
+        ]
+      },
+      {
+        heading: 'Set margins and orientation deliberately',
+        paragraphs: [
+          'The margin setting controls the space around each image on fixed-size paper. Choose none when the picture should fill the available page area, or leave margin when the document will be printed or annotated. Available settings are none, 5, 10, and 20 millimeters. The image is fitted within the page rather than stretched to fill it.',
+          'Auto orientation matches each page to its image, so portrait and landscape images can alternate. You can also force portrait or landscape for a uniform direction. With Fit to image, orientation is not used because the page follows the image. Preview the page sizes after export if the packet will be printed on a shared office printer.'
+        ]
+      },
+      {
+        heading: 'Understand how each image format is handled',
+        paragraphs: [
+          'JPG and PNG files are embedded directly in the PDF, rather than being re-encoded as another image during conversion. That helps preserve their original encoded image data. WebP files are converted to PNG first because the PDF writer embeds JPEG and PNG image data. A WebP source may therefore produce a larger page image.',
+          'A PDF page holds an image, not all the features of the original photo file. Animation, layers, and some metadata do not carry into a static page. JPEG files with orientation information may be re-encoded when needed so the photo appears upright. Check phone images after export, especially if they were taken in portrait mode.'
+        ]
+      },
+      {
+        heading: 'Review the file list and page sequence',
+        paragraphs: [
+          'Before creating the PDF, check the file names, count, and order. Remove an accidental duplicate and move any cover or instruction sheet to the front. Each selected image becomes one page, so the final page count should match the number of images you intend to include.',
+          'If the set contains personal documents, avoid choosing a whole downloads folder by mistake. Add only the images needed for the packet. For a large job, create the PDF in smaller groups only if you intend to deliver separate files; otherwise keep the entire list together so page order remains simple.'
+        ]
+      },
+      {
+        heading: 'Inspect the exported PDF before sending',
+        paragraphs: [
+          'Open the downloaded PDF in a reader and scroll through every page. Check for sideways photos, a crop at the edges, unreadable writing, and unexpected blank sheets. The tool reports the page count and PDF size after creation, but those numbers do not replace a visual review.',
+          'Try printing one page if paper output matters. Margins and image placement can look different on a screen than on a printer with non-printable edges. Zoom in on small receipts and handwritten notes, and make sure any text can be read at the scale the page will be printed or viewed.'
+        ]
+      },
+      {
+        heading: 'Keep a copy of the source images',
+        paragraphs: [
+          'The generated PDF is a new file; it does not remove or edit the images you added. Keep those originals if you may need to change page order, choose a different paper size, or create a higher-resolution document later. Store the PDF under a name that identifies the packet and date.',
+          'Stayput processes the images in the browser and does not upload them to a conversion service. The browser still needs memory while preparing each page. Very large photos or a long batch may take longer, particularly on a phone. If the job fails, reduce the batch size or resize copies and retain the full-resolution originals.',
+          'For a mixed collection, Auto orientation lets landscape photos use landscape sheets and portrait scans use portrait sheets. That is convenient for viewing, but it may not suit a printer or a submission that requires every page to be the same size. WebP is accepted, then converted to PNG for embedding; JPG and PNG are embedded directly. This difference can affect file size, especially for a large set of WebP photographs. Check the resulting PDF size before emailing it, and compress a copy only if the recipient has a limit. The layout fits each image inside its page and does not stretch it to fill every corner, so margins and unused space may be visible by design.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'inspect-pdf-metadata-and-properties',
+    title: 'How to inspect PDF metadata before sharing a document',
+    seoTitle: 'Inspect PDF Metadata, Page Sizes, and Version',
+    seoDescription: 'Check a PDF’s title, author, software, dates, page count, encryption, and page sizes before you share or archive it.',
+    excerpt: 'PDF properties can identify an authoring app or reveal an old title. Inspect the document details and know what a cleaned copy removes.',
+    image: '/blog/images/pdf-metadata-properties.webp',
+    imageAlt: 'A work desk with laptops, a tablet, and stationery arranged around it',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'pdf-metadata-viewer',
+    toolCta: 'View PDF metadata in your browser',
+    sections: [
+      {
+        heading: 'What PDF metadata tells you',
+        paragraphs: [
+          'A PDF can include document properties such as title, author, subject, keywords, creation date, and modification date. It may also name the application that created or last produced the file. These fields help organize a library or troubleshoot a document, but they are entered by software or a person and are not independently verified facts.',
+          'Metadata is separate from the visible pages. A file can show a current title in its document properties while the first page still carries an outdated heading. Inspect both before sharing. The PDF’s appearance and its stored properties are two different views of the document, and neither automatically corrects the other.'
+        ]
+      },
+      {
+        heading: 'Check page count and page dimensions',
+        paragraphs: [
+          'Page count is useful when confirming that a scan or export contains every sheet. Page dimensions can reveal a mix of A4, Letter, landscape, or custom pages. Stayput reports the count and groups the page sizes it finds, converting measurements to millimeters for display.',
+          'A PDF may contain several different page sizes, so a single label does not always describe the whole file. Check the preview or open the document in a reader if one page seems out of place. Page dimensions do not tell you whether the text is legible or whether a scan is sharp enough for printing.'
+        ]
+      },
+      {
+        heading: 'Read the PDF version and encryption status',
+        paragraphs: [
+          'The PDF version header indicates a format version associated with the file. It can help explain why a very old reader or document system has trouble with a newer PDF, but it is not a complete compatibility test. The features used inside a document can matter as much as the version string.',
+          'The viewer also reports whether it detects encryption. It may read basic properties from an encrypted file where possible, but the tool does not edit encrypted documents. If opening or modifying the PDF requires a password, use an authorized PDF reader and follow the document owner’s rules rather than trying to bypass the restriction.'
+        ]
+      },
+      {
+        heading: 'Treat dates and author names as clues',
+        paragraphs: [
+          'Creation and modification dates can help identify which export is newer, especially when several similarly named versions exist. However, copying or re-saving a PDF can update metadata, and a device clock can be wrong. Use dates as clues alongside the file’s source and content, not as proof of when a document was signed or sent.',
+          'Author and creator values may be missing, generic, or inherited from a template. A producer field names PDF software, not necessarily the person who wrote the document. If an unknown value appears, it can reflect the export path rather than a hidden editor. Verify authorship through an appropriate record or signature process.'
+        ]
+      },
+      {
+        heading: 'Clear standard fields when you need a clean copy',
+        paragraphs: [
+          'Stayput can create a copy with standard Info dictionary fields cleared and the XMP metadata stream removed. It does not edit the source file. Download the cleaned version separately and inspect its properties before replacing or sending anything. The output may still contain details in custom metadata streams or in the visible document itself.',
+          'Metadata removal is different from redaction. Clearing a title or author field does not cover names, account numbers, or comments printed on a page. Use a proper redaction workflow for visible sensitive content and verify the result by searching or copying text from the exported document.'
+        ]
+      },
+      {
+        heading: 'Understand the limits of property inspection',
+        paragraphs: [
+          'A metadata viewer presents the standard properties the library can read. A PDF may contain attachments, annotations, custom XMP entries, signatures, forms, or other structures that are not all listed in the page. A missing value means the relevant property is not present in the fields being reported, not that every trace of document history is gone.',
+          'A PDF can also have different page sizes and rotations, or fields that were written by an export program. If a legal or records process requires a complete metadata examination, use an approved forensic or document-management workflow. This tool is intended for ordinary inspection and a simple clean copy, not a certified audit.'
+        ]
+      },
+      {
+        heading: 'Make a copy and confirm what you share',
+        paragraphs: [
+          'Before sending a document, check the displayed title, author, date, and page count. If metadata should be cleared, download a clean copy, reopen it in a PDF reader, and confirm the standard fields are blank. Also read the visible pages for personal details that metadata removal cannot touch.',
+          'The viewer reads PDF bytes in your browser rather than sending them to an online metadata service. Keep the original in a secure folder if it is a record, and use a distinct filename for the version you share. A quick properties check can catch an old template name or unexpected author field before it travels with the document.',
+          "The clean-copy action is disabled when the PDF is marked encrypted because editing its document properties requires an editable file. When the copy succeeds, the tool blanks standard title, author, subject, keywords, creator, and producer fields and removes the XMP stream it handles. Reopen the output and check the same fields rather than assuming that a download means every property is gone. Custom streams, attachments, annotations, and visible page content can require a different inspection workflow. If the PDF is part of a records process, preserve an untouched copy and follow your organization's approved retention rules before changing or distributing a cleaned version."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'remove-repeated-lines-from-a-list',
+    title: 'How to remove duplicate lines while keeping the useful order',
+    seoTitle: 'Remove Duplicate Lines and Keep the First Occurrence',
+    seoDescription: 'Clean a pasted list by removing repeated lines, choosing case and whitespace rules, and checking which values remain.',
+    excerpt: 'A deduplicated list is easier to review when you choose how spaces, letter case, and blank lines should be treated first.',
+    image: '/blog/images/remove-duplicate-lines.webp',
+    imageAlt: 'A laptop displaying source code in a code editor',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'remove-duplicate-lines',
+    toolCta: 'Remove duplicate lines in your browser',
+    sections: [
+      {
+        heading: 'Start with one item on each line',
+        paragraphs: [
+          'Removing duplicate lines helps when a copied contact list, log excerpt, or inventory contains the same entry more than once. Paste one item per line and decide what counts as a duplicate before running the cleanup. Exact text, text ignoring capitalization, and text after trimming spaces can produce different results.',
+          'Keep an untouched copy of the input if the list is a record or will be used in a later import. Deduplication is a content change, even when it removes only repeated values. A source copy makes it possible to compare the unique list and recover an entry if two items looked alike but represented different things.'
+        ]
+      },
+      {
+        heading: 'Choose whether letter case matters',
+        paragraphs: [
+          'Case-sensitive matching treats `Oak` and `oak` as separate lines. Turning the option off treats them as equivalent for duplicate checking, so the first version encountered remains. This can be helpful for names or tags that should ignore capitalization, but it may combine identifiers where uppercase and lowercase have different meanings.',
+          'Think about the system that will receive the list. A set of human-readable labels may be case-insensitive, while a password, file path, or code token may not be. Check a small sample with both forms before processing a long list, and keep the case-sensitive setting enabled when the destination distinguishes them.'
+        ]
+      },
+      {
+        heading: 'Decide what to do with surrounding spaces',
+        paragraphs: [
+          'With trimming enabled, leading and trailing spaces are removed before a line is compared and written to the output. That means `blue` and ` blue ` collapse into one entry, and the retained line is clean. This is often useful for pasted lists copied from a spreadsheet or an email.',
+          'If spaces are meaningful, turn trimming off. A line with a trailing space can be significant in a code sample or fixed-width record, even if it looks like a duplicate on screen. Check for tabs and invisible whitespace too. A plain visual inspection can miss them, so use the trim option only when the data rules allow it.'
+        ]
+      },
+      {
+        heading: 'Handle empty lines deliberately',
+        paragraphs: [
+          'Blank lines can separate sections, mark missing values, or simply appear between copied entries. Removing empty lines drops them completely. Leaving that option off keeps one blank line because identical blank entries are duplicates under the same comparison rules. Choose based on whether blank rows carry meaning in the destination.',
+          'For a CSV-style list, empty lines are usually noise and can be removed. For a poem, outline, or text where spacing separates ideas, deleting them may change the structure. Preview the output before copying it into another application, especially when the source includes multiple groups separated by whitespace.'
+        ]
+      },
+      {
+        heading: 'Know which copy is kept and why order stays intact',
+        paragraphs: [
+          'The tool keeps the first occurrence of each unique line and removes later repeats. It does not sort the result, so the remaining entries appear in the order they first appeared in the input. This makes the output easier to compare with the original and preserves a meaningful sequence such as first-seen event time.',
+          'If you want alphabetical order as well, run the result through a line sorter afterward. Sorting before deduplication can change which spelling or capitalization appears first, so decide which version should survive. For a curated list, review the first occurrence of each value before treating it as the preferred one.'
+        ]
+      },
+      {
+        heading: 'Review the counts before using the output',
+        paragraphs: [
+          'Stayput reports how many lines remain and how many it removed. A large removed count can be expected in a repeated log, but it can also signal that whitespace or case options are broader than intended. Compare a few entries you expected to keep with the output and make sure different values were not folded together.',
+          'For an important list, test the output in the application that will use it. A directory importer, spreadsheet, or script can interpret blank values differently from a text box. If the destination uses a unique key such as an email address, deduplicating by full line may not remove repeated people whose other fields vary.'
+        ]
+      },
+      {
+        heading: 'Use a local cleanup without losing your source',
+        paragraphs: [
+          'The duplicate-line tool processes the text in the browser and gives you a copyable result. It does not upload pasted text to a cleanup service. This is convenient for a quick list, but it does not replace a database constraint or a repeatable import rule when duplicates can arrive again later.',
+          'Paste only the material you need, confirm the matching options, and copy the output after checking the counts. Keep a saved source when the input is sensitive or must be auditable. For very long files, a local text editor or a data-processing script may offer more control over encoding and line-ending rules.',
+          'Before cleaning a large list, try a short sample that includes the edge cases you care about: a repeated blank, a line with a trailing space, and two entries with different capitalization. Confirm which one remains and whether its surrounding whitespace is preserved under your selected settings. The tool reports the number of entries kept and removed, but it does not show a change history for each line. If you need to explain every deletion, compare the original and result in a diff tool or save a separate list of source records. That matters when deduplication affects inventory, customer records, or any list where a similar-looking entry could still represent a distinct account.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-json-arrays-to-csv',
+    title: 'How to convert JSON data to CSV for spreadsheet work',
+    seoTitle: 'Convert JSON to CSV with Nested Fields Explained',
+    seoDescription: 'Turn JSON objects into spreadsheet rows, flatten nested fields, choose a delimiter, and check quoting and Excel encoding.',
+    excerpt: 'A JSON export can become a useful spreadsheet when its fields are predictable. Learn how nested objects and arrays appear in CSV cells.',
+    image: '/blog/images/json-to-csv-export.webp',
+    imageAlt: 'Hands typing on a laptop keyboard',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'json-to-csv',
+    toolCta: 'Convert JSON to CSV in your browser',
+    sections: [
+      {
+        heading: 'Check the structure of the JSON first',
+        paragraphs: [
+          'CSV works best when each row represents a record and each column represents a field. A JSON array of objects is a common starting point: each object becomes one row, and its properties become columns. Before converting, inspect the input for missing values, nested objects, or fields that change shape between records.',
+          'Stayput accepts JSON parsed with the browser’s built-in parser. A malformed quote, trailing comma, or comment causes a syntax error instead of a partial export. Fix the JSON first and confirm that the top-level value is an array or an object. A single scalar value does not provide a useful set of columns.'
+        ]
+      },
+      {
+        heading: 'Understand how headers and rows are assembled',
+        paragraphs: [
+          'The converter gathers column names from the records in encounter order, adding a header the first time it sees each field. If later objects contain a new property, that property adds a column and earlier rows leave its cell blank. This is handy for uneven data, but it can expose inconsistent schemas that deserve a closer look.',
+          'A top-level object is handled as one record. An array becomes multiple rows, including values that may not be objects. If the input mixes types, the resulting columns may be less intuitive than a normal table. Preview the CSV before downloading and clean or reshape unusual data in the source when the spreadsheet needs a stable layout.'
+        ]
+      },
+      {
+        heading: 'Read flattened nested fields',
+        paragraphs: [
+          'Nested objects are flattened into column names joined with dots. An object such as `{"address":{"city":"Oslo"}}` produces a field named `address.city`. This keeps a basic hierarchy visible without creating a separate worksheet for every nested group.',
+          'Arrays inside objects are written as JSON text in a cell rather than expanded into extra rows. That keeps the original array together, but a spreadsheet formula will not automatically treat the cell as several records. If you need one row per item in a nested array, reshape the source or use a data tool that can expand arrays.'
+        ]
+      },
+      {
+        heading: 'Choose a delimiter that fits the destination',
+        paragraphs: [
+          'The converter supports comma, semicolon, tab, and pipe delimiters. Commas are common in CSV files, while semicolons are used in some spreadsheet locales. Tabs can be convenient for pasting into a sheet, and pipes may work when commas appear often in the data. Match the delimiter expected by the receiving application.',
+          'CSV quoting still matters when a field contains the chosen delimiter, a quote, or a line break. The tool wraps that field in quotes and doubles embedded quotes so they are not mistaken for the end of the value. Do not remove those quotes by hand unless you are certain the resulting file remains valid.'
+        ]
+      },
+      {
+        heading: 'Use the Excel BOM option when needed',
+        paragraphs: [
+          'A UTF-8 byte order mark can help some versions of Excel recognize non-ASCII characters, such as accented names, when opening a downloaded CSV. Stayput offers an Add BOM for Excel switch. Try it if characters look garbled in the spreadsheet, and keep it off when a system specifically expects a plain UTF-8 file without a marker.',
+          'The BOM affects file encoding detection, not the content schema or delimiter. If a spreadsheet still shows odd characters, check the import dialog and select UTF-8 explicitly. Also check how the program interprets commas and semicolons for your locale. A file can be valid CSV while opening with an unexpected column split in one application.'
+        ]
+      },
+      {
+        heading: 'Inspect formulas and sensitive values',
+        paragraphs: [
+          'CSV files can be opened by spreadsheet software that treats cells beginning with `=`, `+`, `-`, or `@` as formulas. Stayput prefixes certain string values with an apostrophe to reduce the chance that text is interpreted as a formula when opened in Excel. This adjustment is intended for strings; it does not replace a review of untrusted data.',
+          'Before converting a data export, remove fields that should not travel with the spreadsheet. A CSV is plain text, so hidden columns or sheet permissions are not available as a privacy control. Check names, account values, and internal notes before sharing the file. Conversion changes representation, not who should have access to the data.'
+        ]
+      },
+      {
+        heading: 'Download, open, and validate the spreadsheet',
+        paragraphs: [
+          'Review the live CSV output and note the reported row count. Then download the file and open it in the application the recipient will use. Check headers, blank cells, accented characters, embedded commas, quotes, and line breaks. A quick visual scan can catch a delimiter mismatch or an unexpected flattened column.',
+          'If the data is used for accounting, analysis, or a customer import, compare a few records with the source JSON. Confirm that numeric-looking IDs have not been treated as numbers and lost leading zeros. CSV has no rich type system, so a spreadsheet may infer dates or numbers differently from the JSON value.'
+        ]
+      },
+      {
+        heading: 'Choose JSON or CSV for the next step',
+        paragraphs: [
+          'CSV is convenient for tables, sorting, filters, and simple handoffs. JSON preserves nested structure and distinguishes data types more explicitly. Keep the original JSON for software integrations or future processing, and use CSV when a person needs rows and columns in a spreadsheet.',
+          'Stayput runs conversion in your browser and does not send the pasted JSON to a server. Large inputs can still consume browser memory, and complex nesting may make a wide CSV hard to use. When the result looks awkward, that can reflect the source shape rather than a faulty conversion. Adjust the JSON structure before exporting a final table.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'encode-and-decode-base64-text',
+    title: 'How to encode and decode Base64 text without confusion',
+    seoTitle: 'Base64 Encoder and Decoder for UTF-8 Text',
+    seoDescription: 'Encode Unicode text to Base64, decode valid strings, use URL-safe characters, and learn why Base64 is not encryption.',
+    excerpt: 'Base64 moves bytes through text-only formats. Learn how UTF-8, padding, URL-safe variants, and binary data affect the result.',
+    image: '/blog/images/base64-encode-decode.webp',
+    imageAlt: 'Earth at night from space with city lights across the surface',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'base64-encoder-decoder',
+    toolCta: 'Encode or decode Base64 text',
+    sections: [
+      {
+        heading: 'Use Base64 when bytes need a text representation',
+        paragraphs: [
+          'Base64 represents binary bytes with a set of printable characters. It is often used in data URLs, email formats, and text-based configuration where raw bytes are inconvenient. Encoding changes how data is written, not what access someone has to it. Anyone with the string can decode it.',
+          'Stayput’s Base64 tool works with text and encodes it as UTF-8 before converting the bytes. That means words outside the English alphabet and emoji can survive an encode-then-decode round trip. A Base64 string is not a hash, password, or encrypted secret; it is a reversible representation.'
+        ]
+      },
+      {
+        heading: 'Understand the UTF-8 step',
+        paragraphs: [
+          'A character is not always one byte. UTF-8 may use multiple bytes for accented letters, non-Latin scripts, or emoji. The encoder converts the text to those bytes, then maps the bytes into Base64 characters. A string of visible letters can therefore become a longer encoded value.',
+          'If you are working with a binary file rather than text, a text decoder may not be able to display the decoded bytes as valid UTF-8. Stayput reports an error when the result is not valid UTF-8 text. Use a tool that accepts and writes binary files when your Base64 content represents an image, archive, or other non-text data.'
+        ]
+      },
+      {
+        heading: 'Use the URL-safe option for the right context',
+        paragraphs: [
+          'Standard Base64 uses plus and slash characters, and commonly adds equals signs as padding. Those characters can be awkward inside a URL or filename. The URL-safe variant replaces plus with hyphen and slash with underscore, and the encoder omits trailing padding.',
+          'Choose URL-safe encoding when the receiving service expects that variant. Do not assume every system accepts it in place of standard Base64. The decoder accepts URL-safe characters and can restore omitted padding, but the service you send the value to may require a particular form. Follow its specification and avoid modifying the output manually.'
+        ]
+      },
+      {
+        heading: 'Decode carefully and read errors as clues',
+        paragraphs: [
+          'Paste the encoded value and switch to Decode to recover its text. The tool ignores whitespace, accepts standard and URL-safe characters, and restores padding when the input length allows it. Invalid symbols or impossible lengths produce an error instead of a guessed result.',
+          'A failure can mean the text was copied incompletely, includes punctuation from a surrounding message, or represents binary bytes rather than UTF-8. Compare the original source and check for an omitted final section. Do not add padding at random; the decoder already handles valid unpadded forms and explains when its input is not valid.'
+        ]
+      },
+      {
+        heading: 'Remember that encoding adds size',
+        paragraphs: [
+          'Base64 commonly uses about one-third more characters than the underlying bytes, plus any formatting around it. That overhead can be acceptable for a small value or an inline asset, but it is inefficient for a large image or file. Keep binary data in a binary format when the destination supports it.',
+          'A data URI may add a media type and a prefix before the Base64 payload. The Stayput text converter returns the encoded text itself, not a file data URI builder. If you need an image embedded in HTML or CSS, use the image-to-Base64 tool, which offers data URI and markup formats for image input.'
+        ]
+      },
+      {
+        heading: 'Protect secrets even when conversion is local',
+        paragraphs: [
+          'Because Base64 is reversible, it provides no confidentiality. Do not use it to hide an API key, password, or private message from someone who can read the encoded string. Encryption requires a cryptographic method with key management; changing a value into a different alphabet does not provide that protection.',
+          'The converter runs in your browser and does not upload pasted text, but keep your device and clipboard in mind. A copied secret can remain in clipboard history or be visible on a shared screen. Remove sensitive content from the page when you are finished and use an approved secret manager for credentials.'
+        ]
+      },
+      {
+        heading: 'Test the round trip before using the result',
+        paragraphs: [
+          'For text you own, encode a short sample and decode it back. Compare punctuation, line breaks, accents, and emoji with the original. This simple test catches confusion between standard and URL-safe forms and confirms that the value is text rather than arbitrary binary data.',
+          'When a server, API, or configuration file consumes the output, check its documented expectations for padding, line wrapping, and character set. A result can be valid Base64 and still be in the wrong place or form for that application. Treat the converter as a byte-to-text helper, then validate the integration in its real environment.',
+          'When copying Base64 from a log or documentation page, remove only surrounding punctuation that is not part of the encoded value. Whitespace is ignored by the decoder, but characters such as a period or colon can make the input invalid. The swap control lets you send an output back through the opposite direction for a quick check. For Unicode text, compare the decoded characters rather than their visual width; accented scripts and emoji can look different across fonts while still matching the original sequence. If the value comes from an API, confirm whether it expects standard padding or URL-safe unpadded form. Store the original data separately when the encoded value is part of a signed request or configuration.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'generate-hashes-for-text-and-files',
+    title: 'How to generate a file hash and compare the result',
+    seoTitle: 'Generate SHA Hashes for Files and Text in a Browser',
+    seoDescription: 'Create SHA-1, SHA-256, SHA-384, or SHA-512 digests, compare a checksum, and understand what a hash can and cannot prove.',
+    excerpt: 'A digest can help check whether two files match. Learn which algorithm to choose and why a matching hash is not a full security review.',
+    image: '/blog/images/hash-generator-checksum.webp',
+    imageAlt: 'Portrait of a smiling man in soft light',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'hash-generator',
+    toolCta: 'Generate a SHA hash in your browser',
+    sections: [
+      {
+        heading: 'What a hash is useful for',
+        paragraphs: [
+          'A cryptographic hash maps input bytes to a fixed-length digest. If two files have matching digests under the same algorithm, that is a practical way to check whether their contents match. Developers use hashes for checksums, release verification, and identifying changes between copies.',
+          'A hash does not encrypt the input or let you restore it. It also does not tell you who created a file. A digest only answers a narrow comparison question when you have a trusted expected value and use the same algorithm on the same bytes.'
+        ]
+      },
+      {
+        heading: 'Choose the algorithm the source specifies',
+        paragraphs: [
+          'Stayput computes SHA-1, SHA-256, SHA-384, and SHA-512 using the Web Crypto API. If a download page publishes a SHA-256 checksum, select the SHA-256 result for comparison. Using a different algorithm produces a different digest even when you start with the correct file.',
+          'SHA-1 remains useful for legacy checksums and non-security comparisons, but it is not appropriate for modern security-sensitive integrity decisions. Prefer SHA-256 or a stronger option supported by the publisher when the goal is to detect tampering. The tool does not include MD5, which Web Crypto does not provide.'
+        ]
+      },
+      {
+        heading: 'Hash the exact text or file bytes',
+        paragraphs: [
+          'For text input, the tool encodes the characters as UTF-8 before hashing. Spaces, line endings, capitalization, and a final newline all change the bytes and therefore change the digest. If a value does not match, compare the exact text, including invisible whitespace, before suspecting the hash implementation.',
+          'For a file, choose the original file rather than a screenshot, extracted copy, or file that was opened and saved by another application. Even a small metadata change alters the digest. A checksum comparison only works when both sides use the same byte sequence, not merely documents that look alike on screen.'
+        ]
+      },
+      {
+        heading: 'Compare against a published checksum',
+        paragraphs: [
+          'Paste the expected checksum into the comparison field. Stayput checks it against the four displayed digests and marks the matching algorithm when one matches. It ignores spaces and letter case in the checksum text, which makes copied values easier to compare without changing the underlying digest.',
+          'Get the expected value from a source you trust, such as the project’s official release page or a signed manifest. If an attacker can change both the download and the checksum displayed beside it, a match does not establish authenticity. A digital signature or trusted channel provides stronger evidence about who published the file.'
+        ]
+      },
+      {
+        heading: 'Interpret a mismatch before downloading again',
+        paragraphs: [
+          'A mismatch means the bytes differ from the expected input, or that the wrong algorithm or value was used. Recheck the file name, size, algorithm label, and checksum for copy errors. A download can be incomplete, or a release may have been updated since the checksum was recorded.',
+          'Do not ignore a mismatch when verifying software or a document that affects a workflow. Download from the official source again and compare the new file. If it still differs, check the publisher’s instructions or release notes. The hash tool reports the digest it calculates; it cannot tell why a file changed.'
+        ]
+      },
+      {
+        heading: 'Know what a digest does not establish',
+        paragraphs: [
+          'A matching hash can show that two byte sequences are the same with overwhelming practical confidence for a strong algorithm. It does not scan for malware, validate a file’s contents, or prove that the original file was safe. A malicious file can have a perfectly valid hash.',
+          'Hash functions are also not password encryption. Password storage typically needs a deliberately slow, salted password-hashing scheme rather than a single SHA digest. Do not use this tool to store account passwords or to make a weak secret secure. Use an authentication system’s supported password hashing method.'
+        ]
+      },
+      {
+        heading: 'Use local calculation and keep large files manageable',
+        paragraphs: [
+          'The hash tool reads text or a file in your browser and calculates the four digests without uploading the input. It can accept many file types, but the browser still reads the file into memory. Very large files may take time or fail depending on available memory and device capacity.',
+          'For a large archive, hash one file at a time and wait for the results before selecting another. Stayput permits large inputs, but that does not mean every phone can handle a multi-gigabyte file comfortably. If the page reports an error, use a local desktop hashing utility or split the task without changing the file whose checksum you need.',
+          "For a release verification, copy the checksum from the publisher's official source and compare it with the digest for the exact downloaded file. Avoid opening and resaving the file before hashing because even a harmless metadata edit changes the byte sequence. The tool computes every supported algorithm and accepts an expected value with spaces or mixed letter case, but it cannot tell you whether the publisher's page was authentic. If the expected digest came through an untrusted message, find it independently. For a large file, wait for the calculation to complete before changing the input; the browser reads the full data, and available memory affects how smoothly the job runs. Keep a note of the algorithm with the digest.",
+          'A one-character change in a file should produce a different digest for each of these algorithms, so a checksum can flag accidental changes between copies. It does not explain what changed or identify the changed location. When you need a reviewable history, use a file comparison or version-control diff alongside the digest. For a text value, include any line ending or trailing newline that belongs to the source; hashing a pasted copy with one character missing will correctly produce another result.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'minify-css-without-changing-rule-meaning',
+    title: 'How to minify CSS while keeping the rules readable in source',
+    seoTitle: 'Minify CSS and Check the Smaller Output',
+    seoDescription: 'Remove CSS comments and excess whitespace, preserve strings and URLs, and learn what a safe minifier leaves unchanged.',
+    excerpt: 'A CSS minifier can trim file bytes without merging rules. Check the output and keep the readable source for future edits.',
+    image: '/blog/images/css-minifier-code.webp',
+    imageAlt: 'A woman in glasses against a blue background',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'css-minifier',
+    toolCta: 'Minify CSS in your browser',
+    sections: [
+      {
+        heading: 'Why minify a stylesheet',
+        paragraphs: [
+          'CSS minification removes formatting that helps people edit a stylesheet but does not affect how browsers read it. Comments and extra whitespace add bytes to the file. A minified version can be useful for deployment, inline snippets, or a size comparison when a project has a strict transfer budget.',
+          'Keep your original source formatted for maintenance. Minified output is harder to review and modify by hand, particularly when a rule is long. A reliable build can regenerate the compact file whenever the source changes, avoiding a situation where someone edits the wrong version and loses readable structure.'
+        ]
+      },
+      {
+        heading: 'Know what the Stayput minifier changes',
+        paragraphs: [
+          'Stayput removes CSS comments and compresses whitespace around punctuation such as braces, commas, and combinators. It also removes a trailing semicolon before a closing brace and normalizes whitespace around `!important`. The page shows the original byte count, minified byte count, and a percentage saved.',
+          'This is a whitespace and comment minifier rather than a full CSS optimizer. It does not merge selectors, combine rules, rename classes, or rewrite property values. That narrower scope makes the output easier to compare with the source, but it may save less space than a project build tool with structural transformations.'
+        ]
+      },
+      {
+        heading: 'Strings and URLs need their spaces',
+        paragraphs: [
+          'Whitespace inside quoted CSS strings can be meaningful, as can content inside a URL value. The minifier protects strings and `url()` contents while it removes formatting elsewhere. For example, a space in a background URL or text generated by a pseudo-element should not disappear just because nearby indentation is unnecessary.',
+          'After minifying, search or inspect any value that contains spaces, quotes, parentheses, or comment-like characters. The helper is designed to preserve those regions while recognizing CSS syntax. A stylesheet with unusual escaping deserves a browser test, especially if it is generated by another tool or contains custom syntax.'
+        ]
+      },
+      {
+        heading: 'Keep modern CSS syntax in context',
+        paragraphs: [
+          'Nesting, custom properties, and `@layer` pass through without rule merging or value rewriting. Whitespace is still compacted, so read the output carefully if the stylesheet relies on a less common construct or a custom preprocessor convention. The minifier does not compile Sass, Less, or another language into browser CSS.',
+          'Run the result in the browsers and build pipeline you support. A stylesheet can be syntactically valid but fail because the target browser lacks a feature. Minification does not add prefixes, validate design tokens, or check whether a selector matches the intended page element.'
+        ]
+      },
+      {
+        heading: 'Compare byte savings with the cost of review',
+        paragraphs: [
+          'A small stylesheet may become only a few bytes smaller because there is little indentation or commenting to remove. A generated CSS file with many comments and line breaks may shrink more. The displayed saving is measured from the text in the browser, so it is a useful local comparison rather than a guarantee of total page-load performance.',
+          'Transfer compression such as gzip or Brotli can reduce repeated whitespace and text patterns too. Minification may still lower the uncompressed asset size or fit a deployment limit, but compare the actual production response when performance is the goal. Network headers, caching, and image sizes can matter more than a modest CSS reduction.'
+        ]
+      },
+      {
+        heading: 'Test styles that depend on exact whitespace',
+        paragraphs: [
+          'Most CSS whitespace is insignificant between tokens, but whitespace inside a string, URL, or custom property value can matter. Review custom values that are later consumed by another tool, and check selectors that use the descendant combinator. A space between selectors means something different from no space.',
+          'Open a page that uses the stylesheet and inspect the elements most likely to show a regression: navigation, responsive layouts, pseudo-element content, and custom properties. If the minified version behaves differently, restore the readable source and isolate the relevant rule before deploying.'
+        ]
+      },
+      {
+        heading: 'Save a separate production copy',
+        paragraphs: [
+          'Paste CSS into the tool and copy the compact result when a one-time minification is enough. Stayput processes the text in the browser; it does not upload the stylesheet. For repeated releases, use a build step in version control so the minified file is reproducible and the source remains available to teammates.',
+          'Name the output clearly and avoid replacing the only readable file. The result is a convenience for delivery, not a substitute for source control, testing, or a browser’s developer tools. Check the final stylesheet in the environment where it will be served and keep a rollback copy if it affects a live site.',
+          'Use the displayed size comparison as one signal, then check whether the stylesheet is already compressed by the server. Brotli or gzip can shrink text files during transfer, and browser caching can reduce repeat downloads. Minifying a one-time snippet may be enough, but a site build should normally regenerate its compact output from committed source. Copying a minified string back into the source makes code review harder and can create differences between local and deployed files. After replacing a stylesheet, inspect a page with the affected components and check the browser console for parsing errors. Keep the source map or readable stylesheet if your debugging process depends on mapping production CSS back to its original rules.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'decode-a-jwt-and-read-its-claims',
+    title: 'How to decode a JWT and read its header and claims',
+    seoTitle: 'Decode a JWT Header and Payload Without Verifying It',
+    seoDescription: 'Read a JWT header, payload, signature segment, and time claims while understanding why decoding cannot verify a token.',
+    excerpt: 'A decoded token can make claims readable, but it does not prove they are genuine. Learn what the header, payload, and time fields mean.',
+    image: '/blog/images/jwt-decoder-token.webp',
+    imageAlt: 'A desktop display with charts and interface elements',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'jwt-decoder',
+    toolCta: 'Decode a JWT in your browser',
+    sections: [
+      {
+        heading: 'Recognize the parts of a JWT',
+        paragraphs: [
+          'A JSON Web Token commonly appears as three dot-separated segments: a header, a payload, and a signature. The first two segments are Base64URL-encoded JSON. Decoding them turns the encoded text into readable values, which is useful when inspecting a test token or tracing an authentication flow.',
+          'Encoding is not encryption. Anyone who has the token can usually read its header and payload, so claims should not contain secrets simply because they are inside a JWT. Treat the token as sensitive because a live bearer token may grant access even when its contents are visible.'
+        ]
+      },
+      {
+        heading: 'Read the header and payload separately',
+        paragraphs: [
+          'The header often names an algorithm and token type, while the payload contains claims such as a subject or expiry. Stayput formats both JSON objects so their fields are easier to inspect. The decoder accepts an optional `Bearer` prefix and expects exactly three segments separated by dots.',
+          'A token with malformed Base64URL data or invalid JSON produces an error. The tool also expects the header and payload to be objects. If a token came from a log, check whether quotes, punctuation, or line wrapping were included when you copied it.'
+        ]
+      },
+      {
+        heading: 'Understand the time claims',
+        paragraphs: [
+          'The decoder recognizes numeric `exp`, `iat`, and `nbf` claims. It displays their dates and reports whether an `exp` value is in the past. JWT time claims are expressed as seconds since the Unix epoch, so they are converted to dates for a quick inspection.',
+          'An expiry display is only a reading of the numeric claim. It does not account for a service’s clock tolerance, revocation list, issuer rules, or audience checks. A token can be inside its claimed time window and still be rejected. Ask the application that issued it how its validation policy works.'
+        ]
+      },
+      {
+        heading: 'Decoding does not verify a signature',
+        paragraphs: [
+          'Stayput does not verify JWT signatures. The page can show a signature segment, but it does not possess the trusted key or perform the cryptographic validation needed to determine whether the token was signed correctly. A decoded payload is not proof that its claims came from a trusted issuer.',
+          'A server must validate the signature and relevant claims using a trusted configuration. Depending on the application, it may also check issuer, audience, expiry, allowed algorithms, and revocation. Never grant access based on a token just because its JSON looks reasonable in a decoder.'
+        ]
+      },
+      {
+        heading: 'Use example tokens while learning',
+        paragraphs: [
+          'For a first inspection, use a sample token from documentation or a development environment. Check how a known claim appears and confirm the units used by the service. When comparing two tokens, note that a changed claim alters the payload segment and the signature should also change when the token is signed.',
+          'If a token has an empty signature segment, the decoder flags it as unsigned. Some systems support special unsigned forms for limited purposes, but application servers should apply a deliberate policy. Do not copy an unsigned example into a live configuration without understanding why it is accepted.'
+        ]
+      },
+      {
+        heading: 'Handle production tokens with care',
+        paragraphs: [
+          'The tool processes pasted text locally in the browser, but a production token is still a credential. Avoid pasting it into a shared screen, a public computer, or a service you do not trust. If you have exposed a live token, follow the issuer’s process for revoking or rotating it rather than assuming that closing the tab invalidates it.',
+          'Clear the input when finished and avoid saving a page screenshot that contains the payload. A token may include user identifiers or internal roles even when it contains no password. Keep the token out of issue reports and chat transcripts unless your team has an approved redaction process.'
+        ]
+      },
+      {
+        heading: 'Use decoded values to troubleshoot, then validate in code',
+        paragraphs: [
+          'A local decoder is handy for checking whether a test token contains the claim your application expects, whether the expiry is in seconds, and whether the header names the expected algorithm. These observations can narrow a debugging question before you inspect the server’s authentication logs.',
+          'The next step is a real verification test in the application or a trusted JWT library configured with the correct keys. Check both valid and invalid cases, including expired and wrong-audience tokens. A readable payload is a debugging clue, not an authorization decision.',
+          "When troubleshooting, compare the decoded test token with the claims your application expects, then test the same case through the server's verifier. Check the algorithm against the server's allowlist and confirm that issuer and audience values match the service configuration. The browser tool only parses the first two segments as Base64URL JSON objects and displays the third segment; it does not use a secret or public key. An expiry shown in the page is based on the local clock and the numeric `exp` claim, not on server clock tolerance. Use generated development tokens for examples. If you pasted a live bearer token into an environment you do not control, follow your team's revocation procedure.",
+          'A readable claim can still be misleading if its name or value has a different meaning in the application. For example, a role field might be informational while a separate permission check controls access. Use the decoder to understand the shape of a development token, then follow the code that validates and consumes those claims. The page shows numeric time claims as dates and reports whether `exp` has passed on the current clock; it does not decide which user should be allowed into a system. Keep authorization tests in the server-side application.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'create-a-strong-random-password',
+    title: 'How to create a strong random password you can store safely',
+    seoTitle: 'Create a Strong Random Password and Store It Safely',
+    seoDescription: 'Choose password length and character groups, understand the tool’s entropy estimate, and save the result in a password manager.',
+    excerpt: 'A generator can make a password hard to guess, but safe storage and unique use matter just as much as its character mix.',
+    image: '/blog/images/password-generator-security.webp',
+    imageAlt: 'Coworkers sitting together and working on laptops',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'password-generator',
+    toolCta: 'Generate a random password',
+    sections: [
+      {
+        heading: 'Start with length and the site’s rules',
+        paragraphs: [
+          'A strong password should be difficult to guess and different from passwords used on other accounts. Begin by checking the service’s requirements, then choose a length that fits. Stayput lets you generate passwords from 6 to 64 characters and turn lowercase letters, uppercase letters, digits, and symbols on or off.',
+          'Longer passwords generally provide more possible combinations when the characters are selected randomly. A website may reject some punctuation or impose a maximum length, so match its rules instead of copying a result that cannot be saved. If the site supports passkeys, consider that option too, but keep a recovery method available.'
+        ]
+      },
+      {
+        heading: 'Choose character groups for compatibility',
+        paragraphs: [
+          'Using several character groups increases the pool from which each character can be selected. The tool can include lowercase, uppercase, numbers, and symbols, and it can avoid look-alike characters such as `O`, `0`, `l`, and `1`. Excluding them can make a password easier to read when you must type it manually.',
+          'Some older forms reject symbols or treat spaces in unexpected ways. If a site has strict rules, use only the groups it accepts and make the password longer to compensate. Never reuse a password just because a particular service has limited character support.'
+        ]
+      },
+      {
+        heading: 'Know what the entropy estimate means',
+        paragraphs: [
+          'Stayput estimates entropy from password length and the size of the selected character pool. The generator also ensures that each enabled group appears at least once, then fills remaining positions from the combined pool and shuffles the characters. It uses the browser’s cryptographic random generator with unbiased integer selection.',
+          'The displayed estimate is a model of the number of possible choices, not a promise that a password is unbreakable. Real security also depends on randomness, the service’s password storage, rate limits, and whether the password has been exposed elsewhere. Treat the strength label as a guide for comparing settings, not as a security audit.'
+        ]
+      },
+      {
+        heading: 'Generate a fresh value for every account',
+        paragraphs: [
+          'Do not reuse one password across several services. If one site is breached, a reused password can be tried against other accounts. Generate a separate value for each login and keep a record of which account it belongs to in a trusted password manager.',
+          'The tool can create up to 20 results at once, but making a batch does not mean they should be shared among users or accounts. Copy only the password you intend to use. Avoid pasting a generated value into an unsecured note or sending it in ordinary email where it may be retained in a mailbox history.'
+        ]
+      },
+      {
+        heading: 'Store the result in a password manager',
+        paragraphs: [
+          'A password manager lets you use long, unique passwords without memorizing each one. Copy the generated result into the intended account entry and confirm it saved before closing the page. If you are updating an existing account, change the password on the service first and make sure the new credential works.',
+          'Keep recovery codes and account recovery details in the manager or another protected place. A strong password cannot help if you lose access to the account and have no recovery method. Protect the manager itself with a strong master credential and its recommended multi-factor options.'
+        ]
+      },
+      {
+        heading: 'Avoid accidental exposure while copying',
+        paragraphs: [
+          'The generated password is visible in the page so you can copy it. Use the tool on a device you control and check that screen sharing is off before generating credentials. Clipboard managers and operating systems may retain copied values, so clear the clipboard when your workflow allows it and do not leave the result displayed on a shared screen.',
+          'Stayput generates passwords in the browser and does not send them to a server. The value exists in the page while you use it, so local handling still matters. Close the tab when finished, avoid saving screenshots, and rotate a password if you believe someone else saw or copied it.'
+        ]
+      },
+      {
+        heading: 'Use a passphrase when typing matters',
+        paragraphs: [
+          'If you must enter a password on a television, shared device, or console, a longer passphrase may be easier to type than punctuation-heavy text. The Stayput password generator creates random character strings rather than word-based passphrases. You can turn off some groups for compatibility, but use enough length and randomness for the account’s risk.',
+          'Do not build a password from a quote, a familiar date, or a predictable substitution such as replacing `a` with `@`. Those choices are common in guessing lists. A generated random value avoids personal patterns, while a password manager handles the memorization burden.',
+          "The tool's estimate is based on the selected pool size and length; it is not a measurement of whether a human can remember the result or a service protects it correctly. Its generator includes at least one character from every selected group, fills remaining positions from the combined set, then shuffles them. The supported length is 6 to 64 characters, and it can generate up to 20 results at once. Check whether a website counts Unicode or punctuation in a particular way before saving a password, since this generator uses its listed ASCII character groups. Copy one result into a password manager, verify the login, and avoid sending the value through chat or email. If a site supports passkeys, consider that separate sign-in method too."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-unix-timestamps-and-dates',
+    title: 'How to convert Unix timestamps to readable dates',
+    seoTitle: 'Convert Unix Timestamps in Seconds or Milliseconds',
+    seoDescription: 'Convert epoch timestamps and local dates, compare UTC and ISO output, and spot the common seconds-versus-milliseconds mistake.',
+    excerpt: 'Timestamps are compact but easy to misread. Check the unit and timezone before using a converted date in logs or code.',
+    image: '/blog/images/unix-timestamp-converter.webp',
+    imageAlt: 'A retro computer and electronic devices on a desk',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'unix-timestamp-converter',
+    toolCta: 'Convert a Unix timestamp',
+    sections: [
+      {
+        heading: 'Know what a Unix timestamp counts',
+        paragraphs: [
+          'A Unix timestamp counts seconds from 00:00:00 UTC on 1 January 1970, without counting leap seconds. It gives systems a compact way to represent a moment without writing a calendar date each time. Many APIs and logs use this value, although some store milliseconds instead.',
+          'The number does not contain a timezone label because the epoch is defined in UTC. A human-readable date can be shown in local time or UTC, and those displays may have different clock times while referring to the same instant. Check the field’s documentation before interpreting a value.'
+        ]
+      },
+      {
+        heading: 'Check seconds versus milliseconds',
+        paragraphs: [
+          'A common debugging error is reading a millisecond value as seconds or the other way around. Seconds often have about ten digits for present-day dates, while milliseconds often have thirteen. Stayput’s Auto choice treats absolute values at or above 100 billion as milliseconds; shorter values are read as seconds.',
+          'The digit count is a practical guess, not a format marker encoded into the timestamp. If the output date is far in the past or future, switch the unit manually and check the source system. Negative timestamps can represent dates before the epoch, and Auto uses the absolute value when it guesses their unit.'
+        ]
+      },
+      {
+        heading: 'Compare local time, UTC, and ISO 8601',
+        paragraphs: [
+          'For a timestamp, Stayput shows the value in your local timezone, as a UTC date string, and as an ISO 8601 value. Local time is convenient when matching an event on your own clock. UTC helps compare logs from systems in different regions, while ISO 8601 is a common format to copy into software or reports.',
+          'Daylight-saving changes can make local times appear to skip or repeat an hour. UTC stays a consistent reference for comparing events across locations. If a timestamp comes from a server, avoid converting it to local time and then assuming that local display was the original recorded timezone.'
+        ]
+      },
+      {
+        heading: 'Convert a calendar date back to a timestamp',
+        paragraphs: [
+          'The date input is interpreted in your local timezone. Select a date and time to see the equivalent timestamp in seconds and milliseconds, along with a UTC representation. Seconds are rounded down to a whole second; milliseconds retain the date’s millisecond value.',
+          'Check the timezone in which you intended to enter the date. A local date picker does not ask you to enter a separate timezone, so a meeting at 9 a.m. in another city should be converted with that city’s offset in mind. Use a timezone-aware application when the source date belongs to a named region.'
+        ]
+      },
+      {
+        heading: 'Use relative time as a quick orientation',
+        paragraphs: [
+          'The converter reports a relative value such as “3 days ago” alongside the absolute date. That can help scan an event log or check whether a token is near expiry. The relative label is based on the current time in the browser and rounded into units such as years, months, days, hours, and minutes.',
+          'Relative dates are less precise than the timestamp itself. “One month ago” is a human-friendly approximation, not a fixed number of seconds. Use the ISO or UTC output when you need an exact point in time for a bug report, audit trail, or database query.'
+        ]
+      },
+      {
+        heading: 'Check invalid or out-of-range values',
+        paragraphs: [
+          'An input must be a finite number that JavaScript can represent as a valid date. Empty text, letters, or a value outside the supported date range will not produce a date. If the converter rejects a value, check for separators, decimal punctuation, accidental spaces, or a timestamp copied with surrounding text.',
+          'Some systems use microseconds, nanoseconds, or custom counters rather than seconds and milliseconds. This converter does not infer those units. Divide or convert according to the source system’s specification, then validate the resulting date against a known event.'
+        ]
+      },
+      {
+        heading: 'Use a timestamp converter while debugging',
+        paragraphs: [
+          'Stayput shows the current epoch time in seconds and milliseconds and updates it every second. This can help compare a test value with the current clock. The tool runs in the browser, so its current time depends on the device clock and is not an authoritative time service.',
+          'For an API issue, record the raw value, unit, expected timezone, and converted UTC date in the same note. That makes it easier for another developer to reproduce the interpretation. Do not replace the original timestamp with a formatted date if the receiving system expects the numeric value.',
+          "When documenting an incident, include both the raw timestamp and the converted UTC value. That gives another person a stable point of comparison even when their local timezone differs. Auto mode uses a threshold at 100 billion to guess between seconds and milliseconds, but unusual dates and older data can make digit length a misleading clue. Select the unit manually if the source format specifies it. The converter's current clock follows the computer's system time, and browser date limits apply to very large values. Unix time ignores leap seconds, so it is not suitable for measuring every physical timing interval. For a scheduled event in another region, use a timezone-aware calendar rather than entering its wall-clock time as if it were local."
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'sort-lines-alphabetically-or-numerically',
+    title: 'How to sort lines alphabetically, numerically, or by length',
+    seoTitle: 'Sort Lines A to Z, by Number, Length, or Shuffle',
+    seoDescription: 'Reorder a pasted list by alphabet, embedded numbers, line length, reverse order, or shuffle while deciding how blanks and case work.',
+    excerpt: 'Lists often need a quick sort before they can be checked or pasted elsewhere. Pick the ordering rule that matches the actual values.',
+    image: '/blog/images/sort-lines-organize.webp',
+    imageAlt: 'A modern office lounge with tables, chairs, and large windows',
+    publishedAt: '2026-11-20',
+    publishedLabel: 'November 20, 2026',
+    toolSlug: 'sort-lines',
+    toolCta: 'Sort lines in your browser',
+    sections: [
+      {
+        heading: 'Put one sortable item on each line',
+        paragraphs: [
+          'A line sorter is useful for cleaning a list of names, checking a set of IDs, or preparing a sequence for review. Paste one item per line and choose the ordering rule before copying the result. The tool keeps each line intact; it does not split a row into columns or sort words inside a sentence.',
+          'Save an original copy when order has meaning, such as a timeline or priority list. Sorting changes sequence, and an alphabetical result may not be the right representation for records that were collected in order. Decide whether you need a sorted view or a permanent reordering before replacing the source.'
+        ]
+      },
+      {
+        heading: 'Choose alphabetical order for words and labels',
+        paragraphs: [
+          'A to Z and Z to A use the browser’s locale-aware string comparison. With case sensitivity off, differences in capitalization are treated as equivalent for ordering. Turn it on when uppercase and lowercase should sort as distinct characters, such as for a technical identifier list.',
+          'Alphabetical order is not always the same as a person’s expected dictionary order. Accented characters and punctuation can be compared according to the browser’s locale rules. If a list must follow a particular language’s official collation, check the result against the destination system rather than assuming every machine will sort it identically.'
+        ]
+      },
+      {
+        heading: 'Use numeric sorting for values inside a line',
+        paragraphs: [
+          'Numeric mode looks for the first signed integer or decimal number on each line and sorts by that value. A line such as `Chapter 12` is compared using 12, which is more useful than plain alphabetic sorting when values have different digit lengths. Numeric descending reverses that numeric order.',
+          'Lines with no number go after lines with numeric values and are ordered alphabetically among themselves. If a row contains more than one number, only the first matching number determines its numeric position. For structured data, extract the intended field before sorting so a date, version, or secondary number does not become the accidental sort key.'
+        ]
+      },
+      {
+        heading: 'Sort by line length or reverse the sequence',
+        paragraphs: [
+          'Length mode puts shorter lines before longer ones and uses alphabetical order to break equal-length ties. It can help find unusually short labels, long entries, or inconsistent text in a list. A line’s length is measured from its JavaScript string value, which counts UTF-16 code units rather than every visual grapheme as one.',
+          'Reverse mode flips the existing order from bottom to top without sorting the contents. Use it when a list is already chronological but you want the newest entries first, or when a sequence needs to be read from its other end. It does not inspect dates or determine which entry is newest.'
+        ]
+      },
+      {
+        heading: 'Decide what to do with empty lines',
+        paragraphs: [
+          'The Remove empty lines switch drops lines containing only whitespace. With it off, blank lines remain in the output and travel with the sort. If blank lines separate groups, a global alphabetical sort may move those separators and change the layout, so remove them only when they are not meaningful.',
+          'The tool does not trim non-empty lines before sorting. Leading spaces can affect the comparison, and the original spacing remains in the output. If a pasted list has inconsistent indentation, clean that whitespace separately or normalize it before sorting. This keeps the sort from hiding a formatting problem.'
+        ]
+      },
+      {
+        heading: 'Shuffle lists for casual mixing, not security',
+        paragraphs: [
+          'Shuffle uses a Fisher-Yates algorithm driven by `Math.random`. It is suitable for mixing a playlist, varying a practice sequence, or creating a casual order for a list. It is not designed to generate security-sensitive randomness or to create a fair drawing with legal or financial consequences.',
+          'Click Shuffle again to get another arrangement. If the sequence must be auditable or reproducible, save the original and use a process that records its random seed or approved selection method. A shuffled list has no built-in record of how it was produced.'
+        ]
+      },
+      {
+        heading: 'Check the output before pasting it elsewhere',
+        paragraphs: [
+          'After sorting, scan the first and last few lines and check a handful of items in the middle. Confirm that embedded numbers were interpreted as expected and that capitalization or accents appear in the intended order. A quick visual check catches cases where alphabetic sorting was chosen for numeric labels.',
+          'Stayput updates the output as you type and includes a copy control. It runs in the browser, so pasted text is not uploaded. For a very large list, the page still uses local memory and CPU. If the browser becomes sluggish, split the list into manageable groups and preserve the original order in a separate file.',
+          "For version numbers, dates, and structured identifiers, decide which portion should determine order before choosing numeric mode. The tool reads the first signed integer or decimal it finds on each line, so `v2.10` and `v2.9` are compared by their first number, not as semantic versions. Numeric mode is useful for labels such as `item 3` and `item 12`, but a spreadsheet or version-aware sorter may be better for multiple fields. Alphabetical comparison follows the browser's locale rules, and equal lengths in length mode are ordered alphabetically. If exact repeatability across different machines matters, run a test set on the destination system and preserve the original list so you can restore its intended sequence."
+        ]
+      }
+    ]
+  },
 ]
 
 export const blogPostBySlug = (slug: string): BlogPost | undefined => blogPosts.find((post) => post.slug === slug)
