@@ -47,11 +47,11 @@ describe('navigation', () => {
     expect(await screen.findByRole('heading', { level: 1 })).toBeInTheDocument()
   })
 
-  it.each(blogPosts.map((post) => [`/blog/${post.slug}`, post.title]))('renders blog article %s', async (path, title) => {
-    renderAt(path as string)
-    expect(await screen.findByRole('heading', { level: 1, name: title as string })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: /./ })).toHaveAttribute('src', expect.stringContaining('/blog/images/'))
-    expect(screen.getByRole('link', { name: /Open tool/ })).toHaveAttribute('href', expect.stringMatching(/^\/(image-compressor|pdf-merger|json-formatter)$/))
+  it.each(blogPosts)('renders blog article $slug', async (post) => {
+    renderAt(`/blog/${post.slug}`)
+    expect(await screen.findByRole('heading', { level: 1, name: post.title })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: post.imageAlt })).toHaveAttribute('src', post.image)
+    expect(screen.getByRole('link', { name: /Open tool/ })).toHaveAttribute('href', `/${post.toolSlug}`)
   })
 
   it('shows a 404 page for unknown routes', async () => {

@@ -147,8 +147,10 @@ describe('SEO', () => {
   })
   it('publishes unique blog routes with more than 800 words of article text', () => {
     expect(new Set(blogPosts.map((post) => post.slug)).size).toBe(blogPosts.length)
+    expect(new Set(blogPosts.map((post) => post.toolSlug)).size).toBe(blogPosts.length)
     for (const post of blogPosts) {
       expect(blogPostWordCount(post), post.slug).toBeGreaterThan(800)
+      expect(toolBySlug(post.toolSlug), post.slug).toBeDefined()
       const seo = seoForPath(`/blog/${post.slug}`, site)!
       expect(seo.ogType).toBe('article')
       expect(seo.jsonLd.map((block) => block['@type'])).toContain('BlogPosting')
