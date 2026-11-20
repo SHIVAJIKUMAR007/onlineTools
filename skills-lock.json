@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "skills": {
+    "google-search": {
+      "source": "fetcher-sh/fetcher-skills",
+      "commit": "d7e88be6e1210bae14803dcb435e19d36cf8a17c",
+      "sourceType": "github",
+      "skillPath": "skills/google-search/SKILL.md",
+      "computedHash": "c48c26d527cfc6634dac86fb4b565785914ee2c73fca4509b3ae98a30bcb2d10"
+    },
+    "humanizer": {
+      "source": "blader/humanizer",
+      "commit": "a32f24407364c74c812b43c15926d638bee1e072",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "6da5d71e32eb66770b4c1ebe38b7e5c271bfca6290c9248aeb8449a84dbfe914"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "sourceType": "github",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "computedHash": "d42f6f32bb62f8ebce93826ef33a7b663f2259b2891a0992f3d63dbd46f0f5ad"
+    }
+  }
+}

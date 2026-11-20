@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { categories, categoryById } from '@/data/categories'
 import { popularOrder, popularTools, relatedTools, toolById, toolBySlug, toolPath, tools, toolsInCategory } from '@/data/tools'
 import { docPages } from '@/data/pages'
+import { blogPosts, blogPostWordCount } from '@/data/blog'
 import { implementedToolIds, toolComponent } from '@/tools/registry'
 import { searchTools } from '@/lib/search'
 import { allPublicPaths, seoForPath } from '@/lib/seo'
@@ -16,7 +17,7 @@ describe('tool registry', () => {
     for (const t of tools) expect(toolPath(t)).toBe(`/${t.slug}`)
   })
   it('does not collide with static routes', () => {
-    const reserved = new Set(['tools', 'about', 'privacy', 'terms', 'disclaimer', 'contact', ...categories.map((c) => c.slug)])
+    const reserved = new Set(['tools', 'blog', 'about', 'privacy', 'terms', 'disclaimer', 'contact', ...categories.map((c) => c.slug)])
     for (const t of tools) expect(reserved.has(t.slug)).toBe(false)
   })
   it('implements a component for every tool and nothing extra', () => {
@@ -90,7 +91,7 @@ describe('SEO', () => {
   const site = 'https://example.test'
   it('covers every public route and none is null', () => {
     const paths = allPublicPaths()
-    expect(paths).toHaveLength(2 + categories.length + tools.length + docPages.length)
+    expect(paths).toHaveLength(3 + categories.length + tools.length + docPages.length + blogPosts.length)
     for (const p of paths) expect(seoForPath(p, site), p).not.toBeNull()
     expect(seoForPath('/does-not-exist', site)).toBeNull()
   })
@@ -143,5 +144,16 @@ describe('SEO', () => {
   })
   it('privacy page names the model host', () => {
     expect(seoForPath('/privacy', site)!.bodyHtml).toContain('huggingface.co')
+  })
+  it('publishes unique blog routes with more than 800 words of article text', () => {
+    expect(new Set(blogPosts.map((post) => post.slug)).size).toBe(blogPosts.length)
+    for (const post of blogPosts) {
+      expect(blogPostWordCount(post), post.slug).toBeGreaterThan(800)
+      const seo = seoForPath(`/blog/${post.slug}`, site)!
+      expect(seo.ogType).toBe('article')
+      expect(seo.jsonLd.map((block) => block['@type'])).toContain('BlogPosting')
+      expect(seo.bodyHtml).toContain(`href="/${post.toolSlug}"`)
+      expect(seo.bodyHtml).toContain(`src="${post.image}"`)
+    }
   })
 })

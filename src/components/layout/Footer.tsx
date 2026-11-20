@@ -36,6 +36,7 @@ export function Footer() {
         <nav aria-label="Company and legal">
           <h2 className="mb-3 text-sm font-semibold">About</h2>
           <ul className="space-y-2 text-sm text-ink-2">
+            <li><Link className="hover:text-accent" to="/blog">Blog</Link></li>
             <li><Link className="hover:text-accent" to="/about">About Stayput</Link></li>
             <li><Link className="hover:text-accent" to="/privacy">Privacy policy</Link></li>
             <li><Link className="hover:text-accent" to="/terms">Terms of service</Link></li>

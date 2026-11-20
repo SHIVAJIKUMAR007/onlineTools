@@ -4,6 +4,7 @@
  */
 import { categories, categoryBySlug, type Category } from '../data/categories'
 import { tools, toolBySlug, toolsInCategory, relatedTools, toolPath, type ToolMeta } from '../data/tools'
+import { blogPosts, blogPostBySlug } from '../data/blog'
 import { docPages, homeFaqs, SITE_NAME } from '../data/pages'
 
 export interface PageSeo {
@@ -12,6 +13,8 @@ export interface PageSeo {
   description: string
   canonical: string
   ogType: 'website' | 'article'
+  ogImage?: string
+  ogImageAlt?: string
   jsonLd: Record<string, unknown>[]
   /** Static HTML placed inside #root for crawlers. Replaced when React mounts. */
   bodyHtml: string
@@ -63,6 +66,18 @@ ${tool.article.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join(''
 ${tool.faqs.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}
 <h2>Related tools</h2>
 <ul>${related.map((r) => `<li><a href="${toolPath(r)}">${esc(r.name)}</a>: ${esc(r.description)}</li>`).join('')}</ul>
+</main>`
+}
+
+function blogPostBody(post: (typeof blogPosts)[number]): string {
+  return `<main>
+<nav aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog">Blog</a> / ${esc(post.title)}</nav>
+<article>
+<header><h1>${esc(post.title)}</h1><p>${esc(post.excerpt)}</p><time datetime="${esc(post.publishedAt)}">${esc(post.publishedLabel)}</time></header>
+<img src="${esc(post.image)}" alt="${esc(post.imageAlt)}" width="1200" height="675" />
+${post.sections.map((section) => `<section><h2>${esc(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join('')}</section>`).join('')}
+<p><a href="/${esc(post.toolSlug)}">${esc(post.toolCta)}</a></p>
+</article>
 </main>`
 }
 
@@ -131,6 +146,71 @@ export function seoForPath(rawPath: string, siteUrl: string): PageSeo | null {
               .join('')}</ul>`,
         )
         .join('')}</main>`,
+    }
+  }
+
+  if (path === '/blog') {
+    return {
+      path,
+      title: 'Practical Guides for Images, PDFs and JSON | Stayput',
+      description:
+        'Read practical guides to compress images, organize PDF files and format JSON. Clear steps, useful limitations and browser-based tools from Stayput.',
+      canonical,
+      ogType: 'website',
+      jsonLd: [
+        breadcrumb(siteUrl, [{ name: 'Home', path: '/' }, { name: 'Blog', path }]),
+        {
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          itemListElement: blogPosts.map((post, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            url: joinUrl(siteUrl, `/blog/${post.slug}`),
+            name: post.title,
+          })),
+        },
+      ],
+      bodyHtml: `<main><h1>Practical guides for everyday files</h1>
+<p>Clear advice for working with images, PDFs and developer data, with useful limits and checks included.</p>
+<section aria-label="Blog articles">${blogPosts
+        .map(
+          (post) =>
+            `<article><a href="/blog/${esc(post.slug)}"><img src="${esc(post.image)}" alt="${esc(post.imageAlt)}" width="1200" height="675" loading="lazy" /><h2>${esc(post.title)}</h2></a><p>${esc(post.excerpt)}</p><time datetime="${esc(post.publishedAt)}">${esc(post.publishedLabel)}</time></article>`,
+        )
+        .join('')}</section></main>`,
+    }
+  }
+
+  const blogPost = path.startsWith('/blog/') ? blogPostBySlug(path.slice('/blog/'.length)) : undefined
+  if (blogPost) {
+    return {
+      path,
+      title: blogPost.seoTitle,
+      description: blogPost.seoDescription,
+      canonical,
+      ogType: 'article',
+      ogImage: joinUrl(siteUrl, blogPost.image),
+      ogImageAlt: blogPost.imageAlt,
+      jsonLd: [
+        breadcrumb(siteUrl, [
+          { name: 'Home', path: '/' },
+          { name: 'Blog', path: '/blog' },
+          { name: blogPost.title, path },
+        ]),
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: blogPost.title,
+          description: blogPost.seoDescription,
+          image: joinUrl(siteUrl, blogPost.image),
+          datePublished: blogPost.publishedAt,
+          dateModified: blogPost.publishedAt,
+          author: { '@type': 'Organization', name: SITE_NAME },
+          publisher: { '@type': 'Organization', name: SITE_NAME },
+          mainEntityOfPage: canonical,
+        },
+      ],
+      bodyHtml: blogPostBody(blogPost),
     }
   }
 
@@ -212,5 +292,13 @@ export function seoForPath(rawPath: string, siteUrl: string): PageSeo | null {
 
 /** Every indexable path, used for the sitemap and prerendering. */
 export function allPublicPaths(): string[] {
-  return ['/', '/tools', ...categories.map((c) => `/${c.slug}`), ...tools.map((t) => toolPath(t)), ...docPages.map((d) => d.path)]
+  return [
+    '/',
+    '/tools',
+    '/blog',
+    ...blogPosts.map((post) => `/blog/${post.slug}`),
+    ...categories.map((c) => `/${c.slug}`),
+    ...tools.map((t) => toolPath(t)),
+    ...docPages.map((d) => d.path),
+  ]
 }

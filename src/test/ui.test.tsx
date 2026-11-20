@@ -5,6 +5,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { AppRoutes } from '@/routes'
 import { allPublicPaths } from '@/lib/seo'
 import { tools } from '@/data/tools'
+import { blogPosts } from '@/data/blog'
 import { useApp } from '@/lib/store'
 
 const renderAt = (path: string) =>
@@ -41,9 +42,16 @@ describe('navigation', () => {
     for (const h of hrefs) expect(valid.has(h), `broken link ${h}`).toBe(true)
   })
 
-  it.each(['/tools', '/image-tools', '/pdf-tools', '/converters', '/text-tools', '/developer-tools', '/about', '/privacy', '/terms', '/disclaimer', '/contact'])('renders %s', async (path) => {
+  it.each(['/tools', '/blog', '/image-tools', '/pdf-tools', '/converters', '/text-tools', '/developer-tools', '/about', '/privacy', '/terms', '/disclaimer', '/contact'])('renders %s', async (path) => {
     renderAt(path)
     expect(await screen.findByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+
+  it.each(blogPosts.map((post) => [`/blog/${post.slug}`, post.title]))('renders blog article %s', async (path, title) => {
+    renderAt(path as string)
+    expect(await screen.findByRole('heading', { level: 1, name: title as string })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /./ })).toHaveAttribute('src', expect.stringContaining('/blog/images/'))
+    expect(screen.getByRole('link', { name: /Open tool/ })).toHaveAttribute('href', expect.stringMatching(/^\/(image-compressor|pdf-merger|json-formatter)$/))
   })
 
   it('shows a 404 page for unknown routes', async () => {

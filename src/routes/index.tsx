@@ -11,6 +11,8 @@ import NotFound from '@/pages/NotFound'
 // Tool pages and legal pages load on demand.
 const ToolPage = lazy(() => import('@/pages/ToolPage'))
 const DocPageView = lazy(() => import('@/pages/DocPageView'))
+const BlogPage = lazy(() => import('@/pages/BlogPage'))
+const BlogPostPage = lazy(() => import('@/pages/BlogPostPage'))
 
 /** Every route comes from the registry, so nothing in the navigation can point at a missing page. */
 export function AppRoutes() {
@@ -19,6 +21,8 @@ export function AppRoutes() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="tools" element={<AllTools />} />
+        <Route path="blog" element={<BlogPage />} />
+        <Route path="blog/:slug" element={<BlogPostPage />} />
         {categories.map((c) => (
           <Route key={c.id} path={c.slug} element={<CategoryPage slug={c.slug} />} />
         ))}

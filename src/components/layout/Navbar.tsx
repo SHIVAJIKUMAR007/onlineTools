@@ -25,6 +25,7 @@ const topLinks = [
   { to: '/pdf-tools', label: 'PDF Tools' },
   { to: '/converters', label: 'Converters' },
   { to: '/developer-tools', label: 'Developer Tools' },
+  { to: '/blog', label: 'Blog' },
   { to: '/about', label: 'About' },
 ]
 
@@ -153,6 +154,7 @@ export function Navbar() {
               </ul>
             </div>
           ))}
+          <Link to="/blog" className="mt-3 block rounded-lg px-3 py-2.5 text-[15px] font-medium hover:bg-surface-2">Blog</Link>
           <Link to="/about" className="mt-3 block rounded-lg px-3 py-2.5 text-[15px] font-medium hover:bg-surface-2">About</Link>
         </div>
       )}
