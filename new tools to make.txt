@@ -160,6 +160,7 @@ Grade / GPA / CGPA calculator	[DONE]
 Fraction, ratio and average calculators
 Scientific calculator
 Salary hourly-to-annual converter	[DONE]
+Indian CTC to monthly take-home (in-hand salary) calculator	[DONE]
 Retirement / FD / RD / PPF calculators
 Break-even calculator
 Electricity bill calculator
