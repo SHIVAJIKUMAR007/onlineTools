@@ -1,16 +1,10 @@
 import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
-
-type Loader = () => Promise<{ default: ComponentType }>
-
-/**
- * Maps a tool id (see data/tools.ts) to its component. Every tool is lazy, and
- * tools in the same category share a chunk, so a visitor only downloads the code
- * for the tool they open.
- */
-const named =
-  <T extends Record<string, unknown>>(load: () => Promise<T>, key: keyof T): Loader =>
-  () =>
-    load().then((m) => ({ default: m[key] as ComponentType }))
+import { named, type Loader } from './loader'
+import { loadersA } from './batches/a'
+import { loadersB } from './batches/b'
+import { loadersC } from './batches/c'
+import { loadersD } from './batches/d'
+import { loadersE } from './batches/e'
 
 const loaders: Record<string, Loader> = {
   // image
@@ -80,6 +74,11 @@ const loaders: Record<string, Loader> = {
   'keyword-density-checker': named(() => import('./text/TextMore'), 'KeywordDensity'),
   'json-escape-unescape': named(() => import('./developer/DevMore'), 'JsonEscape'),
   'random-string-generator': named(() => import('./developer/DevMore'), 'RandomStringGenerator'),
+  ...loadersA,
+  ...loadersB,
+  ...loadersC,
+  ...loadersD,
+  ...loadersE,
 }
 
 const cache = new Map<string, LazyExoticComponent<ComponentType>>()

@@ -1,4 +1,4 @@
-export type CategoryId = 'image' | 'pdf' | 'converters' | 'text' | 'developer'
+export type CategoryId = 'image' | 'pdf' | 'converters' | 'text' | 'developer' | 'calculators' | 'utilities'
 
 export interface Category {
   id: CategoryId
@@ -76,6 +76,30 @@ export const categories: Category[] = [
       'Format JSON, encode Base64 and URLs, generate UUIDs and hashes, decode JWTs and minify CSS. Tokens and payloads stay in your browser.',
     intro:
       'Everyday developer utilities that run locally. That matters when you are pasting tokens, payloads or customer data.',
+  },
+  {
+    id: 'calculators',
+    slug: 'calculators',
+    name: 'Calculators',
+    navName: 'Calculators',
+    icon: 'Calculator',
+    tagline: 'Loans, savings, tax, dates, health and everyday math.',
+    seoTitle: 'Free Online Calculators: Loan, SIP, GST, Age | Stayput',
+    seoDescription:
+      'Calculate loan EMI, SIP returns, compound interest, GST, discounts, age, BMI and dates. Numbers you type stay in your browser.',
+    intro: 'Quick calculators for money, dates and everyday sums. Everything is computed in this tab, so the figures you enter are never sent anywhere.',
+  },
+  {
+    id: 'utilities',
+    slug: 'utilities',
+    name: 'Timers and Utilities',
+    navName: 'Utilities',
+    icon: 'Timer',
+    tagline: 'Timers, random pickers, speed tests and keyboard checks.',
+    seoTitle: 'Free Online Timers, Random Pickers and Tests | Stayput',
+    seoDescription:
+      'Use an online stopwatch, countdown and Pomodoro timer, spin a picker wheel, roll dice, and test your reaction time and click speed.',
+    intro: 'Small interactive utilities that run in the page: timers, random pickers and quick tests. Nothing you do here is uploaded.',
   },
 ]
 

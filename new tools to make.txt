@@ -4,8 +4,8 @@ LEGEND (updated 2026-11-19; duplicates removed, each tool listed once):  [DONE] 
 
 High-volume tools that work fully client-side
 #	Tool	Typical search terms	JS approach
-1	Age / date calculator	age calculator, date difference, days between dates	Date object
-2	Percentage calculator	percentage calculator, % change	plain math
+1	Age / date calculator	age calculator, date difference, days between dates	Date object	[DONE]
+2	Percentage calculator	percentage calculator, % change	plain math	[DONE]
 3	Unit converter	cm to inches, kg to lbs, celsius to fahrenheit	conversion tables	[DONE]
 4	Currency converter (partial)	usd to inr	needs live rates, or use static/manual rates
 5	Image converter / compressor	png to jpg, webp converter, compress image	Canvas API, toBlob()	[DONE]
@@ -14,13 +14,13 @@ High-volume tools that work fully client-side
 8	Password generator	password generator	crypto.getRandomValues()	[DONE]
 9	Word / character counter	word counter, character count	string ops	[DONE]
 10	Case converter	uppercase to lowercase, title case	string ops	[DONE]
-11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas
-12	EMI / loan / SIP / compound interest calculator	emi calculator, sip calculator	financial formulas
-13	GST / VAT / tax calculator	gst calculator	formulas
+11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas	[PARTIAL: BMI only]
+12	EMI / loan / SIP / compound interest calculator	emi calculator, sip calculator	financial formulas	[DONE]
+13	GST / VAT / tax calculator	gst calculator	formulas	[PARTIAL: GST only]
 14	Merge / split PDF	merge pdf, split pdf	pdf-lib	[DONE]
 15	Image to PDF / JPG to PDF	jpg to pdf	jsPDF or pdf-lib	[DONE]
-16	Random number / dice / coin / picker wheel	random number generator, spin wheel	Math.random() / crypto
-17	Stopwatch / timer / countdown	online timer, stopwatch	performance.now()
+16	Random number / dice / coin / picker wheel	random number generator, spin wheel	Math.random() / crypto	[DONE]
+17	Stopwatch / timer / countdown	online timer, stopwatch	performance.now()	[DONE]
 18	Color picker / HEX-RGB converter	color picker, hex to rgb	pure JS, <input type=color>	[DONE]
 19	JSON formatter / validator	json formatter	JSON.parse/stringify	[DONE]
 20	Base64 / URL encode-decode	base64 decode	btoa/atob, encodeURIComponent	[DONE]
@@ -41,11 +41,11 @@ High-volume tools that work fully client-side
 
 JSON tools
 JSON minifier	[DONE]
-JSON diff checker
-JSON to CSV, and CSV to JSON	[PARTIAL: JSON to CSV only]
+JSON diff checker	[DONE]
+JSON to CSV, and CSV to JSON	[DONE]
 JSON to XML, and XML to JSON
-JSON to YAML, and YAML to JSON
-JSON to TypeScript interface
+JSON to YAML, and YAML to JSON	[PARTIAL: JSON to YAML only]
+JSON to TypeScript interface	[DONE]
 JSON viewer / tree viewer
 JSON path tester
 JSON escape / unescape	[DONE]
@@ -57,11 +57,11 @@ Excel / CSV compare
 Duplicate line remover	[DONE]
 Sort lines (A-Z, Z-A, numeric)	[DONE]
 Format and convert tools
-XML formatter
+XML formatter	[DONE]
 HTML formatter / minifier
 CSS minifier / beautifier	[PARTIAL: minify only]
 JavaScript minifier / beautifier
-SQL formatter
+SQL formatter	[DONE]
 YAML validator
 HTML to Markdown
 CSV to Excel table viewer
@@ -73,17 +73,17 @@ Hex / binary / ASCII converters	[DONE]
 Generator tools
 UUID / GUID generator	[DONE]
 Random string generator	[DONE]
-Cron expression generator and explainer
-Fake data / mock JSON generator
+Cron expression generator and explainer	[PARTIAL: explainer plus builder]
+Fake data / mock JSON generator	[DONE]
 Testers
-Cron tester
+Cron tester	[PARTIAL: next runs shown in the explainer]
 Timestamp converter (Unix to date)	[DONE]
 Text tools
 Remove extra spaces and line breaks	[DONE]
 Find and replace	[DONE]
 Text to slug	[DONE]
 Reverse text	[DONE]
-Text to speech (the browser’s speechSynthesis API)
+Text to speech (the browser’s speechSynthesis API)	[DONE]
 Useful libraries (cdnjs)
 Diff: jsdiff for text diffs, or jsondiffpatch for JSON diffs
 Formatting: js-beautify for HTML, CSS and JS, and sql-formatter for SQL
@@ -94,24 +94,24 @@ JSON editing: jsoneditor or Monaco for syntax highlighting
 
 
 Text and writing tools
-Remove duplicate words
+Remove duplicate words	[DONE]
 Text repeater	[DONE]
 Text to list / list to comma-separated	[DONE]
 Readability score (Flesch-Kincaid)	[DONE]
 Keyword density checker	[DONE]
-Fancy text / Unicode font generator
-Small text / superscript generator
+Fancy text / Unicode font generator	[DONE]
+Small text / superscript generator	[DONE]
 Emoji picker and copy
 Palindrome checker	[DONE]
 Anagram finder
 Morse code converter	[DONE]
 Roman numeral converter	[DONE]
 Number to words converter	[DONE]
-Pig Latin / ROT13 / Caesar cipher	[PARTIAL: Caesar cipher and ROT13 only, no Pig Latin]
+Pig Latin / ROT13 / Caesar cipher	[DONE]
 Security and privacy
-Password strength checker
-Passphrase generator
-HMAC generator
+Password strength checker	[DONE]
+Passphrase generator	[DONE]
+HMAC generator	[DONE]
 AES encrypt / decrypt (Web Crypto API)
 Bcrypt hash generator and verifier
 Random token / API key generator
@@ -119,14 +119,14 @@ Public IP and browser fingerprint viewer
 Secret note (encrypted, shareable link)
 Hash file checker (checksum of an uploaded file)	[DONE: Hash Generator accepts files]
 Date, time and calendar
-Countdown timer to a date
-Working days calculator
-Date add / subtract calculator
-Week number of the year
+Countdown timer to a date	[DONE]
+Working days calculator	[DONE]
+Date add / subtract calculator	[DONE]
+Week number of the year	[DONE]
 Unix timestamp to date, in bulk
-Pomodoro timer
+Pomodoro timer	[DONE]
 Meeting time planner across time zones
-Leap year checker
+Leap year checker	[DONE]
 Zodiac / birthstone finder
 Image and media (client-side)
 Image cropper, rotator and flipper	[DONE]
@@ -152,14 +152,14 @@ Invoice and receipt maker with PDF export
 Markdown to PDF
 Letterhead and certificate maker
 Everyday calculators
-Discount / sale price calculator
-Tip and bill splitter
-Profit margin and markup calculator
+Discount / sale price calculator	[DONE]
+Tip and bill splitter	[DONE]
+Profit margin and markup calculator	[DONE]
 Fuel cost / mileage calculator
-Grade / GPA / CGPA calculator
+Grade / GPA / CGPA calculator	[DONE]
 Fraction, ratio and average calculators
 Scientific calculator
-Salary hourly-to-annual converter
+Salary hourly-to-annual converter	[DONE]
 Retirement / FD / RD / PPF calculators
 Break-even calculator
 Electricity bill calculator
@@ -167,11 +167,11 @@ Fun and utility
 Random name / team picker
 Truth or dare, or “would you rather” generator
 Random quote generator
-Reaction time test
-Click speed test (CPS)
+Reaction time test	[DONE]
+Click speed test (CPS)	[DONE]
 Memory and number games
 Screen resolution and device info viewer
-Keyboard key code tester
+Keyboard key code tester	[DONE]
 Dead pixel test
 Online notepad (auto-saved with localStorage)
 Sticky notes / to-do list

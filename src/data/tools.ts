@@ -1,4 +1,9 @@
 import type { CategoryId } from './categories'
+import { batchA } from './batches/a'
+import { batchB } from './batches/b'
+import { batchC } from './batches/c'
+import { batchD } from './batches/d'
+import { batchE } from './batches/e'
 
 export interface Faq {
   q: string
@@ -38,7 +43,7 @@ export interface ToolMeta {
   related: string[]
 }
 
-type ToolInput = Omit<ToolMeta, 'slug' | 'kind' | 'h1' | 'article'> & {
+export type ToolInput = Omit<ToolMeta, 'slug' | 'kind' | 'h1' | 'article'> & {
   slug?: string
   h1?: string
   article?: ToolArticle
@@ -50,6 +55,8 @@ const articleCategoryName: Record<CategoryId, string> = {
   text: 'text',
   developer: 'developer',
   converters: 'conversion',
+  calculators: 'calculator',
+  utilities: 'utility',
 }
 
 const createArticle = (x: ToolInput): ToolArticle => {
@@ -1315,6 +1322,8 @@ export const tools: ToolMeta[] = [
     ],
     related: ['password-generator', 'uuid-generator', 'hash-generator', 'hex-binary-ascii-converter'],
   }),
+  // ───────────── Batches of new tools (one file per batch in ./batches) ─────────────
+  ...[...batchA, ...batchB, ...batchC, ...batchD, ...batchE].map(t),
 ]
 
 export const toolById = (id: string): ToolMeta | undefined => tools.find((x) => x.id === id)

@@ -76,6 +76,7 @@ export const privacyPage: DocPage = {
       heading: 'What stays on your device',
       paragraphs: [
         'Every tool on this site processes your input inside your browser. Files you choose, text you type or paste, and the results you download are not uploaded, transmitted or stored by us. We do not have a server that receives them.',
+        'One exception depends on your browser. The Text to Speech tool hands your text to the speech voices built into your browser or operating system. Some voices, such as certain online voices in Chrome or Edge, may send that text to the browser vendor to produce audio. Choose a local voice for sensitive text.',
       ],
     },
     {
@@ -89,7 +90,7 @@ export const privacyPage: DocPage = {
     {
       heading: 'What we store in your browser',
       paragraphs: [
-        'The tools themselves do not set cookies. The Background Remover stores downloaded model files in your browser Cache Storage so the next visit is faster. You can remove them any time by clearing site data in your browser settings.',
+        'The tools themselves do not set cookies. The Background Remover stores downloaded model files in your browser Cache Storage so the next visit is faster. You can remove them any time by clearing site data in your browser settings. The Pomodoro Timer saves your chosen session lengths and auto-start setting in your browser local storage.',
       ],
     },
     {
