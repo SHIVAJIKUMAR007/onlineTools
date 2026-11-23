@@ -14,7 +14,7 @@ High-volume tools that work fully client-side
 8	Password generator	password generator	crypto.getRandomValues()	[DONE]
 9	Word / character counter	word counter, character count	string ops	[DONE]
 10	Case converter	uppercase to lowercase, title case	string ops	[DONE]
-11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas	[PARTIAL: BMI only]
+11	BMI / calorie / health calculators	bmi calculator, calorie calculator	formulas	[DONE: BMI and calorie]
 12	EMI / loan / SIP / compound interest calculator	emi calculator, sip calculator	financial formulas	[DONE]
 13	GST / VAT / tax calculator	gst calculator	formulas	[PARTIAL: GST only]
 14	Merge / split PDF	merge pdf, split pdf	pdf-lib	[DONE]
@@ -30,7 +30,7 @@ High-volume tools that work fully client-side
 24	Regex tester	regex tester	RegExp	[DONE]
 25	Markdown to HTML	markdown editor	marked library
 26	Speed typing test	typing test	key events and timers
-27	Time zone converter / world clock	time zone converter	Intl.DateTimeFormat
+27	Time zone converter / world clock	time zone converter	Intl.DateTimeFormat	[DONE]
 28	Video / audio converter, trimmer	mp4 to mp3	ffmpeg.wasm (heavy, but client-only)
 29	Background remover	remove background	ML in the browser (@imgly/background-removal, WASM)	[DONE]
 30	OCR, image to text	image to text	tesseract.js
@@ -46,8 +46,8 @@ JSON to CSV, and CSV to JSON	[DONE]
 JSON to XML, and XML to JSON
 JSON to YAML, and YAML to JSON	[PARTIAL: JSON to YAML only]
 JSON to TypeScript interface	[DONE]
-JSON viewer / tree viewer
-JSON path tester
+JSON viewer / tree viewer	[DONE]
+JSON path tester	[DONE]
 JSON escape / unescape	[DONE]
 JSON sorter (sort keys)	[DONE: option in JSON Formatter]
 Diff and compare tools
@@ -58,7 +58,7 @@ Duplicate line remover	[DONE]
 Sort lines (A-Z, Z-A, numeric)	[DONE]
 Format and convert tools
 XML formatter	[DONE]
-HTML formatter / minifier
+HTML formatter / minifier	[DONE]
 CSS minifier / beautifier	[PARTIAL: minify only]
 JavaScript minifier / beautifier
 SQL formatter	[DONE]
@@ -68,7 +68,7 @@ CSV to Excel table viewer
 Encode and decode tools
 HTML entity encode / decode	[DONE]
 JWT decoder	[DONE]
-Unicode / UTF-8 converter	[PARTIAL: UTF-8 bytes via Hex / Binary converter, no code points or escapes]
+Unicode / UTF-8 converter	[DONE]
 Hex / binary / ASCII converters	[DONE]
 Generator tools
 UUID / GUID generator	[DONE]
@@ -112,7 +112,7 @@ Security and privacy
 Password strength checker	[DONE]
 Passphrase generator	[DONE]
 HMAC generator	[DONE]
-AES encrypt / decrypt (Web Crypto API)
+AES encrypt / decrypt (Web Crypto API)	[DONE]
 Bcrypt hash generator and verifier
 Random token / API key generator
 Public IP and browser fingerprint viewer
@@ -125,9 +125,9 @@ Date add / subtract calculator	[DONE]
 Week number of the year	[DONE]
 Unix timestamp to date, in bulk
 Pomodoro timer	[DONE]
-Meeting time planner across time zones
+Meeting time planner across time zones	[PARTIAL: planner row inside Time Zone Converter]
 Leap year checker	[DONE]
-Zodiac / birthstone finder
+Zodiac / birthstone finder	[DONE]
 Image and media (client-side)
 Image cropper, rotator and flipper	[DONE]
 Image to grayscale / filters
@@ -155,15 +155,15 @@ Everyday calculators
 Discount / sale price calculator	[DONE]
 Tip and bill splitter	[DONE]
 Profit margin and markup calculator	[DONE]
-Fuel cost / mileage calculator
+Fuel cost / mileage calculator	[DONE]
 Grade / GPA / CGPA calculator	[DONE]
-Fraction, ratio and average calculators
-Scientific calculator
+Fraction, ratio and average calculators	[PARTIAL: fractions only]
+Scientific calculator	[DONE]
 Salary hourly-to-annual converter	[DONE]
 Indian CTC to monthly take-home (in-hand salary) calculator	[DONE]
-Retirement / FD / RD / PPF calculators
-Break-even calculator
-Electricity bill calculator
+Retirement / FD / RD / PPF calculators	[PARTIAL: FD, RD and PPF; no retirement planner]
+Break-even calculator	[DONE]
+Electricity bill calculator	[DONE]
 Fun and utility
 Random name / team picker
 Truth or dare, or “would you rather” generator
@@ -171,9 +171,9 @@ Random quote generator
 Reaction time test	[DONE]
 Click speed test (CPS)	[DONE]
 Memory and number games
-Screen resolution and device info viewer
+Screen resolution and device info viewer	[DONE]
 Keyboard key code tester	[DONE]
-Dead pixel test
-Online notepad (auto-saved with localStorage)
-Sticky notes / to-do list
-Drawing board / whiteboard (Canvas)
+Dead pixel test	[DONE]
+Online notepad (auto-saved with localStorage)	[DONE]
+Sticky notes / to-do list	[PARTIAL: to-do list only]
+Drawing board / whiteboard (Canvas)	[DONE]
