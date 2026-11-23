@@ -21,6 +21,7 @@ export function Logo({ className }: { className?: string }) {
 }
 
 const topLinks = [
+  { to: '/tools', label: 'All tools' },
   { to: '/image-tools', label: 'Image Tools' },
   { to: '/pdf-tools', label: 'PDF Tools' },
   { to: '/converters', label: 'Converters' },

@@ -2280,6 +2280,1326 @@ export const blogPosts: BlogPost[] = [
       }
     ]
   },
+  {
+    slug: 'convert-jpg-to-png-for-cleaner-editing',
+    title: 'When to convert JPG images to PNG for editing and sharing',
+    seoTitle: 'Convert JPG to PNG for Editing | Stayput',
+    seoDescription:
+      'Learn what JPG to PNG conversion preserves, what it cannot restore, and how to check image size and quality before using the new file.',
+    excerpt:
+      'PNG can be a useful handoff format when an editor or workflow asks for it. The conversion keeps decoded pixels, but it cannot bring back detail already lost in a JPG.',
+    image: '/blog/images/jpg-to-png-guide.webp',
+    imageAlt: 'A camera and lens prepared for a photography session',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'jpg-to-png',
+    toolCta: 'Convert JPG images to PNG in your browser',
+    sections: [
+      {
+        heading: 'Why a JPG file sometimes needs to become PNG',
+        paragraphs: [
+          `JPG is a practical format for photographs, while PNG is often requested by an editor, a design handoff, or an upload form. A conversion can solve that compatibility problem without changing the visible dimensions. It is also handy when you plan to make further edits and want to avoid another round of JPG compression at every save. The choice should follow the next step in your workflow, rather than a belief that one extension always means better quality.`,
+          `A JPG stores image data with lossy compression. It discards some detail to keep the file smaller, especially in areas with subtle texture or color changes. PNG stores the decoded pixels without that kind of loss, so the pixels produced by the conversion are kept exactly in the new file. That does not restore information removed when the JPG was first saved. A blurry edge or blocky patch will still be present after conversion.`
+        ]
+      },
+      {
+        heading: 'What changes during the conversion',
+        paragraphs: [
+          `The converter reads each JPG, decodes its pixels, and writes those pixels into PNG format. Dimensions and the visible composition normally remain the same. PNG has no quality slider here because its output is lossless. The tool accepts JPG and JPEG files, processes more than one at a time, and gives each result a PNG download. When there are several results, you can package them together as a ZIP instead of saving every file separately.`,
+          `The file size often grows, sometimes by a lot. Photographs contain fine variations that PNG must preserve, and PNG is less efficient than JPG for that kind of content. A smaller output is not the goal of this particular conversion. If a form needs PNG, the larger size may be an acceptable trade. If the goal is to send or publish a lighter photograph, keep a JPG or consider a format intended for compact photographic images.`
+        ]
+      },
+      {
+        heading: 'Check the destination before converting a folder',
+        paragraphs: [
+          `Find out what the receiving app actually requires. Some forms accept PNG because they need a transparent graphic, but a JPG source has no transparent pixels to recover. Others accept PNG simply as one of several allowed formats. If the destination accepts JPG and your image is a photo, converting can add storage without adding useful editing flexibility. Test one representative file before processing a large collection, especially when a storage limit applies.`,
+          `Keep the source JPG until the converted file has been opened in the intended application. A preview in the browser can show that the image renders, but it cannot confirm that a specialized editor preserves every workflow detail. Check dimensions, framing, and colors beside the source. If the image contains small labels or sharp edges, zoom in on them. Those details were set by the source file, and conversion should not be mistaken for an image repair step.`
+        ]
+      },
+      {
+        heading: 'Use a sensible batch workflow',
+        paragraphs: [
+          `For a batch, group files by purpose and choose a handful that represent the different image types. Include one detailed photograph, one small image, and anything with text or strong edges. The results can have very different sizes even when the source files have similar dimensions. Compare the output sizes, then open a few files at normal viewing size. File names gain a new PNG extension, which makes the conversion easy to recognize in a folder.`,
+          `Stayput performs this conversion in your browser and does not require an upload. Each image still needs to be decoded and held in local memory while it is processed, so a very large batch can slow an older phone or laptop. If the browser struggles, convert fewer files at once. Save outputs to a separate folder so you do not overwrite originals, and use the ZIP option when it makes your handoff simpler.`
+        ]
+      },
+      {
+        heading: 'Know the limits around color and transparency',
+        paragraphs: [
+          `A JPG cannot store alpha transparency. If an image appears to have a white background, the white pixels are part of the picture, and PNG will preserve them as pixels rather than making them transparent. Use an editor with a background-removal or masking workflow when you need a genuinely transparent result. A file extension change cannot infer which pale areas belong to the background and which belong to the subject.`,
+          `Color can also depend on the source profile and the app that opens the file. The tool converts decoded browser image content, so check the output in the software where it will be used if color matching matters. For a profile-critical print job, keep the original and use a managed editing application that exposes color-profile controls. For ordinary web graphics, compare the visible image and dimensions before sending the PNG onward.`
+        ]
+      },
+      {
+        heading: 'A quick way to verify the PNG',
+        paragraphs: [
+          `After downloading, confirm the extension ends in .png and open the file from its saved location. Compare the pixel dimensions with the JPG, then inspect the same area in both images at the same zoom. The PNG may be larger even when it looks identical, which is an expected result for a photograph. If an image viewer shows a blank preview, try another current browser or image app before assuming the conversion failed.`,
+          `For repeat work, write down the destination requirement and keep one untouched source copy. That small habit prevents an accidental chain of exports where a PNG is later converted back to JPG and compressed again. The PNG is useful as a lossless working copy of the pixels that were available at conversion time. It is not a substitute for the camera original or the highest-quality source you can obtain.`
+        ]
+      },
+      {
+        heading: 'Convert only when the next step benefits',
+        paragraphs: [
+          `Use JPG to PNG when a compatible editor or service specifically needs PNG, or when you want to avoid further lossy saves during a short editing process. Keep JPG for compact photos that are already finished. If a platform requires transparency, begin with a source that actually has an alpha channel or remove the background deliberately. Check file size limits as well as appearance, since a PNG photo can exceed an upload cap that the JPG met.`,
+          `The conversion tool makes the format change straightforward: add JPG files, let the browser create PNG copies, then download one result or a ZIP. Review the saved output rather than relying only on the on-page preview. Once it meets the receiving app's needs, store it beside the original with a clear name. That gives you a usable PNG without losing track of where its pixels came from.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'make-jpg-photos-smaller-with-webp',
+    title: 'How to convert JPG photos to WebP and compare the results',
+    seoTitle: 'Convert JPG Photos to WebP Online | Stayput',
+    seoDescription:
+      'A practical guide to JPG to WebP conversion, quality choices, file-size comparisons, compatibility checks, and safe batch exports.',
+    excerpt:
+      'WebP can make many photographs smaller, though each image responds differently. Compare the exported file at its intended display size before replacing the JPG.',
+    image: '/blog/images/jpg-to-webp-guide.webp',
+    imageAlt: 'A blue evening sky above a city and distant hills',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'jpg-to-webp',
+    toolCta: 'Convert JPG photos to WebP in your browser',
+    sections: [
+      {
+        heading: 'When a WebP copy makes sense',
+        paragraphs: [
+          `A photo on a web page often needs to look good while arriving in fewer bytes. WebP is a modern image format that supports lossy compression, and it can produce a smaller file than JPG for many photographic images. The actual saving depends on the source and quality setting. A detailed forest, a smooth wall, and a grainy night photo do not compress in the same way, so one test image cannot predict every result in a folder.`,
+          `Converting from JPG to WebP is most useful when the place you plan to use the image accepts WebP. Current browsers support it, while older software, publishing systems, or third-party forms may still expect JPG. Keep a JPG copy when compatibility is uncertain. A format change does not add detail to the source; it creates a new encoding of the pixels already present in the JPEG.`
+        ]
+      },
+      {
+        heading: 'Set quality by looking at the photo',
+        paragraphs: [
+          `Stayput starts JPG to WebP conversion at quality 80 and lets you adjust the quality slider. Higher values usually retain more detail and create larger files, while lower values can reduce the file further at the cost of visible artifacts. Treat the number as an encoder setting, not a direct percentage of visual quality. Two encoders can interpret the same number differently, and complex texture can expose damage sooner than a smooth sky.`,
+          `Compare the original and converted preview at a realistic size. Look closely at hair, foliage, fabric, fine text, and dark gradients. These areas can show smearing, ringing near sharp edges, or uneven blocks. If you see a problem, raise quality a little and compare again. Avoid judging only at extreme zoom, where tiny differences may not matter to the viewer, or only in a thumbnail, where artifacts can disappear.`
+        ]
+      },
+      {
+        heading: 'Read the size comparison carefully',
+        paragraphs: [
+          `For each processed file, the tool reports the original and converted sizes and the percentage saved or added. A positive saving on one image does not guarantee a saving on the next. Some JPGs are already heavily compressed or contain noisy detail that is expensive to encode. If WebP is larger at the chosen setting, try lowering quality carefully or keep the original JPG when the result does not justify the conversion.`,
+          `A smaller byte count is useful when it shortens a download or fits an upload cap, but it is not the only check. Pixel dimensions should remain appropriate for the page or document. This tool changes format and quality, not the image dimensions. If a 5000-pixel photo is displayed in a narrow card, resizing it to an appropriate width may reduce more data than repeatedly lowering quality.`
+        ]
+      },
+      {
+        heading: 'Convert a batch without losing track of sources',
+        paragraphs: [
+          `Add a group of JPG files and inspect the list before downloading. The converter handles several images and can create one ZIP for the completed batch. File names use the original base name with the WebP extension, so store the download in a separate folder or make a copy of the originals first. This makes it easier to roll back if a content system rejects WebP or a designer asks for the source later.`,
+          `Run a small sample before sending a large folder through the browser. Image processing uses memory and CPU on your own device, and a batch that is comfortable on a desktop may be sluggish on a phone. Watch for per-file errors and review the size totals. If one file is unusually large or fails to decode, process it separately and check whether it is damaged or mislabeled.`
+        ]
+      },
+      {
+        heading: 'Keep expectations realistic for JPG sources',
+        paragraphs: [
+          `JPG is already a lossy format. Encoding it as WebP performs another lossy step, so repeated conversions between formats can gradually soften details or create artifacts. For best results, start with the camera original or a high-quality master when you have one. If the JPG is the only source, choose a quality setting that looks acceptable and keep that JPG untouched rather than repeatedly converting the WebP back and forth.`,
+          `WebP can encode transparency, but this tool accepts JPG files. Since JPG has no alpha channel, there is no transparency to preserve in this conversion. The output remains a photograph with its existing background. If you need transparent pixels, use an image source that supports transparency and a suitable workflow rather than expecting a new file extension to create them.`
+        ]
+      },
+      {
+        heading: 'Check compatibility before publishing',
+        paragraphs: [
+          `Open a downloaded WebP file in the application that will publish it. A browser can display WebP, but a legacy desktop editor or content-management plugin may not accept the file. Check thumbnail generation, image previews, and any automated processing step in your publishing workflow. When compatibility is mixed, keeping a JPG fallback can be more dependable than trying to convert every system at once.`,
+          `For web publishing, make sure the page references the correct WebP path and that the server returns an image content type. Test the final page in the browsers your audience uses. These checks cover more than the converter can: the tool confirms it made a local file, while your site determines whether that file is served and displayed correctly.`
+        ]
+      },
+      {
+        heading: 'A repeatable conversion routine',
+        paragraphs: [
+          `Choose a representative photo, set quality, and compare the output at the intended viewing size. Note the file-size change and inspect a few difficult details. If the tradeoff works, apply the same setting to the rest of that image group, then check outliers individually. Keep a master copy, use descriptive file names, and avoid replacing production images until the new URLs have been tested.`,
+          `The JPG to WebP converter runs in the browser, so your images are not sent to a conversion server. Your device does the decoding and encoding, which means processing time and memory use depend on the hardware and file dimensions. The result is a convenient delivery copy, not a guarantee of a fixed percentage saving. Use the per-file preview and size report to make that decision image by image.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-webp-images-to-png',
+    title: 'How to convert WebP images to PNG without losing transparency',
+    seoTitle: 'Convert WebP to PNG and Keep Transparency | Stayput',
+    seoDescription:
+      'Understand WebP to PNG conversion, transparent backgrounds, animated file limits, output size, and ways to verify each exported image.',
+    excerpt:
+      'PNG is useful when an editor cannot open WebP or needs a compatible still image. Transparency can carry through, but lossy detail and animation limits remain.',
+    image: '/blog/images/webp-to-png-guide.webp',
+    imageAlt: 'A quiet mountain lake reflected beneath a clear sky',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'webp-to-png',
+    toolCta: 'Convert WebP files to PNG in your browser',
+    sections: [
+      {
+        heading: 'Reasons to turn a WebP into PNG',
+        paragraphs: [
+          `WebP works well on the web, but an older editor, upload form, or desktop utility may only accept familiar formats. PNG is a convenient still-image format for that handoff, and it supports transparent pixels. Converting can also make the file easier to inspect in software that has not added WebP support. Check the receiving app first, because changing the extension alone does not make an unsupported workflow compatible.`,
+          `The conversion decodes the WebP into pixels and writes those pixels to PNG. If the WebP contains transparency, the PNG can keep that transparency. If the source used lossy compression, artifacts from that encoding remain visible in the new file. A lossless PNG output preserves the decoded pixel values, not the original scene detail that may already have been discarded.`
+        ]
+      },
+      {
+        heading: 'Transparency depends on the source image',
+        paragraphs: [
+          `A transparent logo can have a checkerboard or colored page behind it in an editor, but the checkerboard is only a display convention. Open the converted PNG over a contrasting background to confirm the alpha channel is still present. The converter does not add a background to PNG. It keeps existing transparent areas while moving the image data into a format many editing apps understand.`,
+          `If the WebP has a solid white background, its white pixels remain white after conversion. PNG support for transparency does not mean every PNG is transparent. To remove a background, use a mask or background-removal tool and inspect the edge around hair, glass, and soft shadows. A format converter cannot decide which pixels should become transparent.`
+        ]
+      },
+      {
+        heading: 'Animated WebP has a still-image limit here',
+        paragraphs: [
+          `An animated WebP can contain a sequence of frames, but this converter exports only the first frame. The resulting PNG is a single still image. If motion matters, use an animation-aware editor or export each frame with software that explicitly supports animation. Converting the first frame is useful for a preview or a still asset, but it is not a way to preserve a complete animation.`,
+          `Before processing an animation, decide whether the first frame tells the whole story. A logo may begin on a blank frame, or an animated chart may only show its final value later. Open the source in an animation-capable viewer and choose the frame you actually need. If the frame is not the first one, capture or export that frame separately before using a standard image converter.`
+        ]
+      },
+      {
+        heading: 'Expect a larger file for photographic images',
+        paragraphs: [
+          `PNG is lossless, but that does not make every PNG smaller or visually superior to its source. A photograph saved as PNG can be much larger than WebP because PNG preserves each decoded pixel without lossy compression. This tool does not expose a quality slider for PNG output. If your main goal is a compact photo, a PNG conversion may work against that goal. Compare the byte count before sending or publishing the file.`,
+          `Artwork with flat areas, clean edges, or a transparent background may fit a PNG workflow well. Even then, size depends on dimensions and image complexity. The converter shows the output size per file, so review it rather than assuming a format label predicts the outcome. If the PNG is too large for a form, ask whether the destination accepts the original WebP or another supported format.`
+        ]
+      },
+      {
+        heading: 'Convert several files and review the batch',
+        paragraphs: [
+          `The tool accepts multiple WebP images, processes them in the browser, and provides individual downloads or a ZIP for a completed batch. Group images by their destination so you can test the right sample before exporting a large collection. Check for per-file errors and keep the original names organized. A separate output folder avoids replacing the only copy of a WebP asset.`,
+          `Large images need more memory while the browser decodes and writes them. If a phone slows down, reduce the batch size or try a desktop. The tool runs locally, but local processing still uses the device's CPU and available memory. For files that cannot be read, confirm that they really are WebP and try opening them in another current browser before concluding that the source is damaged.`
+        ]
+      },
+      {
+        heading: 'Check the exported pixels in the target application',
+        paragraphs: [
+          `After downloading, confirm that the file has a PNG extension and opens in the application that requested it. Compare dimensions and framing with the WebP. Look at semi-transparent edges over both light and dark backgrounds, because a pale fringe can be hard to see on only one surface. If the source was a photograph, inspect fine details at the normal display size and do not expect conversion to repair compression damage.`,
+          `When color is important, compare the PNG in the final app rather than relying only on the browser preview. Different apps can interpret color profiles differently. Save a copy of the WebP and record which output was sent to the editor. If a color shift appears, use a color-managed workflow to investigate rather than repeatedly changing formats and compounding uncertainty.`
+        ]
+      },
+      {
+        heading: 'Choose PNG only when the handoff needs it',
+        paragraphs: [
+          `PNG is a practical compatibility choice for still images, screenshots, diagrams, and transparent artwork. It is less attractive when a large photographic file needs to stay lightweight. Keep WebP when the destination supports it and its size is useful, or use a different format that the receiving system accepts. The best format is determined by the next step and by the properties the image needs to retain.`,
+          `A careful check takes little time: convert one file, open it in the target app, verify transparency and dimensions, and compare the file size. For an animated source, verify that a still first frame is acceptable. Then process the rest of the batch and download the files you need. That simple test helps prevent a format conversion from being mistaken for a full image-editing or animation workflow.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'save-webp-as-jpg-with-a-solid-background',
+    title: 'How to save a WebP image as JPG with the right background',
+    seoTitle: 'Convert WebP to JPG with a Chosen Background | Stayput',
+    seoDescription:
+      'Learn how WebP to JPG conversion handles transparency and quality, how to choose a background, and how to check the downloaded photo.',
+    excerpt:
+      'JPG is widely accepted for photos, but it cannot contain transparency. Choose the color that fills transparent pixels and inspect the result before sharing it.',
+    image: '/blog/images/webp-to-jpg-guide.webp',
+    imageAlt: 'A sunlit field and mountains seen from a broad open hillside',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'webp-to-jpg',
+    toolCta: 'Convert WebP images to JPG in your browser',
+    sections: [
+      {
+        heading: 'Why a WebP image may need to be JPG',
+        paragraphs: [
+          `Some upload forms, office applications, and older image editors accept JPG but reject WebP. JPG remains a common delivery format for photographs, so making a copy can solve that compatibility problem. The conversion does not change the image dimensions, and it cannot recover detail lost in an earlier lossy WebP export. Keep the WebP source if you may want another output later.`,
+          `JPG cannot store transparency. If the WebP has transparent areas, the converter fills them with a solid background color that you select. This prevents a transparent logo or subject from turning black or displaying unpredictably in a viewer. The color is part of the exported image, so choose it to match the page or document where the JPG will appear.`
+        ]
+      },
+      {
+        heading: 'Choose a background before downloading',
+        paragraphs: [
+          `A white background is a safe default for photos that already look opaque, but a transparent graphic may need a different color. Select the background option and inspect the preview around the outside edge of the subject. Fine hair, glass, shadows, and antialiased artwork can blend differently against a new color. If the edge looks wrong, change the background and compare again before saving the file.`,
+          `A solid color cannot reproduce a transparent object that is meant to sit over several different surfaces. If you need the image to adapt to a dark and light theme, keep a format with alpha transparency, such as PNG or WebP. A JPG copy is useful when the destination requires it, but the selected fill color becomes permanent in that copy.`
+        ]
+      },
+      {
+        heading: 'Set quality for the content, not a promise',
+        paragraphs: [
+          `The tool starts conversion at quality 90 and lets you adjust the setting. Higher quality usually means a larger JPG; lower quality can create visible artifacts around edges and fine texture. No single number guarantees the same result for every WebP. A smooth illustration, a noisy photo, and text over a background place different demands on a lossy encoder.`,
+          `Compare the result with the original at the size people will view it. Look for halos near high-contrast edges, smearing in hair or leaves, and banding in gradients. If you notice a flaw, raise quality and recheck. For a small form upload, a slightly lower setting may be acceptable, but do not trade away legibility or important detail just to reduce a few more kilobytes.`
+        ]
+      },
+      {
+        heading: 'Be aware of animated WebP files',
+        paragraphs: [
+          `This conversion creates a still JPG from the image the browser decodes. Animated WebP content is not preserved as a moving sequence by this workflow. If animation matters, use an animation-capable editor and choose a separate export format for the frames or motion. For a preview image, first confirm that the frame shown by the browser is the frame you intend to keep.`,
+          `The choice of first frame can matter for animated logos, stickers, and product demonstrations. The first frame may be transparent or incomplete while later frames show the subject clearly. Open the WebP in an animation-aware viewer before conversion when you are unsure. A still conversion is a deliberate snapshot, not an animation transcoder.`
+        ]
+      },
+      {
+        heading: 'Process a batch and keep the source files',
+        paragraphs: [
+          `Add WebP files together when they share the same destination and background needs. The converter processes files in the browser, shows the results, and can package several into a ZIP. Check individual previews before downloading the batch, since a single background color may look good for one image and poor for another. Remove or retry files that show an error instead of assuming every input was converted.`,
+          `The browser holds image data locally during processing, so very large files or many images can use noticeable memory. Split a large folder into smaller groups if the page becomes slow. Save the JPG results separately from the original WebP files. That protects the source and makes it easier to try another background or quality setting without repeatedly encoding an already compressed JPG.`
+        ]
+      },
+      {
+        heading: 'Verify the JPG in its intended destination',
+        paragraphs: [
+          `After downloading, open the file in the app or form that requested JPG. Confirm that the extension is .jpg and the dimensions match the source. Check transparent regions carefully because they should now show the selected solid color. If the file will be printed or used in a design review, inspect colors and edge details in the final software rather than relying on a small preview.`,
+          `Compare file size as well as appearance. A JPG can become larger than a highly optimized WebP, particularly at high quality. If the output does not meet the upload limit, resizing may be more effective than choosing a visibly lower quality. Keep an untouched source copy and name the converted file clearly so nobody mistakes the JPG delivery version for the editable master.`
+        ]
+      },
+      {
+        heading: 'Choose a format that fits the final use',
+        paragraphs: [
+          `JPG suits opaque photographs and destinations that explicitly request it. WebP or PNG is a better fit when the image needs transparency. If a destination accepts multiple formats, compare the output sizes and confirm that it displays correctly before converting an entire library. Avoid repeated lossy conversion cycles, because every new export can add compression changes.`,
+          `Stayput offers the WebP to JPG conversion with a quality control and a fill color for transparent areas. It runs in your browser, so the file is not sent to a remote converter. Your device performs the work, and the result should still be checked in the place where it will be used. A short review of the background, edges, dimensions, and file size catches the issues most likely to matter.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'rotate-and-flip-an-image-without-changing-its-shape',
+    title: 'How to rotate or flip an image and check the exported result',
+    seoTitle: 'Rotate and Flip an Image Online | Stayput',
+    seoDescription:
+      'Fix sideways photos with 90-degree rotation and horizontal or vertical flips, then choose an export format and inspect the result.',
+    excerpt:
+      'A quarter-turn can fix orientation, while a flip creates a mirror image. Use the preview to check direction and choose export settings that suit the file.',
+    image: '/blog/images/image-rotator-guide.webp',
+    imageAlt: 'A mountain lake with a shoreline and reflections in calm water',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'image-rotator',
+    toolCta: 'Rotate or flip an image in your browser',
+    sections: [
+      {
+        heading: 'Start with the direction you need',
+        paragraphs: [
+          `A sideways photo usually needs a 90-degree turn, while an upside-down image needs 180 degrees. A mirror effect uses a horizontal or vertical flip. These changes are easy to confuse when the picture contains no clear reference, so look for text, a face, or a familiar landscape feature before choosing a direction. The live preview lets you see the change before exporting.`,
+          `The rotator accepts common image formats, including JPG, PNG, WebP, AVIF, GIF, and BMP. It works with one image at a time. When a new file is selected, the rotation and flip controls return to their starting state. That reset is useful when correcting a folder of unrelated images, since a previous item's transform will not quietly carry into the next selection.`
+        ]
+      },
+      {
+        heading: 'Understand the rotation and flip controls',
+        paragraphs: [
+          `The buttons turn an image by 90 degrees counterclockwise, 180 degrees, or 90 degrees clockwise. A quarter-turn swaps the displayed width and height. The horizontal and vertical flip controls mirror the image, and their direction follows the image after it has been rotated. This detail can affect which edge seems to move when you flip a sideways photo.`,
+          `Use Reset changes if you want to return to the original orientation before exporting. A small preview is drawn at a reduced size so it can fit on screen; the download uses the selected transformations on the image itself. Check a landmark near the edge after rotation, because a mirrored picture can still look plausible while text or an asymmetric logo reads backward.`
+        ]
+      },
+      {
+        heading: 'Read phone orientation correctly',
+        paragraphs: [
+          `Phones can store camera orientation in EXIF metadata instead of physically rotating every pixel. The image loader applies that orientation when it opens the photo, so the preview shows the way the picture is meant to look. A user may think the photo needs another turn because a file manager displayed it differently. Compare the preview with the actual scene before making a second rotation.`,
+          `Exporting creates a rendered image with the chosen transform rather than asking every viewer to interpret the original orientation tag. This can make the result more consistent in apps that ignore camera metadata. Still, keep the original file if its metadata or camera details matter. A transformed copy is intended for sharing or publishing, not as a replacement for a complete camera original.`
+        ]
+      },
+      {
+        heading: 'Pick an output format and quality',
+        paragraphs: [
+          `By default, the format menu uses a format based on the source: JPG remains JPG, WebP remains WebP, AVIF remains AVIF, and other supported sources use PNG. You can also choose PNG, JPG, or WebP for the export. JPG and WebP show a quality control, while PNG does not. A high setting can preserve more visible detail in lossy formats, but the output can be larger.`,
+          `JPG cannot preserve transparency, so a JPG export fills transparent areas with white. If a transparent logo needs to remain transparent, choose PNG or WebP instead. Rotating by right angles does not need diagonal resampling, but export encoding can still change pixels, especially for lossy formats. The tool re-encodes the downloaded image even when no transform is selected, so do not treat an unchanged preview as a byte-for-byte copy.`
+        ]
+      },
+      {
+        heading: 'Check a mirror effect before sharing',
+        paragraphs: [
+          `A flip is useful for correcting a scan, matching a layout, or creating a reflected composition. It can also reverse signs, labels, clothing marks, and familiar landmarks. Read any visible text in the preview and compare the subject's left and right sides. For a headshot, make sure the person still looks natural and that a part or distinctive feature has not moved to an unintended side.`,
+          `Flipping is not perspective correction. If a photo was taken at an angle or a page is skewed, a mirror will not straighten it. Use a crop or perspective-editing tool for those jobs. A 90-degree rotation changes orientation but does not crop, sharpen, or adjust exposure. Check whether the image's intended canvas dimensions still suit the destination after a quarter-turn swaps its sides.`
+        ]
+      },
+      {
+        heading: 'Use the download as a separate edited copy',
+        paragraphs: [
+          `Choose Download image after reviewing the preview and format. The saved file uses the source base name with an edited suffix, which helps distinguish it from the original. Open that saved copy once to verify that the rotation and flip survived download. If the destination has a maximum dimension or file size, check those constraints separately because this tool does not resize the image.`,
+          `Very large images can take longer and use substantial memory. The image pipeline rejects inputs above its pixel limit rather than attempting an unsafe canvas operation. If that happens, resize a copy before opening it in the rotator. Keep a high-resolution original in your archive and use the edited export for the document, page, or message that needs the correction.`
+        ]
+      },
+      {
+        heading: 'A quick review before you send it',
+        paragraphs: [
+          `Confirm the subject is upright, any text reads normally, and the flip direction matches the purpose. Check dimensions after a quarter-turn, then inspect a small edge detail that would reveal an unintended mirror. Open the downloaded file in the software used by the recipient. If transparency matters, verify the background is still clear rather than assuming the preview's checkerboard is part of the image.`,
+          `The image rotator handles orientation changes in the browser and gives you control over output format and lossy quality. It is a focused editing step, not a full photo editor. It does not repair blur, straighten a skewed scan, or preserve every item of source metadata. Make the smallest change that solves the problem, save a separate copy, and retain the original in case the crop or direction needs revision later.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'use-image-base64-data-uris-with-care',
+    title: 'How to turn an image into Base64 and choose the right output',
+    seoTitle: 'Image to Base64: Data URI, CSS, or HTML | Stayput',
+    seoDescription:
+      'Learn when an image Base64 data URI is useful, how the four output modes differ, and why large images are usually poor inline assets.',
+    excerpt:
+      'Base64 can embed a small image in CSS, HTML, or data, but its text form adds size. Choose the right output and check the complete copied value.',
+    image: '/blog/images/image-to-base64-guide.webp',
+    imageAlt: 'Close view of electronic circuit components on a board',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'image-to-base64',
+    toolCta: 'Convert an image to Base64 in your browser',
+    sections: [
+      {
+        heading: 'What Base64 does to an image file',
+        paragraphs: [
+          `An image normally lives as binary bytes in a file. Base64 represents those bytes using a text alphabet, which makes the data easier to place in formats that expect text. A data URI adds a media type and a prefix before the encoded characters. It can be useful for a small icon, a test fixture, or a self-contained HTML example where managing a separate image file would be awkward.`,
+          `The text representation is larger than the original binary image, commonly by about one third before other page overhead. A data URI also makes a document or stylesheet harder to read and update. For a large photograph, an ordinary image file is usually more manageable and can be cached separately. Consider how the asset will be stored and delivered before converting it simply because a data URI looks convenient.`
+        ]
+      },
+      {
+        heading: 'Choose between the four output modes',
+        paragraphs: [
+          `The tool offers a full data URI, raw Base64 characters, a CSS background-image declaration, and an HTML img element. Use the full URI when a program expects the MIME prefix and encoded value together. Choose raw Base64 when another format already supplies the media type. The CSS option wraps the URI in a background rule, while the HTML option creates an img tag with an empty alt attribute.`,
+          `That empty alt text is only a starting point. For meaningful content, replace it with an accessible description before publishing. Decorative images may use empty alt text intentionally, but an image that communicates information should have text that serves the same purpose. The generated snippet is not a complete component and does not decide how your site should label, size, or cache the image.`
+        ]
+      },
+      {
+        heading: 'Keep data URIs small and purposeful',
+        paragraphs: [
+          `Inline data works best for small assets that are used once or are needed inside a self-contained document. A large encoded image can make source files unwieldy, increase the size of every request that includes it, and complicate updates. If the same image appears on multiple pages, a normal file can be cached and reused. Measure the actual page transfer rather than assuming fewer file requests always means faster loading.`,
+          `Base64 encoding does not compress an image. If the file is too large, resize it or convert it to an appropriate image format before encoding. The right dimensions depend on where it appears, and a data URI does not change that requirement. Keep a normal source copy so you can make a new size or format later without decoding an old pasted string.`
+        ]
+      },
+      {
+        heading: 'Read the preview and copy behavior correctly',
+        paragraphs: [
+          `After selecting an image, the page displays the file size, Base64 character count, and estimated overhead compared with the binary file. The text area shows at most 60,000 characters for long output. That limit applies to the visible preview only. Copy and download use the full encoded output, so a pasted preview may appear shorter than the value copied to the clipboard or saved as a text file.`,
+          `The tool handles one file at a time and reads it with the browser FileReader API. If the output is long, use the download control instead of selecting thousands of visible characters manually. Check the selected file name before copying, especially after converting several assets in sequence. Clear or replace the current image before using a new snippet so the label and encoded data stay paired.`
+        ]
+      },
+      {
+        heading: 'Use SVG data with the right security expectations',
+        paragraphs: [
+          `SVG files are accepted alongside common raster formats. A data URI can make SVG convenient to place in HTML or CSS, but this conversion does not sanitize the SVG. The preview renders it as an image, so embedded scripts do not run in that preview. That behavior is not a security review of the generated file. Do not treat an encoded value as safe merely because it has been converted to text.`,
+          `If an SVG comes from an untrusted source, use a sanitizer designed for that purpose and review how the destination embeds it. Rendering SVG as an image and inserting SVG markup into a document are different contexts. A data URI changes the representation, not the trust level. Avoid pasting untrusted markup into pages with elevated privileges, and follow the security practices of the application that consumes it.`
+        ]
+      },
+      {
+        heading: 'Check the data URI before putting it into a project',
+        paragraphs: [
+          `Copy the full output and test it in a small local example before changing a production page. Confirm the prefix includes the expected image media type and that the image renders at the required dimensions. Raw Base64 has no media type by itself, so the receiving format must know how to interpret it. A wrong or missing prefix can make a valid encoded payload appear broken.`,
+          `The generated CSS rule uses a quoted data URI and the HTML example uses an img element. Review escaping and content policies in your project before inserting either snippet. Some systems sanitize inline values or restrict data URLs with a content security policy. If the page blocks the URI, use a normal asset file or update the policy only after understanding its security effects.`
+        ]
+      },
+      {
+        heading: 'Keep the original file and a useful filename',
+        paragraphs: [
+          `Base64 strings are awkward to compare by eye and easy to truncate when copied into chat, a text editor, or a configuration field. Save a downloaded text copy when you need to preserve the full value, and keep the original image with a meaningful name. That gives you a reliable way to re-encode the asset if dimensions, format, or accessibility text later changes.`,
+          `The converter runs in the browser and does not upload the selected image. Your device reads the file and builds the output, so an unusually large image can still use memory and create a very large text value. Choose a small image, select the output mode expected by your code, and test the complete result in its destination. That is usually faster than debugging an incomplete URI after it has been copied into a larger project.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'choose-an-image-format-for-your-project',
+    title: 'How to choose an image format and convert files for a project',
+    seoTitle: 'Choose and Convert an Image Format | Stayput',
+    seoDescription:
+      'Compare JPG, PNG, WebP, and AVIF for common image jobs, set quality carefully, and verify batch conversions before publishing.',
+    excerpt:
+      'Image formats trade file size, transparency, and compatibility differently. Pick a format for the destination, then check each converted file rather than relying on one default.',
+    image: '/blog/images/image-converter-guide.webp',
+    imageAlt: 'A laptop and mobile devices arranged on a desk for web work',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'image-converter',
+    toolCta: 'Convert image formats in your browser',
+    sections: [
+      {
+        heading: 'Choose the format based on the destination',
+        paragraphs: [
+          `A format conversion is useful when a website, editor, form, or device expects a particular kind of image. JPG is common for photographs, PNG is useful for crisp graphics and transparency, and WebP and AVIF are modern choices that can make web images smaller. Their results vary with image content, quality settings, and the software that will open them. Start by checking the requirements of the receiving app rather than converting every file to the same format by habit.`,
+          `Stayput's Image Format Converter accepts JPG, PNG, WebP, AVIF, GIF, and BMP inputs and can export JPG, PNG, WebP, or AVIF. It does not decode HEIC or HEIF, which needs a separate decoder and has its own tool. A GIF input is treated as an image for conversion, not an animation export workflow. If motion or a special format matters, verify the source and output behavior before processing a batch.`
+        ]
+      },
+      {
+        heading: 'Know what quality settings actually change',
+        paragraphs: [
+          `The quality control affects lossy output formats such as JPG, WebP, and AVIF. Higher quality generally retains more visible detail and produces a larger file. PNG does not show the quality slider because the output is lossless. WebP also has a lossless option, which preserves the decoded pixel data but may yield a larger file than lossy WebP. Compare the result instead of assuming a quality number transfers exactly between formats.`,
+          `A smooth gradient, a photograph with fine grain, and a screenshot with small text put different pressure on an encoder. Look closely at faces, thin lines, type, and dark shadow detail. If an image is for a small thumbnail, a difference visible only at extreme zoom may not matter. If people will inspect it full size, keep more detail. The preview and per-file size report help you decide, but the destination still determines what counts as acceptable.`
+        ]
+      },
+      {
+        heading: 'Handle transparency before choosing JPG',
+        paragraphs: [
+          `JPG cannot store transparent pixels. When JPG is the output, the converter fills transparent areas with the selected background color. That choice should match the page or document where the image will sit. For logos and cutout graphics that need to work over several backgrounds, PNG or WebP can preserve transparency instead. A format change cannot infer which solid white pixels should become transparent.`,
+          `Open a transparent image over a contrasting background after conversion. A checkerboard in an editor often indicates transparency, while a white canvas in a basic viewer may only be its display background. Check the actual exported file in the intended app. If a white halo appears around a cutout, revisit the source mask or export background rather than changing the file extension again.`
+        ]
+      },
+      {
+        heading: 'Review AVIF output and processing time',
+        paragraphs: [
+          `AVIF can compress images efficiently, but encoding may take several seconds per image. The converter uses a WebAssembly encoder and waits for you to click Convert when AVIF is selected. That explicit step gives you time to choose a quality setting before the longer job begins. Large dimensions can increase the wait, so test a representative image and keep the browser tab open while processing.`,
+          `AVIF support varies among older apps and publishing systems even though current browsers can display it. Check the full path from upload to final page, including any thumbnail service or CMS that rewrites images. If a system rejects AVIF, use another supported output. For browsers where fallback behavior matters, your site may need a delivery strategy that offers a second format; this converter only creates files and does not configure your web server.`
+        ]
+      },
+      {
+        heading: 'Make a batch manageable',
+        paragraphs: [
+          `Add a manageable set of files, choose the output, and inspect results before downloading all of them. The tool shows a per-file size and dimensions, and it can bundle completed conversions into a ZIP. Batch processing saves repeated clicks, but it does not mean every image will have the same size change. A PNG screenshot, a JPG portrait, and a flat illustration respond differently to the same output and quality choice.`,
+          `The work happens on your device, so memory and processing time depend on the browser and available hardware. If a big folder slows down, split it into smaller groups. Remove a failed item and try it by itself in a supported format. Keep originals separate from outputs, and check the filenames inside a ZIP before moving them into a shared project directory.`
+        ]
+      },
+      {
+        heading: 'Do not expect conversion to repair a source',
+        paragraphs: [
+          `Changing formats does not restore sharpness, correct exposure, remove a background, or bring back detail lost in earlier compression. A lossy source encoded again can accumulate additional artifacts. Use the highest-quality source available, and keep an untouched copy so future exports can start from it. If the image needs a crop or a resize, perform that as a deliberate edit and confirm the resulting dimensions separately.`,
+          `Some file types also carry metadata or multiple frames that a simple still-image conversion may not preserve. Animated GIF or WebP input should not be treated as a guarantee of animated output. If a frame sequence, profile, or camera record matters, use software designed to preserve those properties. The converter is for making a new image file in a supported format, not for retaining every feature of every container.`
+        ]
+      },
+      {
+        heading: 'Verify the final file in its real use',
+        paragraphs: [
+          `Open a downloaded image from the folder where you saved it. Confirm the extension, dimensions, transparency, and appearance. Compare its size against the source, then test it in the website or app that requested the conversion. A local preview cannot tell whether a remote content system will accept a format, whether a page references the right path, or whether the image is served with the right content type.`,
+          `Stayput converts images inside the browser, so the files are not uploaded to a conversion service. Each result still depends on the source and selected settings. Use a representative sample to establish a workflow, preserve originals, and check outliers one at a time. That approach balances predictable output with fewer surprises when a batch contains screenshots, illustrations, and photos in the same folder.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'generate-lorem-ipsum-for-layout-testing',
+    title: 'How to generate Lorem Ipsum for layout and content testing',
+    seoTitle: 'Generate Lorem Ipsum for Layout Testing | Stayput',
+    seoDescription:
+      'Use Lorem Ipsum paragraphs, sentences, or words to test page layouts, choose realistic sample lengths, and avoid placeholder text in published content.',
+    excerpt:
+      'Placeholder text can expose spacing and wrapping problems while a design is in progress. Match the sample length to the layout and replace it before launch.',
+    image: '/blog/images/lorem-ipsum-generator-guide.webp',
+    imageAlt: 'A writer making notes by hand beside a notebook',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'lorem-ipsum-generator',
+    toolCta: 'Generate placeholder Lorem Ipsum text',
+    sections: [
+      {
+        heading: 'Use placeholder copy to test a real layout',
+        paragraphs: [
+          `A page can look balanced with a short heading and one tidy sentence, then break when the real copy arrives. Lorem Ipsum gives designers and developers neutral filler while they test column widths, cards, buttons, and text flow. It helps reveal whether a layout can handle longer paragraphs or whether a navigation label wraps at a narrow viewport. The words are intentionally not meaningful content, so they should not stand in for editorial review.`,
+          `The generator creates paragraphs, sentences, or a chosen number of words. Choose the unit that matches the component you are testing. A word count helps fill a fixed excerpt field, while several paragraphs are useful for a long-form article preview. The tool can start with the familiar opening phrase or produce a different sample without it.`
+        ]
+      },
+      {
+        heading: 'Pick an amount that resembles the final material',
+        paragraphs: [
+          `The available limits are 1 to 50 paragraphs, 1 to 200 sentences, or 1 to 2,000 words. The default paragraph setting creates three paragraphs. When choosing a count, think about the real content range rather than the largest possible number. A product description may need two sentences, while an article page needs enough varied paragraphs to test scrolling and section rhythm.`,
+          `Paragraph mode creates several sentences per paragraph, and sentence lengths vary. Word mode gives a more exact amount for a field that has a content budget. Sentence mode works when the number of short blurbs matters more than exact length. Count the generated words again if a design requirement uses a strict limit, since paragraph and sentence options do not promise a fixed word total.`
+        ]
+      },
+      {
+        heading: 'Understand the classic opening and randomness',
+        paragraphs: [
+          `The classic option starts the output with “Lorem ipsum dolor sit amet.” That phrase is recognizable to anyone reviewing a mockup, which can be useful when the placeholder needs to stand out from real content. Turn it off when repeated openings distract from the layout test. Generate again to get a new arrangement from the tool's built-in word bank.`,
+          `The text is not a translation of readable Latin. It is scrambled placeholder material derived from Latin writing, and the generated words are selected from a fixed collection. The randomness makes another sample possible, but it does not make a result reproducible. If an issue must be recreated exactly, save the sample used in the test rather than expecting a later click to produce the same paragraphs.`
+        ]
+      },
+      {
+        heading: 'Test more than one text shape',
+        paragraphs: [
+          `One filler sample can hide edge cases. Try a short heading, a long unbroken label, a dense paragraph, and several consecutive sections. The generator is designed for ordinary word spacing, so it will not test every real-world problem such as URLs, names in a different script, or inline code. Add representative content from the actual product when those cases affect wrapping or screen-reader behavior.`,
+          `Check the layout at the narrowest viewport you support and at a wide desktop size. A card that fits on a large monitor may overflow on a phone, especially when a button or title is long. Review line length, vertical spacing, and how a page behaves when copy is missing. Placeholder text helps with dimensions, but it cannot replace an accessibility check or a content design review.`
+        ]
+      },
+      {
+        heading: 'Keep placeholder copy out of the finished page',
+        paragraphs: [
+          `Lorem Ipsum can remain in a forgotten draft, a seeded demo, or a hidden state if nobody checks before deployment. Search the final content, previews, and database fixtures before launch. Replace every visible placeholder with approved language and verify that no generated text is exposed in search snippets, page titles, image descriptions, or social previews. The familiar opening phrase makes a useful search string during a final audit.`,
+          `Placeholder text is a poor substitute for final copy when evaluating meaning, legal wording, translation, or search relevance. It does not describe the product, answer a reader's question, or provide keyword context. Use it only while the content is still being designed. Once real text arrives, run the layout checks again because real words have different lengths and punctuation patterns.`
+        ]
+      },
+      {
+        heading: 'Copy the sample into the right environment',
+        paragraphs: [
+          `After generating, use the copy control to move the text into a design file or local development environment. The output panel can scroll when a longer sample exceeds its height. If you need a particular amount, select words and check them with a word counter rather than relying on paragraph count. Keep the mockup labeled so reviewers know the content is temporary.`,
+          `The generator works in the browser and does not send the text to a service. Generated content is still just text in the page, so copy it somewhere durable if it will be used in a test plan. A refresh or closing tab can remove your working state. Avoid pasting placeholder copy into a production content field unless the page is clearly marked as a draft.`
+        ]
+      },
+      {
+        heading: 'A practical layout test routine',
+        paragraphs: [
+          `Start by matching the sample unit to the component. Generate several paragraphs for a long article, then check heading spacing, paragraph rhythm, and the mobile layout. Use a shorter sample for a card and a word count for a fixed preview. Generate another sample if the first one has a convenient pattern that accidentally makes a design look more balanced than the real copy will.`,
+          `Before releasing the page, replace the filler and repeat the same checks with final content. Confirm that titles, links, and images still fit, and search for the classic opening phrase. Lorem Ipsum is useful because it lets a design take shape before copy is ready. Its limits are just as clear: it cannot test meaning or guarantee how final writing will wrap.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'reverse-text-by-character-word-or-line',
+    title: 'How to reverse text by characters, words, or lines',
+    seoTitle: 'Reverse Text by Character, Word, or Line | Stayput',
+    seoDescription:
+      'Compare three ways to reverse text, understand how whitespace and emoji behave, and check the output before using it in a list or script.',
+    excerpt:
+      'Reversing characters, word order, or line order gives different results. Choose the mode that matches the task and check how it handles spacing.',
+    image: '/blog/images/text-reverser-guide.webp',
+    imageAlt: 'An open book and handwritten notes arranged on a desk',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'text-reverser',
+    toolCta: 'Reverse characters, words, or lines',
+    sections: [
+      {
+        heading: 'Choose what you mean by reverse',
+        paragraphs: [
+          `The phrase “reverse text” can describe several different operations. Character mode turns “desk” into “ksed.” Word mode keeps each word spelled normally but changes their order, and line mode reverses the order of lines in a list. Pick the mode based on the structure you want to rearrange. For a list of steps, reversing lines is different from reversing every letter in each step.`,
+          `Stayput updates the result as you type and offers the three modes in one control. Paste a short sample first, especially when the source has punctuation, unusual spacing, or multiple lines. A clear example makes it easy to confirm that the chosen mode is appropriate before copying a large block into another tool or document.`
+        ]
+      },
+      {
+        heading: 'Character mode keeps visible characters together',
+        paragraphs: [
+          `Character mode reverses user-perceived grapheme clusters when the browser supports the Unicode segmenter. That means a combined accent or a joined emoji sequence is less likely to be split into stray pieces than if the string were reversed by raw code units. A fallback handles Unicode code points when the segmenter is unavailable, though a complex joined emoji can behave differently in that older environment.`,
+          `Punctuation and spaces are characters too, so they move to the opposite end along with letters. A reversed sentence will not keep its punctuation in normal reading position. This is useful for a puzzle or a simple visual transformation, but it does not produce a readable translation or a linguistically correct mirror of a sentence. Check the complete output when exact character order matters.`
+        ]
+      },
+      {
+        heading: 'Word mode reverses order within each line',
+        paragraphs: [
+          `Word mode reverses the sequence of words independently on each line. It splits a line on whitespace, removes empty pieces, and joins the remaining words with one ordinary space. That means repeated spaces, tabs, and leading or trailing whitespace are normalized. Line breaks are preserved, so a multi-line paragraph remains multi-line even though the words on each line change order.`,
+          `For example, “red   green blue” becomes “blue green red,” with the extra spaces removed. Punctuation stays attached to the word where it appeared, so a comma or period may end up in an unexpected position after the order changes. If punctuation structure matters, inspect the result or use a script that treats punctuation as separate tokens.`
+        ]
+      },
+      {
+        heading: 'Line mode keeps each line intact',
+        paragraphs: [
+          `Line mode reverses the sequence of lines and leaves the text within each line untouched. It accepts both LF and CRLF line breaks, then joins the result with standard newline characters. This can flip a checklist, reverse a log excerpt, or change the order of a pasted list without altering individual labels.`,
+          `If the final line is empty because the source ends with a newline, that empty line also changes position. Blank lines in the middle move with the surrounding block. Review the first and last few lines after reversing, since an empty separator can look like missing content. For code, confirm that reversing lines does not break a required declaration order or block structure.`
+        ]
+      },
+      {
+        heading: 'Use a copy rather than overwriting the source',
+        paragraphs: [
+          `Keep the original text somewhere safe if the transformation is difficult to undo. The tool shows input and output side by side, which makes a quick comparison possible before copying. For a long list, spot-check the beginning, middle, and end. If a record depends on line order, reverse only a duplicate and preserve the original sequence for reference.`,
+          `Character reversal can alter identifiers, URLs, and code tokens in ways that are easy to miss. Word mode may collapse intentional spacing, and line mode may move comments or headings away from their intended content. These are predictable effects of the selected operation, not data recovery features. Use the reverser for simple transformations and verify the result in the application where it will be used.`
+        ]
+      },
+      {
+        heading: 'Check Unicode and copied text',
+        paragraphs: [
+          `Accented letters, emoji, and non-Latin scripts can contain several code points even when they appear as one visible symbol. Grapheme-aware reversal helps keep those clusters together in modern browsers. It does not understand the meaning of a writing system or preserve reading direction rules. If the text contains combining marks or specialized script shaping, compare the output in its intended display environment.`,
+          `After copying, paste into a plain text editor first if the destination has rich formatting or hidden whitespace. A visible result can contain newlines and spaces that affect how a command, data field, or spreadsheet interprets it. If the output will be used in code, test a small sample and inspect escaped characters before replacing a production value.`
+        ]
+      },
+      {
+        heading: 'Pick a mode for the job and verify it',
+        paragraphs: [
+          `Use character mode for a literal reverse-string effect, word mode to reverse order while retaining spelling, and line mode to invert a list. A small trial reveals each mode's handling of punctuation and whitespace. For transformations that must preserve exact formatting, keep a source copy and compare the output with a diff rather than relying on appearance alone.`,
+          `The text stays in the current page while you work. No special language processing or automatic correction occurs, so the output reflects the selected mechanical operation. If the transformed text will be published, read it carefully and confirm that any line breaks, punctuation, and symbol order are intentional. That check is especially useful when the original has structured data rather than ordinary prose.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'encode-and-decode-html-entities-safely',
+    title: 'How to encode and decode HTML entities in pasted text',
+    seoTitle: 'Encode and Decode HTML Entities Online | Stayput',
+    seoDescription:
+      'Learn which characters an HTML entity encoder escapes, when to decode entities, and why decoded text still needs safe handling in a web page.',
+    excerpt:
+      'Entity encoding makes certain characters visible as HTML references. Decoding helps inspect escaped text, but it does not sanitize content for every use.',
+    image: '/blog/images/html-entity-encoder-guide.webp',
+    imageAlt: 'A software developer working at a screen with code visible',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'html-entity-encoder-decoder',
+    toolCta: 'Encode or decode HTML entities in your browser',
+    sections: [
+      {
+        heading: 'Why encode characters as HTML entities',
+        paragraphs: [
+          `HTML uses angle brackets and ampersands to mark structure and references. When those characters appear as literal text, an entity can represent them in a way that a browser displays without interpreting them as markup. This is useful for examples in documentation, snippets in a tutorial, or text that needs to be placed inside an HTML context. The correct escaping still depends on where the value will be inserted.`,
+          `Stayput's encoder escapes ampersand, less-than, greater-than, double quote, and apostrophe by default. It can optionally turn non-ASCII characters into numeric decimal references as well. The output is useful for viewing and copying, but HTML has several contexts with different parsing rules. An HTML text node, an attribute, a JavaScript string, and a URL each need context-specific handling.`
+        ]
+      },
+      {
+        heading: 'Encode ampersands before copying the result',
+        paragraphs: [
+          `An ampersand can begin an entity, so encoding it is important when showing raw markup or text that contains a literal ampersand. If it is left unescaped, a following sequence may be parsed as a named or numeric reference. The tool escapes the five basic characters in one pass, so a sentence such as “fish & chips” becomes safe to display as literal text in a basic HTML text context.`,
+          `Optional non-ASCII encoding converts characters above the basic ASCII range to decimal numeric references. This can be helpful in systems with restricted text handling, but it can make output harder to read. It does not transliterate or translate the words. Try a short example with an accented letter or symbol, then compare the encoded form with what your target browser renders.`
+        ]
+      },
+      {
+        heading: 'Decode entities to inspect what they represent',
+        paragraphs: [
+          `Decoding turns named and numeric HTML entities back into readable characters using the browser's HTML parser. It is useful when a log, exported field, or copied source contains strings such as &amp; or &#169; and you want to see the rendered text. The tool builds an inert document and reads its text content; it does not place the decoded result into the live page as markup.`,
+          `That behavior protects the current preview from executing decoded tags, but it does not make the decoded output harmless in every destination. A decoded string that contains angle-bracket markup can become active if another application inserts it as HTML. Treat decoded content as data and escape or sanitize it according to the final context. Decoding is a representation change, not a security review.`
+        ]
+      },
+      {
+        heading: 'Keep the destination context in mind',
+        paragraphs: [
+          `HTML entity encoding is not the same as URL encoding, JavaScript string escaping, or a full HTML sanitizer. For example, a value placed inside a quoted attribute has different risks from a sentence displayed between paragraph tags. Use a framework's normal text binding where possible, and follow its guidance for attributes or rich HTML. A copied entity string is only suitable for a context that parses HTML entities.`,
+          `If you are building a page, avoid concatenating untrusted input into raw HTML. Escaping the five common characters is a useful basic step for displaying text, but it does not validate links, remove dangerous URL schemes, or approve arbitrary markup. Keep markup and data separate. For HTML meant to be rendered from an untrusted source, use a maintained sanitizer and review its allowed tags and attributes.`
+        ]
+      },
+      {
+        heading: 'Check the output with a small example',
+        paragraphs: [
+          `Start with a short line containing an ampersand, a pair of angle brackets, quotes, and a non-ASCII letter. Encode it, then decode the result and compare it with the original. This round trip is a quick check that the characters you care about survived. It does not prove that a later template, database, or browser context will handle the string correctly.`,
+          `When debugging double-escaped content, look for sequences such as &amp;amp;. That often means a value was encoded more than once. Decode a sample to understand the layers, but fix the code path that applies escaping rather than manually editing every record. Keep a backup before updating stored data, because different fields may contain a mix of already-escaped and ordinary text.`
+        ]
+      },
+      {
+        heading: 'Use examples that match your page',
+        paragraphs: [
+          `A code tutorial may need to display a full HTML tag as text. A text input may only need the user's original characters, and a rich text editor may apply its own escaping. Test the exact output inside the component or document where it will appear. A value that looks right in a plain text box can be decoded again by a browser or another tool at a later step.`,
+          `For attributes, quotes matter because they can end the quoted value if escaping is missing. For a URL, HTML entities do not replace percent encoding. For script data, JSON serialization is usually a better fit than hand-assembling a JavaScript string. Choose a method that matches the syntax being produced, then use the entity tool only for the HTML entity operation it supports.`
+        ]
+      },
+      {
+        heading: 'Encode deliberately and verify after rendering',
+        paragraphs: [
+          `Use the encoder when visible text needs to include HTML-special characters, and use the decoder to inspect an escaped value. Select the non-ASCII option only when the receiving system needs numeric references. After copying, render a test in the intended environment and check both appearance and behavior. If the decoded text contains markup, decide whether it should remain plain text or be handled by a sanitizer.`,
+          `The tool processes the text locally in your browser and includes copy controls for the result. It does not know how your application stores, templates, or displays the output. Preserve a source copy when transforming stored content and avoid applying entity encoding repeatedly. A quick context check prevents readable entities from being mistaken for a universal defense against unsafe HTML.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-hex-rgb-and-hsl-colors-for-css',
+    title: 'How to convert HEX, RGB, and HSL colors for CSS',
+    seoTitle: 'Convert HEX, RGB, and HSL Colors for CSS | Stayput',
+    seoDescription:
+      'Convert opaque colors between HEX, RGB, and HSL, use the picker, and interpret the white and black contrast readings before applying a palette.',
+    excerpt:
+      'HEX, RGB, and HSL describe the same opaque color in different ways. Convert between them, then verify contrast and appearance in the real interface.',
+    image: '/blog/images/color-converter-guide.webp',
+    imageAlt: 'Paint brushes and bright pigments arranged on a palette',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'color-converter',
+    toolCta: 'Convert colors between HEX, RGB, and HSL',
+    sections: [
+      {
+        heading: 'Choose a color format that suits the task',
+        paragraphs: [
+          `HEX, RGB, and HSL are common ways to express a color in CSS. HEX writes channel values in hexadecimal, RGB uses red, green, and blue numbers, and HSL describes hue, saturation, and lightness. Each notation can refer to the same opaque color. A converter is useful when a design file, style guide, or existing stylesheet gives a value in a format that is awkward to edit by hand.`,
+          `The Stayput color converter accepts three- or six-digit HEX, offers a native color picker, and updates the RGB and HSL values as you edit. It works with opaque colors only. Alpha transparency is not supported, so a value that includes an alpha channel will not fit the accepted HEX format. If the design uses opacity, handle it separately in a CSS color function or an application that supports alpha.`
+        ]
+      },
+      {
+        heading: 'Read short and long HEX values',
+        paragraphs: [
+          `A short HEX value such as #f80 expands each digit to a repeated pair, producing #ff8800. A six-digit value gives separate two-digit channels for red, green, and blue. The tool accepts the leading hash or the six digits without it, then displays the copied HEX value in uppercase. The capitalization changes the spelling, not the underlying color.`,
+          `When a value is invalid or incomplete, the text field marks it and explains the accepted pattern. Finish typing all three or six hexadecimal digits before expecting the other formats to update. For a long palette, paste one color at a time and record its label beside the result. A list of unlabeled color codes can be difficult to match to the intended interface later.`
+        ]
+      },
+      {
+        heading: 'Use RGB for channel-level adjustments',
+        paragraphs: [
+          `RGB fields let you change red, green, or blue independently with values from zero to 255. This is convenient when you need to adjust one channel or compare a value with a design specification. Copying produces CSS-ready notation such as rgb(12, 88, 140). The channel controls constrain values to the expected range, and each edit updates the preview and the other formats.`,
+          `RGB edits can be easier to reason about when a brand guide gives channel numbers, but small changes may be hard to judge by eye. Use the displayed preview to see the broad effect and verify the final result on the actual background. A color that looks different beside another color may still have the same encoded value, because surrounding hues influence perception.`
+        ]
+      },
+      {
+        heading: 'Use HSL to explore hue and lightness',
+        paragraphs: [
+          `HSL separates hue, saturation, and lightness. Hue runs around a color wheel, while saturation controls how vivid the color is and lightness moves it toward black or white. This representation can make a palette adjustment more direct than changing three RGB channels. The tool shows a whole-number hue from 0 to 359 and percentage values for saturation and lightness.`,
+          `Conversions round channel and HSL values to whole numbers, so converting back and forth can produce a nearby value rather than the exact original notation. Save the original color token when a design system requires a precise brand value. Use HSL for exploration, then compare the final HEX or RGB value in the product where it will appear.`
+        ]
+      },
+      {
+        heading: 'Interpret contrast readings with care',
+        paragraphs: [
+          `The preview calculates a contrast ratio for the selected color against white and black. The displayed note gives 4.5:1 as a common threshold for body text. Use those readings to narrow a choice, but do not assume they certify every text treatment. Contrast requirements depend on text size, weight, and the foreground and background colors used together. The converter compares only the current color with white or black.`,
+          `If your interface uses colored text on a colored surface, measure that actual pair in an accessibility review. Check hover, focus, disabled, and dark-mode states too. A high ratio against white does not help if the text is placed on a pale tint rather than white. The tool is a quick check for two combinations, not a full palette contrast auditor or accessibility certification.`
+        ]
+      },
+      {
+        heading: 'Test colors in the real interface',
+        paragraphs: [
+          `A standalone color swatch does not reveal how a color behaves beside icons, photographs, borders, or other text. Paste the copied CSS value into a test component and look at it on the target screen. Check small type and thin outlines, and compare the color under the site's light and dark themes. Display technology and brightness can change the perceived appearance without changing the numeric value.`,
+          `For print, a browser color is not a calibrated print specification. Printing workflows may use a different color space and require profile-aware conversion. For web design, keep a record of the source token, the converted value, and the role it serves. Naming a token by purpose, such as action background, is easier to maintain than relying on a color name that may change during a redesign.`
+        ]
+      },
+      {
+        heading: 'Copy a value and preserve the source palette',
+        paragraphs: [
+          `Use the copy control beside HEX, RGB, or HSL to take the chosen representation into a stylesheet or design note. Recheck the copied string after pasting, especially if the destination reformats punctuation or removes a leading hash. Keep the approved palette in its original source file so a temporary adjustment does not replace a documented brand color.`,
+          `The converter runs in the browser and supports opaque colors in the three listed formats. It does not parse CSS variables, named colors, alpha values, or entire palette files. Enter one value, review its conversion and contrast readings, and test the result in context. That simple loop is enough for a one-off CSS change, while larger design systems need their own token management and accessibility checks.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-text-to-hex-binary-and-bytes',
+    title: 'How to convert text to hexadecimal, binary, and byte values',
+    seoTitle: 'Convert Text to Hex, Binary, and Bytes | Stayput',
+    seoDescription:
+      'Learn how UTF-8 bytes appear in hex, binary, decimal, and octal, how to decode byte strings, and how to diagnose invalid input.',
+    excerpt:
+      'Text encodings turn characters into bytes before a number base displays them. Check the byte grouping and UTF-8 validity when converting text or code.',
+    image: '/blog/images/hex-binary-ascii-guide.webp',
+    imageAlt: 'A laptop keyboard and code on a computer screen',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'hex-binary-ascii-converter',
+    toolCta: 'Convert text to hex, binary, decimal, or octal',
+    sections: [
+      {
+        heading: 'Understand the bytes beneath a text string',
+        paragraphs: [
+          `A computer stores text as encoded bytes before those bytes are shown as letters and symbols. The hex, binary, decimal, and octal views express the byte values using different number bases. Stayput encodes text as UTF-8, so basic English letters commonly use one byte while many accented characters and emoji use multiple bytes. A symbol can therefore expand into several groups in the output.`,
+          `The converter has two directions. Text to code produces bytes in the selected base, while code to text parses byte values and decodes them as UTF-8. Decimal is labeled ASCII in the interface because that is a familiar use, but the operation handles UTF-8 bytes, not only the original 7-bit ASCII range.`
+        ]
+      },
+      {
+        heading: 'Choose a base and read its grouping',
+        paragraphs: [
+          `Hex uses base 16 and usually writes each byte as two digits, binary uses eight bits, and octal displays three digits for values through 255. Decimal prints byte values such as 72 or 105. The encoder places spaces between groups so the output is readable. Those spaces separate byte values; they are not part of the original text.`,
+          `When decoding, the tool accepts values separated by whitespace, commas, or semicolons. Unbroken hexadecimal and binary strings can also be split into byte-sized groups automatically. For example, a continuous hex string can be decoded without manually inserting spaces. If an input is ambiguous or an odd number of digits, add explicit separators and check each byte before proceeding.`
+        ]
+      },
+      {
+        heading: 'Handle UTF-8 characters and symbols',
+        paragraphs: [
+          `ASCII letters such as A through Z use familiar byte values, but UTF-8 represents other characters with additional bytes. A character such as é may occupy more than one byte, and a multi-part emoji can need several. That is why a visual character count and a byte count do not always match. The tool's output represents the encoding, not one code number for each visible symbol.`,
+          `When decoding, the bytes must form valid UTF-8. If one byte is missing, a value is outside the byte range, or the sequence is malformed, the tool returns a clear error instead of guessing at replacement characters. Check the source text's encoding and copy the complete sequence. Do not remove leading zeroes from binary or octal values when they are needed to identify byte boundaries.`
+        ]
+      },
+      {
+        heading: 'Recognize invalid values before decoding',
+        paragraphs: [
+          `Every decoded token must use digits valid for the selected base and represent a value from 0 through 255. A hexadecimal token can contain 0 to 9 and A to F, while a binary token can contain only zero and one. A value such as 256 is too large for one byte. If the tool reports an error, fix the specific token instead of changing the text on the other side of the conversion.`,
+          `An unbroken hex string like 48656c6c6f is grouped into pairs. A prefixed value beginning with 0x is accepted for an individual token, but separators make long sequences easier to inspect. Binary uses eight-bit grouping for continuous input. Decimal and octal need separators between byte values because an unbroken run could be interpreted in more than one way.`
+        ]
+      },
+      {
+        heading: 'Use the conversion for debugging and examples',
+        paragraphs: [
+          `Byte notation is useful when reading a protocol trace, comparing an encoded sample with documentation, or explaining how a short text value is represented. Convert a known phrase first and compare a couple of bytes with a trusted reference. Keep the selected base in mind when copying the output into a terminal or source file, since a byte list is not automatically a valid literal in every programming language.`,
+          `This tool does not interpret a network protocol, inspect a file header, or decide whether a byte sequence has application meaning. It only turns text into UTF-8 bytes and shows those bytes in a base, or decodes base values back to text. For binary files, use a file-aware hex viewer that preserves arbitrary bytes rather than this text decoder.`
+        ]
+      },
+      {
+        heading: 'Check whitespace and invisible characters',
+        paragraphs: [
+          `A newline, tab, or space in the input is also encoded as bytes. Copying from a formatted document can add a line break or a nonstandard space that changes the output. If a sequence decodes unexpectedly, test a short plain-text sample and inspect the original string for hidden characters. A byte-level comparison is often more reliable than comparing two visually similar lines.`,
+          `The decoder's output can include control characters that do not display visibly. A valid UTF-8 sequence can therefore produce an empty-looking or oddly formatted result even when the bytes are valid. Paste the output into a code-point inspector or a safe plain-text editor if those characters matter. Do not assume that visually blank text means the conversion returned nothing.`
+        ]
+      },
+      {
+        heading: 'Verify the round trip before reusing data',
+        paragraphs: [
+          `For a basic check, encode a short phrase, then switch to code-to-text and decode the result with the same base. Compare punctuation, spaces, and any non-ASCII characters with the original. If the round trip changes a character, inspect the byte sequence and the text source. The tool reports malformed UTF-8 rather than quietly replacing invalid bytes.`,
+          `The conversion runs locally in the browser, which makes it convenient for ordinary text examples and debugging. It is not a substitute for a protocol specification or a binary file inspector. Copy the complete output, retain separators where they clarify byte boundaries, and verify how the receiving program expects values to be formatted before using them in code.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'replace-text-in-bulk-with-literal-or-regex-matches',
+    title: 'How to find and replace text in bulk without changing the wrong matches',
+    seoTitle: 'Find and Replace Text with Case and Regex Options | Stayput',
+    seoDescription:
+      'Use literal search, whole-word matching, case rules, and regular expressions carefully, then review the replacement count and output.',
+    excerpt:
+      'A bulk replacement can save tedious edits, but a broad pattern may change more than expected. Test a small sample and inspect the count before copying.',
+    image: '/blog/images/find-and-replace-guide.webp',
+    imageAlt: 'A monitor showing charts and data in a bright workspace',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'find-and-replace',
+    toolCta: 'Find and replace text in your browser',
+    sections: [
+      {
+        heading: 'Start with the exact change you need',
+        paragraphs: [
+          `Find and replace works well for repeated edits such as changing a product label, removing a recurring phrase, or normalizing names in a copied list. The tool updates the result as you type and reports how many matches it found. Begin with a small sample and a precise search term. A short test can expose a match that is broader than the one you had in mind before it touches a large block.`,
+          `By default, the search is literal, global, and case-insensitive. Literal mode treats punctuation such as a period or parenthesis as an ordinary character rather than a regular-expression instruction. Match case narrows the search to the exact capitalization. Whole word adds word boundaries around the pattern, which can help avoid matching a short word inside a longer one.`
+        ]
+      },
+      {
+        heading: 'Use whole-word matching with its boundaries in mind',
+        paragraphs: [
+          `Whole-word matching uses JavaScript regular-expression word boundaries. That is useful for ordinary English terms surrounded by spaces or punctuation, but it may not match the way every language defines a word. Underscores and many non-ASCII letters can also behave differently from a reader's idea of a boundary. Test accented words, identifiers, and joined terms before applying a whole-word replacement to structured text.`,
+          `A word such as “cat” can appear as a standalone word, inside a compound name, or in a code identifier. Decide whether the compound should change before enabling the option. If the pattern is a regular expression, parentheses and metacharacters affect the boundary expression too. Start with a carefully chosen example and inspect every changed form rather than assuming a boundary option captures the meaning of your content.`
+        ]
+      },
+      {
+        heading: 'Use regular expressions for patterns, not guesses',
+        paragraphs: [
+          `Turn on Regular expression when the text varies in a way a literal phrase cannot describe. A pattern can match a range of dates, repeated spaces, or a structured code. The replacement can refer to capture groups such as $1 and $2. The tool reports an error when the pattern is invalid, which is a reason to simplify it and test against a short sample before pasting a whole document.`,
+          `Regular expressions can also be expensive. Some patterns with nested repetition backtrack through many possibilities and make the browser unresponsive on long text. Avoid adding broad repetition without a clear limit, and test the expression on a small excerpt first. If a pattern hangs, stop using it on the large input and simplify the structure. A regex replace is a search-and-replace operation, not a safe parser for every programming language.`
+        ]
+      },
+      {
+        heading: 'Understand what an empty replacement does',
+        paragraphs: [
+          `Leaving Replace with empty deletes each match. This is useful for removing a prefix, a character, or a phrase that should no longer appear. It can also erase meaningful separators if the pattern is too wide. Check the replacement count and read several lines of output before copying it. A high count may be correct for common whitespace, but it should trigger a closer look for a rare term.`,
+          `In literal mode, a dollar sign in the replacement is inserted as a dollar sign rather than interpreted as a group reference. In regular-expression mode, replacement syntax can use references such as $1. That difference matters when editing prices, identifiers, or text that includes currency symbols. Test the exact replacement string and confirm the resulting punctuation before running it across a large body of text.`
+        ]
+      },
+      {
+        heading: 'Protect the original before a broad edit',
+        paragraphs: [
+          `The interface shows both the input and result, so keep the input intact until you have reviewed the output. For long documents, save a copy before replacing. Compare the output with a diff tool if each changed line matters. A replacement count tells you how many matches were found, but it does not tell you whether each replacement was semantically correct.`,
+          `Be especially careful with source code, structured data, and quoted text. A literal replacement can change a property name or an example that happens to contain the same phrase. A regex can change a broader range than expected when punctuation has a special meaning. Use the narrowest pattern that solves the task, and make one logical change at a time so an unwanted result is easier to trace.`
+        ]
+      },
+      {
+        heading: 'Check case, punctuation, and line endings',
+        paragraphs: [
+          `Paste a representative section that includes uppercase and lowercase versions, punctuation, and line breaks. Toggle Match case and Whole word separately so you can see which option changes the count. The tool leaves line breaks in the input text, but replacements can include newline characters if the pattern or replacement contains them. Confirm that paragraphs and list boundaries are still where they belong.`,
+          `The tool does not offer a dedicated undo history. If you change the find or replacement fields after reviewing a result, the output updates again from the current input. Keep the original text available until the final result has been copied and checked. For a one-time bulk cleanup, storing the source in a separate editor gives you an easy way to back out.`
+        ]
+      },
+      {
+        heading: 'A safe repeatable replacement routine',
+        paragraphs: [
+          `Write down the intended match and the expected number of changes, then test on a short excerpt. Confirm whether matching should ignore case, whether a whole word is needed, and whether the search should be literal or a regex. Review the count, scan the output, and compare a few surrounding lines. If the change is right, apply the same operation to the full text and check it again.`,
+          `Stayput processes the text in the browser and provides a copy-ready result. It does not understand the meaning of a sentence or know which matches are business-critical. A careful sample, a preserved original, and a final diff are useful safeguards when a replacement affects many records. For complex document formats, use an editor that understands the format rather than replacing text inside raw serialized data.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'make-readable-url-slugs-from-titles',
+    title: 'How to make readable URL slugs from titles and phrases',
+    seoTitle: 'Make Readable URL Slugs from Titles | Stayput',
+    seoDescription:
+      'Learn how slug generation handles accents, punctuation, separators, blank lines, and length limits, then check for collisions before publishing.',
+    excerpt:
+      'A clean slug can make a URL easier to scan and maintain. Review how a generator normalizes text and check that each result is unique in your site.',
+    image: '/blog/images/slug-generator-guide.webp',
+    imageAlt: 'Rows of books and printed pages on a library shelf',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'slug-generator',
+    toolCta: 'Generate URL-friendly slugs from titles',
+    sections: [
+      {
+        heading: 'Turn a title into a compact URL label',
+        paragraphs: [
+          `A slug is the readable portion of a URL that identifies a page, article, or record. A useful slug gives a person a quick idea of the destination and avoids spaces that require encoding in a URL. Stayput's slug generator accepts multiple titles, one per line, and creates lowercase output with hyphens by default. It can also use underscores and optionally limit the output length.`,
+          `A short, descriptive label is easier to share and maintain than a string of punctuation or an auto-generated database number. Start with a title that describes the page rather than a temporary campaign slogan. The generated value is only a starting point: check existing routes, keep important terms, and avoid changing a published URL without a redirect plan.`
+        ]
+      },
+      {
+        heading: 'See how accents and punctuation are handled',
+        paragraphs: [
+          `The generator normalizes accented Latin characters into simpler ASCII forms, maps a few special letters such as ß and æ, and turns an ampersand into the word “and.” Other runs of punctuation or unsupported characters become a separator. For instance, punctuation around a phrase usually collapses into one hyphen rather than creating a string of symbols.`,
+          `The tool keeps only a-z and 0-9 after normalization. Letters from scripts such as Chinese or Arabic are removed rather than transliterated, so a title written entirely in those scripts may produce an empty result. If your audience uses another writing system, create a deliberate transliteration or localized URL strategy instead of assuming this ASCII-only helper can preserve the original words.`
+        ]
+      },
+      {
+        heading: 'Pick a separator that fits the destination',
+        paragraphs: [
+          `Hyphens are a common choice for readable web URLs because they separate words visually. Underscores can suit internal identifiers or file names where the consuming system expects them. Choose one separator consistently across a site so editors do not need to guess which style a new page should use. The tool lets you switch between the two without changing the rest of the normalization.`,
+          `After choosing a separator, inspect the beginning and end of each result. Leading and trailing separators are removed, and repeated punctuation does not create a long run of separators. Blank input lines are ignored, so the output list may contain fewer lines than the source. If output positions need to match source lines, label the source records or remove blanks before pasting them.`
+        ]
+      },
+      {
+        heading: 'Use maximum length without assuming a hard word boundary',
+        paragraphs: [
+          `The optional maximum length can cap a slug, and the control allows a value up to 200 characters. When a cut happens, the implementation uses the latest separator if it falls beyond half of the limit. If there is no suitable separator in that range, the output is cut at the character limit and can end in the middle of a word. Review truncated slugs instead of assuming every limit ends cleanly at a word boundary.`,
+          `A shorter slug can be easier to scan, but removing too much context can make pages hard to distinguish. If two titles shorten to the same value, add a meaningful qualifier or another stable identifier. The tool does not check your site's routes or automatically make duplicates unique. That check belongs in the publishing workflow before a URL goes live.`
+        ]
+      },
+      {
+        heading: 'Check for duplicate and reserved slugs',
+        paragraphs: [
+          `Different titles can produce the same slug after punctuation and accents are removed. A new article called “Color for the Web” could collide with an earlier spelling that normalized to the same words. Compare the results against current routes, category names, and reserved paths before saving them. A slug generator transforms text; it cannot know whether your application already uses the result.`,
+          `If a page is already indexed or linked from other sites, changing its slug can break inbound links unless the old address redirects. Plan a redirect and update internal links whenever a published URL must change. For a new post, settle its slug before sharing the link. A readable URL is helpful only while it continues to resolve to the intended content.`
+        ]
+      },
+      {
+        heading: 'Generate a batch with a clear source list',
+        paragraphs: [
+          `Paste one title per line and check the number of input and output lines. Since empty lines are filtered out, a blank row does not produce a placeholder slug. Copy the result into a spreadsheet beside its original title so you can spot mismatches. That side-by-side view is especially useful when several titles differ only by a punctuation mark or accented letter.`,
+          `The maximum length and separator apply to every non-empty title in the batch. If a few pages need a longer route, generate those separately or leave the limit off and review each one. Do not paste arbitrary user-submitted titles into production routes without validation. A generated string still needs application-level checks for uniqueness, reserved words, and allowed characters.`
+        ]
+      },
+      {
+        heading: 'Review the final URL in context',
+        paragraphs: [
+          `Copy the slug and place it into a test URL with the correct route prefix. Read it as a visitor would, check that the words are still clear, and confirm the address loads the right page. Try the URL on a mobile screen or in a message preview if it will be shared there. A compact slug should not sacrifice the distinct meaning of the page.`,
+          `Stayput's slug generator makes lowercase ASCII slugs from lines of text, supports hyphens or underscores, and offers a length limit. It does not include site routing or collision checks. Review normalization, non-Latin behavior, and truncation before publishing. Keeping the original title next to the final slug makes future maintenance and redirects easier.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'clean-extra-spaces-and-line-breaks-in-text',
+    title: 'How to remove extra spaces and line breaks from copied text',
+    seoTitle: 'Remove Extra Spaces and Line Breaks from Text | Stayput',
+    seoDescription:
+      'Clean copied text by collapsing spaces, trimming lines, managing blank paragraphs, or joining lines, then check what formatting was removed.',
+    excerpt:
+      'Text copied from PDFs and email can carry uneven spaces and line breaks. Choose cleanup options carefully so paragraph boundaries and intended spacing survive.',
+    image: '/blog/images/remove-extra-spaces-guide.webp',
+    imageAlt: 'Printed pages and books arranged for reading and editing',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'remove-extra-spaces',
+    toolCta: 'Remove extra spaces and clean copied text',
+    sections: [
+      {
+        heading: 'Why copied text needs a cleanup pass',
+        paragraphs: [
+          `Text copied from a PDF, email, or scanned document can arrive with repeated spaces, line breaks at every visual row, or several blank lines between sections. Those artifacts make a paragraph awkward to edit and can interfere with a form or spreadsheet. The cleanup tool lets you collapse repeated spaces, trim each line, choose how blank lines behave, and optionally join the remaining text into one paragraph.`,
+          `Start with a copy of the source, especially when headings and paragraph breaks carry meaning. A cleanup operation can make text easier to read while also removing distinctions that were intentional. The tool shows the number of characters before and after the change, which can reveal a large reduction, but it cannot decide whether a line break was a real paragraph boundary.`
+        ]
+      },
+      {
+        heading: 'Collapse repeated spaces and tabs',
+        paragraphs: [
+          `The repeated-space option collapses runs of ordinary spaces or tabs to one space. This is useful for irregular alignment copied from a fixed-width page or for text with accidental double spaces. Non-breaking spaces are converted to ordinary spaces first, so they participate in cleanup. A single space between words remains, and punctuation is not rewritten.`,
+          `This setting does not remove every possible invisible Unicode separator. If a document includes unusual whitespace characters, inspect the result in a text editor that can reveal them. The tool's character count can show that something changed, but a count alone cannot identify which characters were removed. Test a small excerpt before cleaning text used in data import or code.`
+        ]
+      },
+      {
+        heading: 'Trim lines and decide what to do with blanks',
+        paragraphs: [
+          `Trim each line removes spaces at the start and end of each line. Blank lines can be kept, collapsed so consecutive empty lines become one, or removed entirely. This gives you control over paragraph spacing when a PDF has inserted many empty rows. If you need exact layout or indentation, turn off trimming and compare the result before copying it.`,
+          `Removing all blank lines can merge headings and paragraphs visually when the result is pasted into a plain text field. Keeping blank lines preserves the original structure but may leave a large gap. The collapse option is a useful middle ground for accidental runs of empty lines. Choose the behavior that fits the next editor, not just the cleanest preview in this page.`
+        ]
+      },
+      {
+        heading: 'Join broken PDF lines into a paragraph',
+        paragraphs: [
+          `PDFs often store a page as visual text rows, so copying a paragraph can leave a line break after every displayed line. Turn on Join into one paragraph to merge the non-empty lines with spaces. The operation filters empty lines and normalizes repeated spaces in the joined result. It works well for a continuous paragraph that was wrapped to fit a page column.`,
+          `Joining is a poor choice when the source has actual lists, headings, addresses, poetry, or code. Those line boundaries carry meaning and should remain separate. Use a short passage first and read the output to ensure that sentences have not been fused in an unexpected place. If the document has multiple columns, check the copied order too, since whitespace cleanup cannot reconstruct a reading order that the PDF copy operation lost.`
+        ]
+      },
+      {
+        heading: 'Keep a source copy when formatting matters',
+        paragraphs: [
+          `A plain text cleanup tool cannot retain bold, links, tables, or page layout from a rich document. It works on the characters you paste. Preserve the source file when citations, indentation, or line structure matters, and paste the cleaned text into a separate draft. For an exact transcript, compare the revised text with the original and restore any meaningful breaks that were removed.`,
+          `If you are preparing text for a database or code editor, verify the expected newline style and whitespace rules. Normalizing line endings from CRLF or CR to LF is part of the cleanup. That is usually helpful for plain text, but a downstream file format may expect a different convention. Keep the original and check the destination after pasting rather than assuming one form suits every application.`
+        ]
+      },
+      {
+        heading: 'Use character counts as a clue, not a verdict',
+        paragraphs: [
+          `The before-and-after character counts make it easy to see whether cleanup shortened the text. A large drop can mean that repeated spacing or blank rows were removed, but it can also signal that Join into one paragraph discarded more structure than intended. Read the beginning, middle, and end of a long result. Counts summarize size; they do not prove that the content remains complete.`,
+          `For long text, the visible result may be easier to review in a separate editor with line numbers or a diff. The cleanup page keeps the input and result side by side and offers a copy control. Save the original before replacing content in a document. If an option produces an unexpected change, adjust it and the result updates from the original input rather than requiring you to reconstruct the source.`
+        ]
+      },
+      {
+        heading: 'A careful text cleanup sequence',
+        paragraphs: [
+          `Paste a representative excerpt, collapse repeated spaces, and trim lines if indentation is not meaningful. Choose how blank lines should behave, then decide whether the text should be joined into one paragraph. Check headings, list items, and paragraph breaks before copying. Use a larger batch only after those choices behave as expected on the sample.`,
+          `The tool runs in the browser and does not upload the pasted text. It makes mechanical whitespace changes, not editorial corrections. Proofread afterward for missing punctuation, words that ran together, or a line break that should have remained. A clean-looking block is useful only if it still preserves the distinctions the source intended.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'translate-morse-code-and-read-its-spacing',
+    title: 'How to translate Morse code and read letter spacing',
+    seoTitle: 'Translate Morse Code to Text and Back | Stayput',
+    seoDescription:
+      'Learn the translator’s letter and word separators, supported characters, skipped symbols, and checks for decoding copied Morse code.',
+    excerpt:
+      'Written Morse uses spacing to separate letters and words. Check the separators and unsupported symbols when translating a copied message.',
+    image: '/blog/images/morse-code-translator-guide.webp',
+    imageAlt: 'A radio tower standing against a blue evening sky',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'morse-code-translator',
+    toolCta: 'Translate text to Morse code and back',
+    sections: [
+      {
+        heading: 'Choose a direction before entering a message',
+        paragraphs: [
+          `Morse code represents letters and numbers with patterns of dots and dashes. A translator can turn ordinary text into a written code sequence or decode a sequence back into characters. Stayput has separate Text to Morse and Morse to text modes. Pick the direction that matches what you pasted, since a text sentence and a Morse pattern use different spacing rules.`,
+          `The text-to-code operation converts letters to uppercase before looking up their patterns. Case therefore does not change the encoded result. A copied Morse sequence can use typographic dot and dash characters, so the decoder normalizes several common look-alikes. Check the raw input if a symbol is still reported as unrecognized.`
+        ]
+      },
+      {
+        heading: 'Use spaces between letters and slashes between words',
+        paragraphs: [
+          `In the written format, a single space separates Morse symbols for letters, while a slash separates words. For example, the familiar SOS sequence is three letter patterns separated by spaces. Keeping the boundaries clear matters because a run of dots and dashes without spaces can be ambiguous. A typed sequence is a plain-text convention, not a recording of the timing used in an actual transmission.`,
+          `The decoder also accepts a vertical bar between words and can treat three or more spaces or a newline as a word boundary. When copying from a document, check whether line wrapping inserted spaces inside a symbol or between letters. A single missing separator can change how patterns are grouped, so compare a short known word before decoding a long message.`
+        ]
+      },
+      {
+        heading: 'Know which characters have a code',
+        paragraphs: [
+          `The translator covers A through Z, digits 0 through 9, and a defined set of punctuation marks such as a period, comma, question mark, and slash. Many emoji, accented letters, and specialized symbols have no entry in this table. During encoding, unsupported characters are listed and left out of the output. Review that notice instead of assuming the generated Morse represents every character in the original text.`,
+          `If the message contains an accented letter, decide whether transliteration is appropriate before encoding. Replacing a character with a similar unaccented letter changes the spelling, which may be acceptable for a simple exercise but not for a name or exact quotation. Preserve the original and record any substitutions so a reader can tell what was deliberately changed.`
+        ]
+      },
+      {
+        heading: 'Read decoding errors as useful feedback',
+        paragraphs: [
+          `When the decoder sees a Morse token that is not in its table, it writes a question mark in the output and identifies the token as unrecognized. That gives you a place to investigate. Check the number of dots and dashes, the spacing around the token, and any character that may have been altered by typography or a messaging app.`,
+          `A decoded question mark is not a guess about the missing letter. It marks a pattern the tool could not match. Compare the original with a trusted reference or ask for a cleaner source if the message matters. Morse can be copied incorrectly when long and short signal marks are confused, and the translator cannot reconstruct a symbol from surrounding words with certainty.`
+        ]
+      },
+      {
+        heading: 'Use Morse for learning and written examples',
+        paragraphs: [
+          `A text translator is useful for practicing letter patterns, building a puzzle, or reading a short written example. It does not play audio, measure signal timing, or send and receive radio transmissions. Real signaling relies on the duration and spacing of marks and gaps, which a string of dots and dashes does not fully capture. For radio practice, pair a text reference with an audio or keying exercise.`,
+          `The code table follows International Morse conventions for the supported letters, numbers, and punctuation. It does not explain every regional procedure or special prosign. If a technical or emergency communication depends on the message, use the appropriate radio procedures and verify the text with a qualified source. A quick browser conversion is a learning aid, not a communications channel.`
+        ]
+      },
+      {
+        heading: 'Check the translated message before sharing it',
+        paragraphs: [
+          `After encoding, compare the first and last symbols with a known test such as SOS. Confirm that word boundaries appear where the original had spaces and that every punctuation mark you need is supported. After decoding, read the output for missing characters marked by question marks. Copying only the translated panel can hide the warning if you do not inspect the notice above it.`,
+          `For a longer message, divide it into phrases and keep the original text beside the translated code. This makes it easier to spot a missing slash or a token that was pasted without a separator. If the output is going into a puzzle, test the exact formatting in the display where players will see it. Narrow line wrapping or repeated spaces can make a Morse sequence harder to parse.`
+        ]
+      },
+      {
+        heading: 'A reliable way to translate a short phrase',
+        paragraphs: [
+          `Select the direction, enter a short phrase, and confirm that the letter and word separators look right. Check unsupported characters before copying. For decoding, keep one space between letter patterns and use a slash or another supported word separator. If a token is rejected, correct the source rather than treating the question mark as a decoded letter.`,
+          `Stayput performs the translation in your browser and shows both the output and any skipped or unrecognized symbols. It does not provide audio, timing, or a complete Morse protocol reference. Those limits are easy to account for when the task is reading a short written code. With clear separators and a quick check against the original, the result is easier to trust and easier to share.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-roman-numerals-with-subtractive-rules',
+    title: 'How to convert Roman numerals and spot invalid forms',
+    seoTitle: 'Convert Roman Numerals and Check Valid Forms | Stayput',
+    seoDescription:
+      'Convert whole numbers from 1 to 3999, decode standard Roman numerals, and understand why forms such as IIII or VX are rejected.',
+    excerpt:
+      'Roman numerals use subtractive pairs such as IV and CM. Check the allowed range and standard spelling when converting or validating a value.',
+    image: '/blog/images/roman-numeral-converter-guide.webp',
+    imageAlt: 'Stone arches and columns in an ancient architectural site',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'roman-numeral-converter',
+    toolCta: 'Convert numbers to Roman numerals and back',
+    sections: [
+      {
+        heading: 'Convert in either direction',
+        paragraphs: [
+          `Roman numerals use letters such as I, V, X, L, C, D, and M to represent values. The converter has separate fields for a number and a numeral, so you can convert either direction without changing a mode. Enter a whole number in the first field or a Roman numeral in the second, then read the result beside it.`,
+          `The tool follows standard subtractive notation, where a smaller symbol before a larger one forms a subtractive pair. For example, IV represents four and IX represents nine. It accepts both uppercase and lowercase input for decoding and trims spaces around the numeral. The number field expects a value in the supported whole-number range rather than a decimal or a date string.`
+        ]
+      },
+      {
+        heading: 'Use the supported range from 1 to 3999',
+        paragraphs: [
+          `The largest standard value accepted by the converter is 3999, written MMMCMXCIX. The smallest is 1, written I. The traditional system has no Roman symbol for zero, so zero does not produce a result. Negative numbers and decimal fractions are outside this converter's standard range as well.`,
+          `The boundary is practical for common dates, chapter numbers, and educational examples. Extended notation for very large numbers can use marks that are not included here. If your source uses an overline or another historical convention, do not remove the mark and assume the remaining letters have the same value. Use a reference or tool that explicitly supports that notation.`
+        ]
+      },
+      {
+        heading: 'Understand why invalid spellings are rejected',
+        paragraphs: [
+          `The decoder does more than add letter values. It converts the parsed total back into the standard form and checks whether that form matches the input. This rejects nonstandard strings such as IIII, VX, or IC, even though a simple left-to-right subtraction rule could produce a number from them. The check helps catch a spelling mistake instead of presenting a plausible but misleading value.`,
+          `Only the letters I, V, X, L, C, D, and M are accepted. If the input contains another character, the page reports that requirement. If it uses valid letters in a nonstandard order, it reports the whole form as invalid. Compare the result with the examples and review the subtractive pair before changing the source.`
+        ]
+      },
+      {
+        heading: 'Learn the common subtractive pairs',
+        paragraphs: [
+          `The conventional subtractive pairs are IV and IX, XL and XC, and CD and CM. Each pair allows a smaller symbol to appear before a larger one in a specific place. Other arrangements can look intuitive but are not accepted as standard spelling. Memorizing these pairs makes it easier to read common numerals and notice a typo in a source document.`,
+          `The converter includes quick examples for values such as 4, 9, 14, 40, 90, 400, 1994, 2026, and 3999. Use them as a spot check when studying the pattern. A value like 1994 is written MCMXCIV, combining thousands, hundreds, tens, and units. The examples demonstrate notation, but they do not cover every date or every historical variant.`
+        ]
+      },
+      {
+        heading: 'Check values used in dates and labels',
+        paragraphs: [
+          `Roman numerals often appear in clock faces, chapter headings, event names, and copyright or publication years. Before engraving or printing a value, convert it in both directions and compare the result with a trusted reference. A one-letter difference can change a value, and an invalid form can be copied through several designs if nobody checks it.`,
+          `For a year, enter the year as a whole number and review the generated numeral. Remember that modern use of Roman numerals does not always follow the same style in every context. Some clocks use IIII where standard numeral rules would use IV. This converter intentionally rejects IIII as an invalid standard form, so use a domain-specific reference if reproducing a clock face.`
+        ]
+      },
+      {
+        heading: 'Avoid treating the converter as a historical authority',
+        paragraphs: [
+          `The tool validates the standard notation implemented in its conversion rules. Roman numeral use has varied across periods and inscriptions, and a historical source may follow conventions that differ from today's common schoolbook form. A strict validation error describes the tool's accepted standard, not necessarily every way a numeral has ever been written.`,
+          `When an inscription or archival source is important, retain the original spelling and consult an appropriate historical reference. Do not silently normalize a quoted artifact just because a converter rejects it. For ordinary modern values between 1 and 3999, the strict form is a useful check. For nonstandard notation, explain the convention rather than presenting it as a standard conversion.`
+        ]
+      },
+      {
+        heading: 'Confirm the result before using it',
+        paragraphs: [
+          `Enter a number, read the generated numeral, and reverse-convert it in the second field if you want a quick round trip. Check for an error message when the value is outside the range or the numeral uses an invalid sequence. If copying from a source, remove punctuation around the numeral but do not discard an overline or other special mark without understanding its meaning.`,
+          `Stayput performs the conversion in the browser and includes a short reference grid. It does not convert dates automatically, interpret extended marks, or supply zero notation. Those limits make its range clear. Use it for standard values and check unusual examples against the source convention before printing, publishing, or teaching the result.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'convert-between-metric-imperial-and-data-units',
+    title: 'How to convert common metric, imperial, and data units',
+    seoTitle: 'Convert Metric, Imperial, and Data Units | Stayput',
+    seoDescription:
+      'Convert length, mass, temperature, volume, area, speed, time, and storage units while checking US measures, binary units, and rounding.',
+    excerpt:
+      'A useful unit conversion depends on choosing the right category and the right definition of a unit. Check gallon systems, data prefixes, and displayed precision.',
+    image: '/blog/images/unit-converter-guide.webp',
+    imageAlt: 'A tape measure and construction tools on a work surface',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'unit-converter',
+    toolCta: 'Convert measurements and data units',
+    sections: [
+      {
+        heading: 'Pick a category before entering a value',
+        paragraphs: [
+          `The unit converter groups common measures into length, weight and mass, temperature, volume, area, speed, time, and digital storage. Choose a category, enter a number, and select the source and destination units. The page shows the chosen conversion and a list of the same value in every unit in that category. That second view is useful when you need to compare several familiar units at once.`,
+          `Changing categories resets the unit selectors to a pair from the new group. Check both labels before copying the result, especially when symbols such as m or s appear in more than one measurement context. The input accepts numeric values, including decimals. It does not decide whether a negative length or volume is physically meaningful; it performs the mathematical conversion for the signed number you enter.`
+        ]
+      },
+      {
+        heading: 'Check US and UK volume definitions',
+        paragraphs: [
+          `The volume list uses US liquid measures for teaspoons, tablespoons, fluid ounces, cups, pints, and gallons. UK imperial volumes differ, with a gallon roughly one fifth larger than a US liquid gallon. If a recipe or specification comes from the United Kingdom, confirm which system it uses before relying on a cup or gallon conversion.`,
+          `The labels identify the US measures in the selector, which makes the assumption visible. A converted number can be mathematically correct and still be wrong for the source context if the wrong gallon was selected. For recipes, check whether the source uses weight or volume and whether the ingredient packs loosely or densely. A unit converter cannot account for ingredient density or cooking technique.`
+        ]
+      },
+      {
+        heading: 'Read decimal and binary storage units',
+        paragraphs: [
+          `Digital storage includes decimal units such as KB, MB, GB, and TB, where each step is based on 1,000, and binary units such as KiB, MiB, GiB, and TiB, where each step uses 1,024. The converter also includes bits and bytes. This distinction explains why a drive capacity shown by a manufacturer may not match a number reported by an operating system.`,
+          `Check whether the source says MB or MiB before comparing file sizes. The labels show the base used for each unit, and the table can display the value in all listed units. A bit is one eighth of a byte in this converter. If the original measurement was rounded or included a filesystem overhead, converting it does not remove that source uncertainty.`
+        ]
+      },
+      {
+        heading: 'Use the temperature category differently',
+        paragraphs: [
+          `Temperature conversions use offsets as well as a scale factor. Celsius, Fahrenheit, and Kelvin do not share the simple multiply-by-a-constant relationship used for length or mass. The tool applies the standard conversion formulas and updates the result as you change the value or either unit.`,
+          `Check whether a temperature is absolute or a difference. A temperature of 20 degrees Celsius converts to 68 degrees Fahrenheit, but a change of 20 Celsius degrees corresponds to a change of 36 Fahrenheit degrees. The converter handles a numeric temperature value, not the interpretation of a temperature interval. For laboratory or engineering work, include the scale and context in your notes.`
+        ]
+      },
+      {
+        heading: 'Understand rounding in the displayed result',
+        paragraphs: [
+          `The converter formats results to up to eight significant digits and avoids trailing zeroes. Very large or very small values may use exponent notation. This keeps the display readable, but the visible string is rounded and should not be treated as an unlimited-precision calculation. Preserve more precision in a dedicated scientific system if later calculations depend on it.`,
+          `Conversion factors in the tool reflect the listed definitions, but a measurement itself may have uncertainty. A tape measure reading, a kitchen cup, or a speed estimate does not become more precise because the output shows several digits. Match the significant figures to the original measurement and the purpose of the calculation. Avoid reporting extra decimals that imply a level of accuracy the source never had.`
+        ]
+      },
+      {
+        heading: 'Use category tables as a cross-check',
+        paragraphs: [
+          `After choosing a source unit, scan the table for a second equivalent result you recognize. For example, convert a meter value to centimeters and millimeters, or compare bytes with kilobytes and kibibytes. A familiar reference can reveal that the wrong category or unit was selected. The swap button is useful for reversing direction and checking whether the displayed values return close to the starting number.`,
+          `A round trip may differ slightly because the display rounds the result. That is expected for repeating decimal conversions such as inches to centimeters. Do not copy a rounded output into a chain of calculations if exact precision matters. Use a calculator or a measurement system that retains the needed precision, and keep the original quantity with its unit alongside the converted value.`
+        ]
+      },
+      {
+        heading: 'Verify units before sharing a result',
+        paragraphs: [
+          `Include unit labels in notes, spreadsheets, and instructions. A bare number such as 12.5 could mean centimeters, inches, kilograms, or gallons. Confirm the regional definition for volume, the decimal or binary convention for storage, and whether a temperature is absolute or an interval. Check the input and output labels after changing category, then copy the value with its unit context.`,
+          `The converter runs in the browser and covers common units rather than every specialized scientific measure. It is useful for everyday comparisons and quick estimates, but it does not validate the source measurement or explain a domain's convention. When a conversion affects safety, engineering tolerances, a prescription, or a financial specification, confirm the applicable standard with a qualified source before acting.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'write-numbers-and-money-amounts-in-words',
+    title: 'How to write numbers and money amounts out in English words',
+    seoTitle: 'Write Numbers and Money Amounts in Words | Stayput',
+    seoDescription:
+      'Spell whole numbers, decimals, and common currency amounts in English, with notes on limits, punctuation, cents, and American-style wording.',
+    excerpt:
+      'Writing an amount in words can prevent ambiguity on a form or invoice. Check the currency, decimal places, and spelling convention before using the result.',
+    image: '/blog/images/number-to-words-guide.webp',
+    imageAlt: 'A paper chart with numbers and calculations on a desk',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'number-to-words',
+    toolCta: 'Write numbers and money amounts in English words',
+    sections: [
+      {
+        heading: 'Choose plain number or money mode',
+        paragraphs: [
+          `A number-to-words converter can make a value easier to read in a sentence, a form, or a cheque-style amount field. Stayput has a plain-number mode and a Money amount mode. Plain mode spells out the integer and reads decimal digits one at a time after the word “point.” Money mode uses a currency choice to name major and minor units, such as dollars and cents or rupees and paise.`,
+          `Pick the mode before entering a value because the same digits can be read differently. A plain 12.50 becomes twelve point five zero, while a money amount uses a currency expression. The page capitalizes the first letter of the displayed result for copying. Review punctuation and capitalization against the style guide of the document where the words will appear.`
+        ]
+      },
+      {
+        heading: 'Enter whole numbers with their intended value',
+        paragraphs: [
+          `Plain mode accepts whole numbers up to 36 digits, including positive or negative values. Commas, spaces, and underscores are ignored, so a formatted value such as 1,204 can be read as one thousand two hundred four. The converter uses the short scale, where a billion is 1,000,000,000 and a trillion is 1,000,000,000,000.`,
+          `Remove currency symbols and other punctuation before entering a value. The input parser accepts a numeric string rather than interpreting a locale-specific format. A comma is treated as a separator, not a decimal mark. If your region writes a decimal comma, convert it to the period form the tool expects and verify the intended value before copying the words.`
+        ]
+      },
+      {
+        heading: 'Read decimals digit by digit',
+        paragraphs: [
+          `In plain-number mode, digits after the decimal point are spoken one by one. This preserves significant trailing zeroes in a value such as 3.05, which becomes three point zero five. That is useful for measurements or identifiers where the individual decimal digits matter. It is different from rounding the value to a familiar fraction or naming cents.`,
+          `For money mode, amounts may have up to two decimal places. A value such as 1.2 is interpreted as one major unit and twenty minor units because the fractional part is padded to two digits. A third decimal place is rejected rather than rounded. Check that the input's precision and currency convention match the form before using the output.`
+        ]
+      },
+      {
+        heading: 'Choose one of the supported currencies',
+        paragraphs: [
+          `Money mode provides dollars and cents, euros and cents, pounds and pence, or rupees and paise. The converter pluralizes the unit names based on the numeric amount and joins nonzero major and minor values with “and.” A whole amount with no cents does not need a minor-unit phrase. Check the selected currency before copying because the tool cannot infer it from a symbol or locale.`,
+          `The available labels are fixed English currency words and do not cover every currency or local naming style. A contract, invoice, or cheque may require a jurisdiction-specific wording convention. Verify the expected spelling, singular and plural forms, and any required capitalization against the organization that will process the document. The generated phrase is a draft for review, not a legal or accounting certification.`
+        ]
+      },
+      {
+        heading: 'Know the number style and size limits',
+        paragraphs: [
+          `Plain numbers follow American-style wording without “and” after hundreds. For example, 101 is written one hundred one. Money mode uses “and” between major and minor units when a minor amount is present. If a school, publisher, or country uses a different house style, edit the result to match that rule rather than treating one style as universal.`,
+          `The plain number limit is 36 digits, and the scale names in the converter extend through decillion. Larger values produce an error. Money values are limited to two decimal places and also require a valid numeric form. If a number is out of range or has unexpected punctuation, the page displays an error instead of guessing.`
+        ]
+      },
+      {
+        heading: 'Check negative values and zeroes',
+        paragraphs: [
+          `Negative numbers begin with “minus.” A negative money amount also uses that prefix. A value with leading zeroes is interpreted as a numeric quantity, so those zeroes do not remain as a fixed-width identifier. If the digits are an account number, postal code, or code that must preserve leading zeroes, use a character-by-character reading method instead of converting it as a number.`,
+          `The plain-number converter can spell zero, but money output treats the major amount as a currency quantity. Check how a zero-cent amount should appear in the intended document. Some forms require “and zero cents” or a fixed phrase even when the minor value is zero. The tool omits a zero minor-unit phrase, so add wording manually if a formal template requires it.`
+        ]
+      },
+      {
+        heading: 'Verify the wording before signing or sending',
+        paragraphs: [
+          `After conversion, read the words aloud while comparing them with the digits. Check each group of thousands, the sign, the decimal portion, and the currency. In a money amount, confirm that a fractional part has been interpreted as the intended number of cents or paise. A misplaced comma or period can change the value before the converter ever sees it.`,
+          `Stayput performs number-to-English conversion in your browser and displays a copyable result. It does not determine the currency, local writing style, or legal wording required by a bank or agency. Keep the original numeric amount with the text and have a second person review high-value documents. A simple check can catch the most costly mismatch: words that do not match the digits.`
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'use-a-caesar-cipher-for-puzzles-not-secrets',
+    title: 'How to use a Caesar cipher and ROT13 for a puzzle',
+    seoTitle: 'Use a Caesar Cipher or ROT13 for Puzzles | Stayput',
+    seoDescription:
+      'Learn how Caesar shifts wrap around the alphabet, what ROT13 does, which characters stay unchanged, and why this cipher is not secure.',
+    excerpt:
+      'A Caesar cipher shifts A to Z by a fixed number of letters. It is easy to experiment with for puzzles, but it offers no real protection for private data.',
+    image: '/blog/images/caesar-cipher-guide.webp',
+    imageAlt: 'A laptop keyboard with a handwritten note and pen nearby',
+    publishedAt: '2026-11-23',
+    publishedLabel: 'November 23, 2026',
+    toolSlug: 'caesar-cipher',
+    toolCta: 'Encrypt or decrypt text with a Caesar shift',
+    sections: [
+      {
+        heading: 'Shift letters around the alphabet',
+        paragraphs: [
+          `A Caesar cipher replaces each letter with another letter a fixed number of positions away. With a shift of three, A becomes D and X wraps around to A. The tool lets you choose encryption or decryption, enter text, and set a shift from 1 to 25. It updates the result as the text or setting changes, so a short example is easy to test.`,
+          `The transformation preserves uppercase and lowercase letters. Only A through Z are shifted; numbers, spaces, punctuation, accented characters, and emoji pass through unchanged. That makes the output readable as a string, but it also means the cipher does not conceal patterns in the message. A reader can see word lengths and punctuation immediately.`
+        ]
+      },
+      {
+        heading: 'Use ROT13 as a special case',
+        paragraphs: [
+          `ROT13 is a Caesar shift of 13 positions. Because the English alphabet has 26 letters, applying the same shift a second time returns the original letters. That makes it useful for lightweight spoiler hiding or a simple puzzle where both parties know the convention. It is also easy to decode by applying ROT13 again rather than reversing a separate key.`,
+          `The tool includes a one-click ROT13 option and can show all 25 possible shifts. That list helps solve a Caesar puzzle when the shift is unknown. A readable phrase often appears at one shift, especially for short English text. Do not treat the list as a cryptographic attack on modern encryption; it demonstrates how small the Caesar cipher's key space is.`
+        ]
+      },
+      {
+        heading: 'Wrap around and preserve letter case',
+        paragraphs: [
+          `A shift past Z wraps back to A, and the same rule applies in the other direction during decryption. For example, the final letters of the alphabet can become early letters after a forward shift. Case is preserved, so an uppercase word stays uppercase in the output and a mixed-case name keeps its capitalization pattern.`,
+          `If the result looks wrong, confirm the direction and shift value before changing the source. Encrypting with a shift and decrypting with that same direction will not generally restore the message. Decryption moves letters back by the chosen number. A quick round trip with a known sample is a useful check that the operation was applied in the intended direction.`
+        ]
+      },
+      {
+        heading: 'Keep the cipher for learning and games',
+        paragraphs: [
+          `The Caesar cipher is suitable for a classroom exercise, a puzzle trail, or a simple encoding demonstration. It can help explain substitution, modular arithmetic, and how a key changes a message. The all-shifts view is handy when checking a short encoded phrase. If the text contains non-English letters, remember that those symbols are not shifted by this implementation.`,
+          `Do not use a Caesar cipher for passwords, confidential notes, account details, or private messages. There are only 25 nontrivial shifts, and trying every one takes little effort. Letter frequencies and common words make many messages even easier to recognize. A modern encryption system needs a secure algorithm, key management, and an appropriate application rather than a classroom cipher.`
+        ]
+      },
+      {
+        heading: 'Try a test message and verify the shift',
+        paragraphs: [
+          `Begin with a short phrase such as HELLO and choose a small shift. Check the first and last letters, including any wrap from Z to A. Then select Decrypt and use the same shift to confirm that the original phrase returns. Leave numbers and punctuation in the sample to see that they pass through without change.`,
+          `For a puzzle, confirm whether the author counts a shift of zero as an option. The tool offers shifts from 1 to 25 and shows all of those possibilities. An unshifted message is not part of that list. If none of the outputs reads clearly, the source may use another cipher, a different alphabet, or a transcription error.`
+        ]
+      },
+      {
+        heading: 'Understand what the tool does not change',
+        paragraphs: [
+          `A Caesar shift changes letter characters in the Latin alphabet and preserves everything else in place. It does not translate language, remove spaces, normalize accents, or detect a hidden key. For a message containing é, ü, or another accented letter, that character remains as entered. A puzzle may expect you to transliterate first, but make that decision explicit rather than assuming the tool will do it.`,
+          `The input and output can include line breaks, so a message with several paragraphs remains visually separated. The cipher does not add authentication or tell you whether a message was altered. Anyone can shift it back or try other offsets. Treat the result as a reversible letter substitution, not as evidence that a note came from a trusted sender.`
+        ]
+      },
+      {
+        heading: 'A simple way to solve or create a Caesar puzzle',
+        paragraphs: [
+          `Choose a shift, enter a short message, and record the setting separately if you want a friend to decode it. Check the result for legibility and verify the reverse operation. To solve a known Caesar puzzle, paste the ciphertext and compare the all-shifts list with likely words. Keep the original message nearby so you can confirm every decoded character.`,
+          `Stayput performs the substitution in your browser and leaves the text on the page. It is a convenient practice tool for a cipher with a small, known alphabet. Use it for games and teaching, and use proper cryptography for anything private. That distinction matters before you copy a transformed message into a place where someone may mistake it for secure encryption.`
+        ]
+      }
+    ]
+  },
 ]
 
 export const blogPostBySlug = (slug: string): BlogPost | undefined => blogPosts.find((post) => post.slug === slug)

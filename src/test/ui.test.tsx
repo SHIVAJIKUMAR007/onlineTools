@@ -42,6 +42,13 @@ describe('navigation', () => {
     for (const h of hrefs) expect(valid.has(h), `broken link ${h}`).toBe(true)
   })
 
+  it('links directly to all tools from the primary navigation', () => {
+    const { container } = renderAt('/')
+    const primaryNav = container.querySelector<HTMLElement>('nav[aria-label="Main"]')
+    expect(primaryNav).not.toBeNull()
+    expect(within(primaryNav!).getByRole('link', { name: 'All tools' })).toHaveAttribute('href', '/tools')
+  })
+
   it.each(['/tools', '/blog', '/image-tools', '/pdf-tools', '/converters', '/text-tools', '/developer-tools', '/about', '/privacy', '/terms', '/disclaimer', '/contact'])('renders %s', async (path) => {
     renderAt(path)
     expect(await screen.findByRole('heading', { level: 1 })).toBeInTheDocument()
