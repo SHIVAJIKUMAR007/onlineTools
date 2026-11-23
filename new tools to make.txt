@@ -28,8 +28,8 @@ High-volume tools that work fully client-side
 22	Lorem ipsum generator	lorem ipsum	word list	[DONE]
 23	Text diff / compare	text compare	diff library	[DONE]
 24	Regex tester	regex tester	RegExp	[DONE]
-25	Markdown to HTML	markdown editor	marked library
-26	Speed typing test	typing test	key events and timers
+25	Markdown to HTML	markdown editor	marked library	[DONE]
+26	Speed typing test	typing test	key events and timers	[DONE]
 27	Time zone converter / world clock	time zone converter	Intl.DateTimeFormat	[DONE]
 28	Video / audio converter, trimmer	mp4 to mp3	ffmpeg.wasm (heavy, but client-only)
 29	Background remover	remove background	ML in the browser (@imgly/background-removal, WASM)	[DONE]
@@ -43,7 +43,7 @@ JSON tools
 JSON minifier	[DONE]
 JSON diff checker	[DONE]
 JSON to CSV, and CSV to JSON	[DONE]
-JSON to XML, and XML to JSON
+JSON to XML, and XML to JSON	[DONE]
 JSON to YAML, and YAML to JSON	[PARTIAL: JSON to YAML only]
 JSON to TypeScript interface	[DONE]
 JSON viewer / tree viewer	[DONE]
@@ -101,7 +101,7 @@ Readability score (Flesch-Kincaid)	[DONE]
 Keyword density checker	[DONE]
 Fancy text / Unicode font generator	[DONE]
 Small text / superscript generator	[DONE]
-Emoji picker and copy
+Emoji picker and copy	[DONE]
 Palindrome checker	[DONE]
 Anagram finder
 Morse code converter	[DONE]
@@ -114,7 +114,7 @@ Passphrase generator	[DONE]
 HMAC generator	[DONE]
 AES encrypt / decrypt (Web Crypto API)	[DONE]
 Bcrypt hash generator and verifier
-Random token / API key generator
+Random token / API key generator	[DONE]
 Public IP and browser fingerprint viewer
 Secret note (encrypted, shareable link)
 Hash file checker (checksum of an uploaded file)	[DONE: Hash Generator accepts files]
@@ -123,7 +123,7 @@ Countdown timer to a date	[DONE]
 Working days calculator	[DONE]
 Date add / subtract calculator	[DONE]
 Week number of the year	[DONE]
-Unix timestamp to date, in bulk
+Unix timestamp to date, in bulk	[DONE]
 Pomodoro timer	[DONE]
 Meeting time planner across time zones	[PARTIAL: planner row inside Time Zone Converter]
 Leap year checker	[DONE]
@@ -157,7 +157,7 @@ Tip and bill splitter	[DONE]
 Profit margin and markup calculator	[DONE]
 Fuel cost / mileage calculator	[DONE]
 Grade / GPA / CGPA calculator	[DONE]
-Fraction, ratio and average calculators	[PARTIAL: fractions only]
+Fraction, ratio and average calculators	[DONE]
 Scientific calculator	[DONE]
 Salary hourly-to-annual converter	[DONE]
 Indian CTC to monthly take-home (in-hand salary) calculator	[DONE]
@@ -165,12 +165,12 @@ Retirement / FD / RD / PPF calculators	[PARTIAL: FD, RD and PPF; no retirement p
 Break-even calculator	[DONE]
 Electricity bill calculator	[DONE]
 Fun and utility
-Random name / team picker
-Truth or dare, or “would you rather” generator
+Random name / team picker	[DONE]
+Truth or dare, or “would you rather” generator	[DONE]
 Random quote generator
 Reaction time test	[DONE]
 Click speed test (CPS)	[DONE]
-Memory and number games
+Memory and number games	[PARTIAL: number memory only]
 Screen resolution and device info viewer	[DONE]
 Keyboard key code tester	[DONE]
 Dead pixel test	[DONE]

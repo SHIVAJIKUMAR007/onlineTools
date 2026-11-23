@@ -9,6 +9,8 @@ import { loadersF } from './batches/f'
 import { loadersG } from './batches/g'
 import { loadersH } from './batches/h'
 import { loadersI } from './batches/i'
+import { loadersJ } from './batches/j'
+import { loadersK } from './batches/k'
 
 const loaders: Record<string, Loader> = {
   // image
@@ -87,6 +89,8 @@ const loaders: Record<string, Loader> = {
   ...loadersG,
   ...loadersH,
   ...loadersI,
+  ...loadersJ,
+  ...loadersK,
 }
 
 const cache = new Map<string, LazyExoticComponent<ComponentType>>()

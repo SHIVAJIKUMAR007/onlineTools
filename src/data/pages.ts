@@ -90,7 +90,7 @@ export const privacyPage: DocPage = {
     {
       heading: 'What we store in your browser',
       paragraphs: [
-        'The tools themselves do not set cookies. The Background Remover stores downloaded model files in your browser Cache Storage so the next visit is faster. You can remove them any time by clearing site data in your browser settings. The Pomodoro Timer saves your chosen session lengths and auto-start setting in your browser local storage. The Online Notepad and the To-Do List save your notes and tasks in your browser local storage (under the keys stayput:notepad:v1 and stayput:todo:v1) so they are still there next time. That data stays on your device, is not encrypted, and is lost if you clear site data. We never receive it.',
+        'The tools themselves do not set cookies. The Background Remover stores downloaded model files in your browser Cache Storage so the next visit is faster. You can remove them any time by clearing site data in your browser settings. The Pomodoro Timer saves your chosen session lengths and auto-start setting in your browser local storage. The Online Notepad and the To-Do List save your notes and tasks in your browser local storage (under the keys stayput:notepad:v1 and stayput:todo:v1) so they are still there next time. That data stays on your device, is not encrypted, and is lost if you clear site data. We never receive it. The Emoji Picker keeps your last 24 used emoji in local storage under the key stayput-emoji-recent, and you can clear them with the Clear recent button.',
       ],
     },
     {

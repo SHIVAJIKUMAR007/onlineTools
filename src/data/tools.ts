@@ -8,6 +8,8 @@ import { batchF } from './batches/f'
 import { batchG } from './batches/g'
 import { batchH } from './batches/h'
 import { batchI } from './batches/i'
+import { batchJ } from './batches/j'
+import { batchK } from './batches/k'
 
 export interface Faq {
   q: string
@@ -1327,7 +1329,7 @@ export const tools: ToolMeta[] = [
     related: ['password-generator', 'uuid-generator', 'hash-generator', 'hex-binary-ascii-converter'],
   }),
   // ───────────── Batches of new tools (one file per batch in ./batches) ─────────────
-  ...[...batchA, ...batchB, ...batchC, ...batchD, ...batchE, ...batchF, ...batchG, ...batchH, ...batchI].map(t),
+  ...[...batchA, ...batchB, ...batchC, ...batchD, ...batchE, ...batchF, ...batchG, ...batchH, ...batchI, ...batchJ, ...batchK].map(t),
 ]
 
 export const toolById = (id: string): ToolMeta | undefined => tools.find((x) => x.id === id)
