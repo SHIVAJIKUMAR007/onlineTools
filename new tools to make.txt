@@ -103,7 +103,7 @@ Fancy text / Unicode font generator	[DONE]
 Small text / superscript generator	[DONE]
 Emoji picker and copy	[DONE]
 Palindrome checker	[DONE]
-Anagram finder
+Anagram finder	[PARTIAL: anagram checker, no finder]
 Morse code converter	[DONE]
 Roman numeral converter	[DONE]
 Number to words converter	[DONE]
@@ -130,7 +130,7 @@ Leap year checker	[DONE]
 Zodiac / birthstone finder	[DONE]
 Image and media (client-side)
 Image cropper, rotator and flipper	[DONE]
-Image to grayscale / filters
+Image to grayscale / filters	[DONE]
 Image color picker (extract a palette from a photo)
 Image watermark adder
 Meme generator
@@ -161,7 +161,7 @@ Fraction, ratio and average calculators	[DONE]
 Scientific calculator	[DONE]
 Salary hourly-to-annual converter	[DONE]
 Indian CTC to monthly take-home (in-hand salary) calculator	[DONE]
-Retirement / FD / RD / PPF calculators	[PARTIAL: FD, RD and PPF; no retirement planner]
+Retirement / FD / RD / PPF calculators	[DONE]
 Break-even calculator	[DONE]
 Electricity bill calculator	[DONE]
 Fun and utility
@@ -177,3 +177,4 @@ Dead pixel test	[DONE]
 Online notepad (auto-saved with localStorage)	[DONE]
 Sticky notes / to-do list	[PARTIAL: to-do list only]
 Drawing board / whiteboard (Canvas)	[DONE]
+Number base converter [DONE]

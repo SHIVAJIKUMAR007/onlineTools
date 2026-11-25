@@ -10,6 +10,7 @@ import { batchH } from './batches/h'
 import { batchI } from './batches/i'
 import { batchJ } from './batches/j'
 import { batchK } from './batches/k'
+import { batchL } from './batches/l'
 
 export interface Faq {
   q: string
@@ -1329,7 +1330,7 @@ export const tools: ToolMeta[] = [
     related: ['password-generator', 'uuid-generator', 'hash-generator', 'hex-binary-ascii-converter'],
   }),
   // ───────────── Batches of new tools (one file per batch in ./batches) ─────────────
-  ...[...batchA, ...batchB, ...batchC, ...batchD, ...batchE, ...batchF, ...batchG, ...batchH, ...batchI, ...batchJ, ...batchK].map(t),
+  ...[...batchA, ...batchB, ...batchC, ...batchD, ...batchE, ...batchF, ...batchG, ...batchH, ...batchI, ...batchJ, ...batchK, ...batchL].map(t),
 ]
 
 export const toolById = (id: string): ToolMeta | undefined => tools.find((x) => x.id === id)
